@@ -1,0 +1,369 @@
+/*                                  Boilerplate Code                                */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #21272b;
+    color: #b4ee21;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Body inner class ^ property vise css*/
+/*     Global Property Vise Css   */
+.justify_space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify_space_around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*     Global  Class Css     */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 0px;
+    border: 1px solid #b4ee21;
+
+}
+
+/*Main HEader Css (Default Css)*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #5e6251;
+    display: none;
+}
+
+.header_main_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_main_row li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main_header_obj_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px 20px 100px;
+    padding: 0;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.2rem;
+}
+
+.header_obj {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    font-family: Candara, sans-serif;
+    font-size: 0.65rem;
+}
+
+.virtual_header_animation_line {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    border: 1.5px solid #b4ee21;
+}
+
+.icon_container_ch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header_container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_container_ch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*   Main Index My Name   */
+.main_content_m_name_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.My_name_index {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+
+
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+}
+
+/* My Main Biiodata  */
+.main_bio_data_panel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    margin: 100px 0 100px 0;
+    padding: 0;
+}
+
+.bio_data_typer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px;
+
+
+
+    font-family: Candara Light;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.My_Photo img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.my_bio_data {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+.pulse_main_typer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    margin-top:190px;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+
+.pulse-base {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border: 0px solid #222;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.pulse-base_1{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 0px solid #222;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.pulse-base_2 {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: 0px solid #222;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.pulse-base:before {
+  content: '';
+  border: 5px solid rgba(181, 237, 50, 0.916);
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+  animation: pulsate 2.6s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  z-index: 99;
+}
+.pulse-base_1:before {
+  content: '';
+  border: 1px solid rgba(181, 237, 50, 0.916);
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: 35px;
+  bottom: 31px;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  z-index: 99;
+}
+
+.pulse-base_2:before {
+  content: '';
+  border: 1.5px solid rgba(181, 237, 50, 0.916);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 120px;
+  bottom: 120px;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  z-index: 99;
+}
+
+.circle_ai{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle_ai_content{
+    display: flex;
+    flex-direction: column;
+        position: absolute;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #21272b;
+    border-radius: 100%;
+    left:195px;
+    bottom: 150px;
+}
