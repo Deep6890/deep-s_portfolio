@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #21272b;
+    background-color: #0d0d0e;
     color: #b4ee21;
 }
 
@@ -28,6 +28,18 @@ p {
 }
 
 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+a.visited {
+
     text-decoration: none;
     color: inherit;
 }
@@ -59,6 +71,19 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -71,6 +96,24 @@ hr {
     border: 1px solid #b4ee21;
 
 }
+
+/*New Font Type */
+@font-face {
+    font-family: 'Gamming_1';
+    src: url('../my_fonts/SummerFavourite-ARLr6.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gamming_2';
+    src: url('../my_fonts/bruce-forever-font/BruceForeverRegular-X3jd2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gamming_3';
+    src: url('../my_fonts/steelar-font/Steelar-j9Vnj.otf') format('truetype');
+    font-weight: 100;
+}
+
 
 /*Main HEader Css (Default Css)*/
 header {
@@ -251,102 +294,111 @@ header {
     margin: 0;
     padding: 0;
 }
-.pulse_main_typer{
-    
+
+.pulse_main_typer {
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.panel{
+
+.panel {
     display: flex;
-    margin-top:190px;
+    margin-top: 190px;
 }
+
 @keyframes pulsate {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
 }
 
 
 .pulse-base {
-  position: relative;
-  height: 60px;
-  width: 60px;
-  border: 0px solid #222;
-  border-radius: 50%;
-  margin: 0 auto;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border: 0px solid #222;
+    border-radius: 50%;
+    margin: 0 auto;
 }
-.pulse-base_1{
-  position: relative;
-  height: 50px;
-  width: 50px;
-  border: 0px solid #222;
-  border-radius: 50%;
-  margin: 0 auto;
+
+.pulse-base_1 {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: 0px solid #222;
+    border-radius: 50%;
+    margin: 0 auto;
 }
+
 .pulse-base_2 {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  border: 0px solid #222;
-  border-radius: 50%;
-  margin: 0 auto;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 0px solid #222;
+    border-radius: 50%;
+    margin: 0 auto;
 }
+
 .pulse-base:before {
-  content: '';
-  border: 5px solid rgba(181, 237, 50, 0.916);
-  border-radius: 50%;
-  height: 600px;
-  width: 600px;
-  position: absolute;
-  left: -15px;
-  bottom: -15px;
-  animation: pulsate 2.6s ease-out;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  z-index: 99;
+    content: '';
+    border: 5px solid rgba(181, 237, 50, 0.916);
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    animation: pulsate 2.6s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    z-index: 99;
 }
+
 .pulse-base_1:before {
-  content: '';
-  border: 1px solid rgba(181, 237, 50, 0.916);
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  left: 35px;
-  bottom: 31px;
-  animation: pulsate 2s ease-out;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  z-index: 99;
+    content: '';
+    border: 1px solid rgba(181, 237, 50, 0.916);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 35px;
+    bottom: 31px;
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    z-index: 99;
 }
 
 .pulse-base_2:before {
-  content: '';
-  border: 1.5px solid rgba(181, 237, 50, 0.916);
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  left: 120px;
-  bottom: 120px;
-  animation: pulsate 2s ease-out;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  z-index: 99;
+    content: '';
+    border: 1.5px solid rgba(181, 237, 50, 0.916);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 120px;
+    bottom: 120px;
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    z-index: 99;
 }
 
-.circle_ai{
+.circle_ai {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -354,16 +406,100 @@ header {
     align-items: center;
     position: relative;
 }
-.circle_ai_content{
+
+.circle_ai_content {
     display: flex;
     flex-direction: column;
-        position: absolute;
+    position: absolute;
     width: 150px;
     height: 150px;
     justify-content: center;
     align-items: center;
     background-color: #21272b;
     border-radius: 100%;
-    left:195px;
+    left: 195px;
     bottom: 150px;
+}
+
+
+/**/
+
+.main_data_discribtive_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 600px;
+    font-family: 'Star Killers';
+}
+
+.skills_heading {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 3.5rem;
+}
+
+.Skills_discribtion {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    font-family: Candara Light;
+    line-height: 40px;
+    word-spacing: 10px;
+    font-size: 1.2rem;
+    color: #bcd974;
+
+}
+
+.Skills_discribtion h4 {
+    display: flex;
+}
+
+.my_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #b4ee21;
+    padding: 10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+
+.my_information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px;
+    font-family: 'SU-30SM', sans-serif;
+
+}
+.pr_information{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.svg_inner_style {
+    display: flex;
+    margin: 10px;
+    font-family: 'Gravidaz', sans-serif;
+
 }
