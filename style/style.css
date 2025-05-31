@@ -476,7 +476,7 @@ header {
     padding: 10px;
     margin-top: 200px;
     margin-bottom: 200px;
-
+    max-width: 400px;
 }
 
 .my_information {
@@ -488,7 +488,7 @@ header {
     margin: 0px;
     font-family: 'SU-30SM', sans-serif;
 
-}
+}   
 .pr_information{
     
     display: flex;
@@ -502,4 +502,36 @@ header {
     margin: 10px;
     font-family: 'Gravidaz', sans-serif;
 
+}
+.skills_icon{
+    
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+}
+.icons_row{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.skills{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.java{
+    margin-top: 0px !important;
+    margin-right: 50px;
+}
+.skills_icon_heading{
+    font-size: 2.5rem;
+    margin-bottom: 100px;
+    font-family: 'Star Killers';
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
