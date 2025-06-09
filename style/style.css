@@ -535,6 +535,7 @@ canvas {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    margin-top: 300px;
 
 }
 
@@ -564,13 +565,13 @@ canvas {
     display: flex;
     justify-content: center;
     width: 80%;
-    height:600Px !important;
+    height: 600Px !important;
 }
 
 .splide__slide {
     display: flex;
     width: 100%;
- 
+
 }
 
 .radar_skill {
@@ -581,5 +582,78 @@ canvas {
     font-weight: bold;
     color: #333;
     width: 100%;
-    background-color:#0d0d0e;
+    background-color: #0d0d0e;
+}
+
+.skill_iceblock_row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 800px;
+}
+
+.skills_ice_block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+    background-color: #b4ee21;
+    margin-bottom: 100px;
+}
+
+
+/* 12 blocks with background + text color maintained */
+.skill_block_1 {
+  background-color: #c5c3c300; /* Transparent lime */
+  color: #1A1A1A;
+}
+.skill_block_2 {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+.skill_block_3 {
+  background-color: #cefb5c;
+  color: #1A1A1A;
+}
+.skill_block_4 {
+  background-color: #7171711a;
+  color: #1A1A1A;
+}
+.skill_block_5 {
+  background-color: #202020;
+  color: #FFFFFF;
+}
+.skill_block_6 {
+  background-color: #a9cc4f;
+  color: #121212;
+}
+.skill_block_7 {
+  background-color: #151414;
+  color: #F5F5F5;
+}
+.skill_block_8 {
+  background-color: #b7ff00;
+  color: #0F0F0F;
+}
+.skill_block_9 {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+.skill_block_10 {
+  background-color: #101010;
+  color: #F0F0F0;
+}
+.skill_block_11 {
+  background-color: #c4f742;
+  color: #111111;
+}
+.skill_block_12 {
+  background-color: #272626;
+  color: #FFFFFF;
 }
