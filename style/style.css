@@ -672,7 +672,7 @@ canvas {
 
 .photography_container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
 
@@ -680,7 +680,7 @@ canvas {
 
 .Photography_heading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-left: 100px;
@@ -689,8 +689,8 @@ canvas {
     font-family: 'Espacio Novo Medium', sans-serif;
     word-spacing: 10px;
     color: aliceblue;
-font-size: 1.5rem;
-
+    font-size: 1.5rem;
+    flex-direction: column;
 }
 
 .photography_trailer {
@@ -721,7 +721,8 @@ font-size: 1.5rem;
     margin: 10px;
     flex-wrap: nowrap;
     border-radius: 50px;
-    box-shadow: 10px 10px 500px 10px rgb(29, 29, 29);
+    background-color: rgba(46, 46, 46, 0.25);
+    box-shadow: 10px 10px 500px 10px rgb(46, 46, 46);
 }
 
 .fream_block img {
@@ -754,8 +755,124 @@ fream_block_2 {
     margin: 20px;
     flex-wrap: nowrap;
     align-items: center;
+
 }
 
 .fream_block_3 img {
     border-radius: 50px;
+
+}
+
+.main_photography_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.photo_img_layer_2 {
+    position: relative;
+    /* IMPORTANT */
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 50px;
+    overflow: hidden;
+    /* To keep border-radius on overlay */
+    background-color: #0d0d0e1d;
+    box-shadow: 10px 10px 500px 10px rgb(60, 52, 42);
+}
+
+.photo_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.photo_img_layer_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.526);
+    /* Black Overlay */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.ph_major_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Star Killers';
+    font-size: 3.5rem;
+    margin-left: 0px;
+}
+
+.ph_minor_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Espacio Novo Medium', sans-serif;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.project_section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Espacio Novo Medium', sans-serif;
+    color: aliceblue;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.project_header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Espacio Novo Medium', sans-serif;
+    font-size: 2.5rem;
+}
+
+.project_container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+}
+
+.project_slide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid #c4f742;
+    padding: 10px;
+}
+
+.quote_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Espacio Novo Medium', sans-serif;
+    color: aliceblue;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }

@@ -2627,9 +2627,26 @@ z" />
 
 
 	</div>
+	<div class="container row main_photography_container">
+		<div class="photo_img_layer_2">
+			<img src="img/nature_bird.jpg" width="1200px" height="700px">
+			<div class="photo_img_layer_1">
+				<div class="photo_img_layer_0">
+					<div class="ph_major_text">
+						<h1>JUST''</h1>
+					</div>
+					<div class="ph_minor_text">
+						<h1>Chasing the Horizon</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container row photography_container">
 		<div class="Photography_heading">
 			<h1>Bits of Light & Life</h1>
+			<br>
+			<h5>A developer’s escape into visuals</h5>
 		</div>
 		<div class="photography_trailer">
 			<div class="photo_frem column">
@@ -2675,7 +2692,37 @@ z" />
 		</div>
 
 	</div>
+	<div class="container row project_section">
+		<div class="project_header">
+			<h1>Project</h1>
+		</div>
+		<section class="splide project_container" aria-label="Splide Basic HTML Example">
+			<div class="splide__track project_container_row">
+				<ul class="splide__list project_container_row">
+					<li class="splide__slide project_slide">
+						<h1>Comming Soon...</h1>
+					</li>
+					<li class="splide__slide project_slide">
+						<h1>Comming Soon...</h1>
+					</li>
+					<li class="splide__slide project_slide">
+						<h1>Comming Soon...</h1>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<div class="container row quote_section">
+		<div class="quote_section_heading">
+			<h1>ONE MORE SCROLL</h1>
+		</div>
 
+		<div class="row">
+			<div class="icon_svg_movement">
+				
+			</div>
+		</div>
+	</div>
 	<script src="js/index.js">
 	</script>
 
@@ -2747,6 +2794,14 @@ z" />
 				}
 			}
 		});</script>
+	<script>
+		var splide = new Splide('.splide', {
+			type: 'loop',
+			padding: '5rem',
+		});
+
+		splide.mount();
+	</script>
 
 </body>
 
