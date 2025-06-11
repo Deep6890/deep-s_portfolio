@@ -61,10 +61,11 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container" onmouseover="call_bounce_in_bck()">
 		<div class="row">
 			<div class="main_content_m_name_container">
-				<div class="My_name_index  bounce-in-bck" onscroll="on_scroll_call_library_animista()">
+				<div class="My_name_index" id="main_grid_my_name"
+					onscroll="on_scroll_call_library_animista()">
 					<h1>
 						Deep Kayastha
 					</h1>
@@ -205,7 +206,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row">
+		<div class="row my_svg_main_container">
 			<div class="my_svg flicker-in-1">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="450px" viewBox="0 0 500 550"
@@ -2285,7 +2286,7 @@ z" />
 		</div>
 	</div>
 	<div class="container">
-		<div class="column">
+		<div class="column skills_main_iceblock_container">
 			<div class="skill_iceblock_row row">
 				<div class="skills_ice_block skill_block_1">
 					<?xml version="1.0" encoding="utf-8"?>
@@ -2719,10 +2720,66 @@ z" />
 
 		<div class="row">
 			<div class="icon_svg_movement">
-				
+				<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+					type="module"></script>
+				<dotlottie-player src="https://lottie.host/e0a8a41a-f235-42fc-9269-0cbb713bb1a1/dG0hfiAQVT.lottie"
+					background="transparent" speed="1" style="width: 500px; height: 500px" loop
+					autoplay></dotlottie-player>
+			</div>
+			<div class="final_quote_section">
+				<h1>My work is where precision meets passion.
+					I don’t just build projects — I build purpose.</h1>
+			</div>
+		</div>
+
+
+		<div class="final_cta">
+			<h1>Think we’d vibe? Let’s talk</h1>
+		</div>
+		<div class="final_cta_button">
+			<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+				type="module"></script>
+			<dotlottie-player src="https://lottie.host/627cca2e-2269-4215-a49b-0be6c8674e96/4kjor3sydj.lottie"
+				background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+		</div>
+		<div class="cta_button row">
+			<div>
+				<button class="cta_main_button">
+					<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+						type="module"></script>
+					<dotlottie-player src="https://lottie.host/cf2fb706-96a2-40f4-8d4f-47189c698ac3/h3R4xbo3eg.lottie"
+						background="transparent" speed="1" style="width: 100px; height: 100px" loop
+						autoplay></dotlottie-player>
+				</button>
+			</div>
+			<div>
+				<input type="text" class="cta_input" placeholder="Drop your thoughts, suggestions, or just say hi!">
 			</div>
 		</div>
 	</div>
+	<div class="container row lines_thanks">
+		<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+			type="module"></script>
+		<dotlottie-player src="https://lottie.host/43f5fc70-8c55-48b0-a441-f79f2014ce16/ZTN8VjNgW1.lottie"
+			background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+	</div>
+	<div class="conatiner row lines">
+		<h1>If this site felt like a story — thank you for reading 😉</h1>
+	</div>
+	<footer>
+		<div class="footer_main_container container column">
+			<div>
+				<h3>© 2025 Deep Kayastha — All rights reserved.
+				</h3>
+			</div>
+			<br>
+			<div>
+				<h4>
+					💻 + 🖤 + ☕ — Deep Kayastha 😄
+				</h4>
+			</div>
+		</div>
+	</footer>
 	<script src="js/index.js">
 	</script>
 
@@ -2760,7 +2817,7 @@ z" />
 				labels: ['Python', 'HTML', 'CSS', 'Javascript', 'Git', 'C', 'C++', 'Java'],
 				datasets: [{
 					label: 'My Skill Level',
-					data: [5, 8, 8, 4, 3, 5, 5, 3], // 🔢 Level 1 to 10
+					data: [5, 8, 8, 4, 3, 5, 5, 3],
 					backgroundColor: 'rgba(180, 238, 33, 0.2)',
 					borderColor: '#b4ee21',
 					pointBackgroundColor: '#b4ee21',
@@ -2802,7 +2859,13 @@ z" />
 
 		splide.mount();
 	</script>
+	<script src="https://lottie.host/embed/e0a8a41a-f235-42fc-9269-0cbb713bb1a1/dG0hfiAQVT.lottie">
 
+	</script>
+	<script src="https://lottie.host/embed/627cca2e-2269-4215-a49b-0be6c8674e96/4kjor3sydj.lottie"></script>
+	<script src="https://lottie.host/embed/cf2fb706-96a2-40f4-8d4f-47189c698ac3/h3R4xbo3eg.lottie"></script>
+
+	<script src="https://lottie.host/embed/43f5fc70-8c55-48b0-a441-f79f2014ce16/ZTN8VjNgW1.lottie"></script>
 </body>
 
 </html>
