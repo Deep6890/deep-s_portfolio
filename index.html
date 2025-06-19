@@ -24,6 +24,13 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
 	<link href="https://fonts.cdnfonts.com/css/espacio-novo-medium" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+	<!-- AOS CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<!-- Locomotive CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+
 
 	<style>
 		@import url('https://fonts.cdnfonts.com/css/espacio-novo-medium');
@@ -60,12 +67,11 @@
 
 </head>
 
-<body>
-	<div class="container" onmouseover="call_bounce_in_bck()">
+<body data-scroll-container>
+	<section class="container" data-scroll-section>
 		<div class="row">
 			<div class="main_content_m_name_container">
-				<div class="My_name_index" id="main_grid_my_name"
-					onscroll="on_scroll_call_library_animista()">
+				<div class="My_name_index bounce-in-bck" id="main_grid_my_name">
 					<h1>
 						Deep Kayastha
 					</h1>
@@ -77,7 +83,7 @@
 					<div class="container">
 						<div class="row">
 							<a href="https://www.instagram.com/deep__kayastha?igsh=MTE2d204a243ZDRsNQ==">
-								<div class="icon_container_ch slide-in-elliptic-right-fwd">
+								<div class="icon_container_ch animate__zoomInLeft animate__animated">
 									<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
 										width="30px" height="30px">
 										<path fill="#b3cc70"
@@ -108,7 +114,7 @@
 								</div>
 							</a>
 							<a href="https://linkedin.com/in/deep-kayastha-763514319">
-								<div class="icon_container_ch slide-in-elliptic-left-bck">
+								<div class="icon_container_ch animate__zoomInRight animate__animated">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 										viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero">
 										<g fill="#b3cc70" fill-rule="nonzero" stroke="none" stroke-width="1"
@@ -131,8 +137,8 @@
 			</div>
 		</div>
 
-	</div>
-	<div class="container">
+	</section>
+	<section class="container" data-scroll-section>
 		<div class="row main_bio_data_panel">
 			<div class="bio_data_typer" data-aos="zoom-in" data-aos-delay="500">
 				<h1>
@@ -140,8 +146,8 @@
 				</h1>
 			</div>
 		</div>
-	</div>
-	<div class="container">
+	</section>
+	<section class="container" data-scroll-section>
 		<div class="panel">
 			<div class="col">
 				<div class="pulse_main_typer">
@@ -181,8 +187,8 @@
 
 		</div>
 
-	</div>
-	<div class="container">
+	</section>
+	<section class="container" data-scroll-section>
 		<div class="row">
 			<div class="main_data_discribtive_skills">
 				<div class="column">
@@ -191,7 +197,7 @@
 
 					</div>
 					<hr>
-					<div class="Skills_discribtion tracking-in-contract-bck">
+					<div class="Skills_discribtion" data-aos="zoom-in" data-aos-once="true">
 						<h4>
 							I'm an AI & Machine Learning enthusiast with a natural affinity for mathematics and a
 							curious, creative spirit. I enjoy crafting intelligent solutions, designing elegant websites
@@ -204,10 +210,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
+	</section>
+	<section class="container" data-scroll-section>
 		<div class="row my_svg_main_container">
-			<div class="my_svg flicker-in-1">
+			<div class="my_svg" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-once="true">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="450px" viewBox="0 0 500 550"
 					enable-background="new 0 0 490 509" xml:space="preserve">
@@ -2264,7 +2270,7 @@ z" />
 				</svg>
 			</div>
 			<div class="my_information">
-				<div class="pr_information slide-in-blurred-right">
+				<div class="pr_information" data-aos-once="true" data-aos="zoom-out-left">
 
 					<div class="svg_inner_head">
 						<h1>Deep Kayastha</h1>
@@ -2279,344 +2285,736 @@ z" />
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
+	</section>
+	<div class="container" data-scroll-section>
 		<div class="row skills_icon_heading">
 			<h1>SKILLS</h1>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" data-scroll-section>
 		<div class="column skills_main_iceblock_container">
 			<div class="skill_iceblock_row row">
-				<div class="skills_ice_block skill_block_1">
-					<?xml version="1.0" encoding="utf-8"?>
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-					<svg fill="#b4ee21" width="68px" height="68px" viewBox="0 0 32 32" version="1.1"
-						xmlns="http://www.w3.org/2000/svg">
-						<title>code</title>
-						<path
-							d="M21.656 1.837c-0.136-0.055-0.293-0.087-0.458-0.087-0.525 0-0.975 0.324-1.16 0.784l-0.003 0.008-10.255 26.058c-0.056 0.137-0.089 0.296-0.089 0.463 0 0.69 0.559 1.25 1.25 1.25 0.528 0 0.98-0.328 1.163-0.791l0.003-0.008 10.257-26.056c0.055-0.135 0.086-0.292 0.086-0.457 0-0.526-0.325-0.977-0.785-1.162l-0.008-0.003zM9.884 22.115l-6.173-6.172 6.229-7.121c0.192-0.219 0.309-0.507 0.309-0.823 0-0.69-0.56-1.25-1.25-1.25-0.374 0-0.71 0.165-0.939 0.425l-0.001 0.001-7 8.001c-0.192 0.219-0.31 0.507-0.31 0.823 0 0.345 0.14 0.658 0.366 0.884v0l7 7.001c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.346-0.14-0.658-0.367-0.885v0zM30.941 15.177l-7-8c-0.23-0.263-0.567-0.427-0.941-0.427-0.691 0-1.251 0.56-1.251 1.251 0 0.316 0.117 0.605 0.31 0.825l-0.001-0.001 6.23 7.12-6.174 6.172c-0.226 0.226-0.366 0.539-0.366 0.884 0 0.691 0.56 1.251 1.251 1.251 0.345 0 0.658-0.14 0.884-0.366l7-7.001c0.226-0.226 0.366-0.539 0.366-0.884 0-0.316-0.117-0.605-0.311-0.825l0.001 0.001z">
-						</path>
-					</svg>
+				<div class="skills_ice_block skill_block_1 " onclick="setTimeout(block_1_showHiddenBox, 1000)"
+					onmouseleave="setTimeout( block_1_hideHiddenBox, 0)">
+					<div class=" skill_block_ani skill_block_1_ani">
+						<?xml version="1.0" encoding="utf-8"?>
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_1_svg" fill="#b4ee21" width="68px" height="68px"
+							viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<title>code</title>
+							<path
+								d="M21.656 1.837c-0.136-0.055-0.293-0.087-0.458-0.087-0.525 0-0.975 0.324-1.16 0.784l-0.003 0.008-10.255 26.058c-0.056 0.137-0.089 0.296-0.089 0.463 0 0.69 0.559 1.25 1.25 1.25 0.528 0 0.98-0.328 1.163-0.791l0.003-0.008 10.257-26.056c0.055-0.135 0.086-0.292 0.086-0.457 0-0.526-0.325-0.977-0.785-1.162l-0.008-0.003zM9.884 22.115l-6.173-6.172 6.229-7.121c0.192-0.219 0.309-0.507 0.309-0.823 0-0.69-0.56-1.25-1.25-1.25-0.374 0-0.71 0.165-0.939 0.425l-0.001 0.001-7 8.001c-0.192 0.219-0.31 0.507-0.31 0.823 0 0.345 0.14 0.658 0.366 0.884v0l7 7.001c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.346-0.14-0.658-0.367-0.885v0zM30.941 15.177l-7-8c-0.23-0.263-0.567-0.427-0.941-0.427-0.691 0-1.251 0.56-1.251 1.251 0 0.316 0.117 0.605 0.31 0.825l-0.001-0.001 6.23 7.12-6.174 6.172c-0.226 0.226-0.366 0.539-0.366 0.884 0 0.691 0.56 1.251 1.251 1.251 0.345 0 0.658-0.14 0.884-0.366l7-7.001c0.226-0.226 0.366-0.539 0.366-0.884 0-0.316-0.117-0.605-0.311-0.825l0.001 0.001z">
+							</path>
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_1">
+						<svg width="300" height="300" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="none" rx="15" />
+							<text x="59%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="60"
+								font-family="Arial, sans-serif" fill="none" stroke="white" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								HTML
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_html skill-container" id="skill_html">
+
+
+						<svg width="200" height="200" viewBox="-27 -27 270 270" xmlns="http://www.w3.org/2000/svg"
+							style="transform: rotate(-90deg);">
+							<!-- Background Circle -->
+							<circle r="98" cx="108" cy="108" fill="transparent" stroke="#77812c" stroke-width="6" />
+
+							<!-- Animated Progress Circle -->
+							<circle r="98" cx="108" cy="108" stroke="#c7d93f" stroke-width="10" stroke-linecap="round"
+								fill="transparent" stroke-dasharray="615.44" stroke-dashoffset="615.44">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="153.86" dur="1.5s"
+									fill="freeze" />
+							</circle>
+
+							<!-- Centered Text: HTML -->
+							<text x="108" y="105" text-anchor="middle" fill="#c7d93f" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">HTML</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="108" y="155" text-anchor="middle" fill="#c7d93f" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">77%</text>
+						</svg>
+
+
+
+
+					</div>
 				</div>
-				<div class="skills_ice_block skill_block_2">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block skill_block_2" onclick="setTimeout(block_2_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_2_hideHiddenBox, 0)">
+					<div class="skills_python_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg height="68px" width="68px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495 495" xml:space="preserve"
-						fill="#000000">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_2_svg" height="68px" width="68px" version="1.1"
+							id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 495 495" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<g>
-								<path style="fill:#d1f797;"
-									d="M142.11,222.098l-56.258,56.257c12.345,5.919,22.365,15.939,28.284,28.285l56.258-56.257 C158.049,244.463,148.03,234.444,142.11,222.098z" />
-								<path style="fill:#d1f797;"
-									d="M272.903,244.618l-22.519-22.519c-5.919,12.346-15.939,22.365-28.284,28.284l22.519,22.52 C250.538,260.557,260.557,250.538,272.903,244.618z" />
-								<path style="fill:#d1f797;"
-									d="M380.863,188.36l-56.257,56.257c12.346,5.919,22.365,15.939,28.285,28.284l56.257-56.257 C396.802,210.726,386.783,200.706,380.863,188.36z" />
-								<path style="fill:#8ee228;"
-									d="M0,332.491c0,33.084,26.916,60,60,60v-120C26.916,272.491,0,299.407,0,332.491z" />
-								<path style="fill:#8ee228;"
-									d="M375,162.509c0,9.251,2.108,18.019,5.863,25.852c5.919,12.346,15.939,22.365,28.285,28.285 c7.833,3.756,16.601,5.864,25.852,5.864v-120C401.916,102.509,375,129.425,375,162.509z" />
-								<path style="fill:#8ee228;"
-									d="M136.247,196.247c0,9.251,2.108,18.019,5.863,25.852c5.919,12.346,15.938,22.365,28.284,28.284 c7.833,3.756,16.601,5.864,25.853,5.864v-120C163.163,136.247,136.247,163.163,136.247,196.247z" />
-								<path style="fill:#8ee228;"
-									d="M272.903,244.618c-12.346,5.92-22.365,15.939-28.284,28.285c-3.756,7.833-5.863,16.6-5.863,25.852 c0,33.084,26.916,60,60,60v-120C289.503,238.754,280.736,240.862,272.903,244.618z" />
-								<path style="fill:#7acc00;"
-									d="M85.853,278.355c-7.833-3.756-16.601-5.864-25.853-5.864v120c33.084,0,60-26.916,60-60 c0-9.251-2.108-18.018-5.863-25.851C108.218,294.294,98.198,284.275,85.853,278.355z" />
-								<path style="fill:#7acc00;"
-									d="M435,102.509v120c33.084,0,60-26.916,60-60S468.084,102.509,435,102.509z" />
-								<path style="fill:#7acc00;"
-									d="M250.383,222.099c3.756-7.833,5.864-16.601,5.864-25.852c0-33.084-26.916-60-60-60v120 c9.251,0,18.019-2.108,25.852-5.864C234.445,244.464,244.464,234.445,250.383,222.099z" />
-								<path style="fill:#7acc00;"
-									d="M324.606,244.618c-7.833-3.756-16.6-5.863-25.852-5.863v120c33.084,0,60-26.916,60-60 c0-9.251-2.108-18.019-5.864-25.852C346.972,260.556,336.952,250.537,324.606,244.618z" />
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path style="fill:#d1f797;"
+										d="M142.11,222.098l-56.258,56.257c12.345,5.919,22.365,15.939,28.284,28.285l56.258-56.257 C158.049,244.463,148.03,234.444,142.11,222.098z" />
+									<path style="fill:#d1f797;"
+										d="M272.903,244.618l-22.519-22.519c-5.919,12.346-15.939,22.365-28.284,28.284l22.519,22.52 C250.538,260.557,260.557,250.538,272.903,244.618z" />
+									<path style="fill:#d1f797;"
+										d="M380.863,188.36l-56.257,56.257c12.346,5.919,22.365,15.939,28.285,28.284l56.257-56.257 C396.802,210.726,386.783,200.706,380.863,188.36z" />
+									<path style="fill:#8ee228;"
+										d="M0,332.491c0,33.084,26.916,60,60,60v-120C26.916,272.491,0,299.407,0,332.491z" />
+									<path style="fill:#8ee228;"
+										d="M375,162.509c0,9.251,2.108,18.019,5.863,25.852c5.919,12.346,15.939,22.365,28.285,28.285 c7.833,3.756,16.601,5.864,25.852,5.864v-120C401.916,102.509,375,129.425,375,162.509z" />
+									<path style="fill:#8ee228;"
+										d="M136.247,196.247c0,9.251,2.108,18.019,5.863,25.852c5.919,12.346,15.938,22.365,28.284,28.284 c7.833,3.756,16.601,5.864,25.853,5.864v-120C163.163,136.247,136.247,163.163,136.247,196.247z" />
+									<path style="fill:#8ee228;"
+										d="M272.903,244.618c-12.346,5.92-22.365,15.939-28.284,28.285c-3.756,7.833-5.863,16.6-5.863,25.852 c0,33.084,26.916,60,60,60v-120C289.503,238.754,280.736,240.862,272.903,244.618z" />
+									<path style="fill:#7acc00;"
+										d="M85.853,278.355c-7.833-3.756-16.601-5.864-25.853-5.864v120c33.084,0,60-26.916,60-60 c0-9.251-2.108-18.018-5.863-25.851C108.218,294.294,98.198,284.275,85.853,278.355z" />
+									<path style="fill:#7acc00;"
+										d="M435,102.509v120c33.084,0,60-26.916,60-60S468.084,102.509,435,102.509z" />
+									<path style="fill:#7acc00;"
+										d="M250.383,222.099c3.756-7.833,5.864-16.601,5.864-25.852c0-33.084-26.916-60-60-60v120 c9.251,0,18.019-2.108,25.852-5.864C234.445,244.464,244.464,234.445,250.383,222.099z" />
+									<path style="fill:#7acc00;"
+										d="M324.606,244.618c-7.833-3.756-16.6-5.863-25.852-5.863v120c33.084,0,60-26.916,60-60 c0-9.251-2.108-18.019-5.864-25.852C346.972,260.556,336.952,250.537,324.606,244.618z" />
+								</g>
 							</g>
-						</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_2">
+						<svg width="300" height="300" viewBox="0 0 370 350" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="#1A1A1A" rx="15" />
+							<text x="65%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="100"
+								font-family="Arial, sans-serif" fill="none" stroke="white" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								PY
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_python skill-container" id="skill_python">
+
+
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#647c3f" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#add969" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="509px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="509" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#add969" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">Python</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#add969" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">10%</text>
+						</svg>
+
+
+
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_3">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block skill_block_3" onclick="setTimeout(block_3_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_3_hideHiddenBox, 0)">
+					<div class="skills_js_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg fill="#545454" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" width="68px" height="68px" viewBox="0 0 256 245"
-						enable-background="new 0 0 256 245" xml:space="preserve" stroke="#545454">
+						<svg class="animate__animated skill_block_3_svg" fill="#545454" version="1.1" id="Layer_1"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68px"
+							height="68px" viewBox="0 0 256 245" enable-background="new 0 0 256 245" xml:space="preserve"
+							stroke="#545454">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<path
-								d="M253.543,121.141c-1.584-4.874-6.819-7.542-11.693-5.958c-1.128,0.366-2.13,0.935-2.997,1.642l-42.395-12.109l30.483-9.904 c2.372,2.005,5.689,2.782,8.86,1.752c4.874-1.583,7.542-6.818,5.958-11.693c-1.584-4.874-6.818-7.542-11.693-5.958 c-3.163,1.028-5.387,3.596-6.133,6.602l-30.882,10.034l26.727-34.912c1.378,0.207,2.823,0.116,4.238-0.344 c4.874-1.584,7.542-6.818,5.958-11.693s-6.818-7.542-11.693-5.958c-4.866,1.581-7.531,6.801-5.965,11.668l-29.772,38.889 c-1.181-0.01-2.383,0.158-3.569,0.543c-4.127,1.341-6.94,4.846-7.606,8.851l-33.456,10.87c-1.347-1.597-3.071-2.861-5.037-3.661 V74.63c3.755-1.819,6.351-5.655,6.351-10.107c0-1.359-0.254-2.656-0.696-3.862l26.783-39.927c0.268,0.023,0.537,0.041,0.811,0.041 c5.126,0,9.282-4.156,9.282-9.282s-4.156-9.282-9.282-9.282s-9.282,4.156-9.282,9.282c0,1.192,0.233,2.327,0.642,3.373 l-24.609,36.686V19.375c2.636-1.637,4.397-4.55,4.397-7.882c0-5.126-4.156-9.282-9.282-9.282c-5.126,0-9.282,4.156-9.282,9.282 c0,3.331,1.761,6.244,4.397,7.882v32.51L98.161,15.626c0.621-1.246,0.98-2.646,0.98-4.132c0-5.126-4.156-9.282-9.282-9.282 s-9.282,4.156-9.282,9.282c0,5.121,4.148,9.273,9.268,9.281l27.551,40.044c-0.406,1.161-0.638,2.404-0.638,3.704 c0,4.452,2.596,8.288,6.351,10.107v35.174c-1.965,0.8-3.69,2.064-5.037,3.661l-33.444-10.867c-0.661-4.011-3.475-7.524-7.608-8.867 c-1.246-0.405-2.509-0.567-3.748-0.537l-29.89-38.104c0.106-0.249,0.206-0.501,0.291-0.764c1.584-4.874-1.084-10.109-5.958-11.693 c-4.874-1.584-10.109,1.084-11.693,5.958c-1.583,4.874,1.084,10.109,5.958,11.693c1.13,0.367,2.278,0.497,3.397,0.432l27.243,34.73 l-30.551-9.927c-0.742-3.013-2.968-5.589-6.137-6.618c-4.874-1.584-10.109,1.084-11.693,5.958s1.084,10.109,5.958,11.693 c3.165,1.028,6.476,0.256,8.847-1.741l30.799,10.007L17.77,117.373c-0.991-0.973-2.21-1.744-3.621-2.202 c-4.874-1.584-10.109,1.084-11.693,5.958s1.084,10.109,5.958,11.693c4.871,1.582,10.101-1.081,11.689-5.948l46.284-13.81 c1.062,0.88,2.298,1.585,3.689,2.037c4.333,1.408,8.895,0.033,11.775-3.13l33.208,10.79c0.154,2.162,0.836,4.173,1.92,5.913 l-20.788,28.613c-4.013-0.601-8.213,0.991-10.763,4.5c-0.737,1.014-1.27,2.112-1.625,3.246l-45.431,16.644 c-0.202-0.176-0.409-0.348-0.63-0.508c-4.147-3.013-9.951-2.094-12.964,2.053c-3.013,4.147-2.094,9.951,2.053,12.964 c4.147,3.013,9.951,2.094,12.964-2.053c0.7-0.964,1.179-2.019,1.464-3.106l41.455-15.188l-18.896,26.008 c-3.094-0.224-6.23,1.097-8.188,3.792c-3.013,4.147-2.094,9.951,2.053,12.964s9.951,2.094,12.964-2.053 c1.958-2.695,2.246-6.086,1.076-8.96l19.063-26.238L89.7,225.286c-1.233,0.642-2.345,1.564-3.218,2.765 c-3.013,4.147-2.094,9.951,2.053,12.964c4.147,3.013,9.951,2.094,12.964-2.053c3.01-4.143,2.095-9.941-2.043-12.956l1.192-48.211 c1.118-0.728,2.13-1.658,2.961-2.801c2.684-3.694,2.782-8.469,0.651-12.19l20.625-28.388c0.998,0.246,2.035,0.39,3.109,0.39 c1.074,0,2.111-0.145,3.109-0.39l20.691,28.48c-2.072,3.706-1.954,8.429,0.705,12.089c0.695,0.957,1.514,1.769,2.417,2.436 l2.26,48.15c-0.215,0.131-0.43,0.265-0.638,0.416c-4.147,3.013-5.066,8.817-2.053,12.964c3.013,4.147,8.817,5.066,12.964,2.053 c4.147-3.013,5.066-8.817,2.053-12.964c-0.71-0.977-1.579-1.768-2.541-2.378l-2.102-44.781l19.399,26.701 c-1.167,2.873-0.879,6.262,1.078,8.955c3.013,4.147,8.817,5.066,12.964,2.053c4.147-3.013,5.066-8.817,2.053-12.964 c-1.959-2.696-5.098-4.018-8.194-3.791l-18.91-26.028l41.306,14.426c0.232,1.363,0.764,2.695,1.631,3.889 c3.013,4.147,8.817,5.066,12.964,2.053c4.147-3.013,5.066-8.817,2.053-12.964c-3.013-4.147-8.817-5.066-12.964-2.053 c-0.003,0.003-0.006,0.005-0.01,0.008l-45.895-16.029c-0.354-1.174-0.896-2.312-1.658-3.36c-2.574-3.542-6.829-5.128-10.875-4.48 l-20.796-28.624c1.084-1.74,1.766-3.751,1.92-5.913l33.206-10.789c2.88,3.171,7.448,4.551,11.787,3.141 c1.453-0.472,2.742-1.214,3.834-2.15l45.925,13.117c0.061,0.266,0.129,0.532,0.215,0.797c1.584,4.874,6.818,7.542,11.693,5.958 C252.459,131.25,255.127,126.016,253.543,121.141z" />
-						</g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M253.543,121.141c-1.584-4.874-6.819-7.542-11.693-5.958c-1.128,0.366-2.13,0.935-2.997,1.642l-42.395-12.109l30.483-9.904 c2.372,2.005,5.689,2.782,8.86,1.752c4.874-1.583,7.542-6.818,5.958-11.693c-1.584-4.874-6.818-7.542-11.693-5.958 c-3.163,1.028-5.387,3.596-6.133,6.602l-30.882,10.034l26.727-34.912c1.378,0.207,2.823,0.116,4.238-0.344 c4.874-1.584,7.542-6.818,5.958-11.693s-6.818-7.542-11.693-5.958c-4.866,1.581-7.531,6.801-5.965,11.668l-29.772,38.889 c-1.181-0.01-2.383,0.158-3.569,0.543c-4.127,1.341-6.94,4.846-7.606,8.851l-33.456,10.87c-1.347-1.597-3.071-2.861-5.037-3.661 V74.63c3.755-1.819,6.351-5.655,6.351-10.107c0-1.359-0.254-2.656-0.696-3.862l26.783-39.927c0.268,0.023,0.537,0.041,0.811,0.041 c5.126,0,9.282-4.156,9.282-9.282s-4.156-9.282-9.282-9.282s-9.282,4.156-9.282,9.282c0,1.192,0.233,2.327,0.642,3.373 l-24.609,36.686V19.375c2.636-1.637,4.397-4.55,4.397-7.882c0-5.126-4.156-9.282-9.282-9.282c-5.126,0-9.282,4.156-9.282,9.282 c0,3.331,1.761,6.244,4.397,7.882v32.51L98.161,15.626c0.621-1.246,0.98-2.646,0.98-4.132c0-5.126-4.156-9.282-9.282-9.282 s-9.282,4.156-9.282,9.282c0,5.121,4.148,9.273,9.268,9.281l27.551,40.044c-0.406,1.161-0.638,2.404-0.638,3.704 c0,4.452,2.596,8.288,6.351,10.107v35.174c-1.965,0.8-3.69,2.064-5.037,3.661l-33.444-10.867c-0.661-4.011-3.475-7.524-7.608-8.867 c-1.246-0.405-2.509-0.567-3.748-0.537l-29.89-38.104c0.106-0.249,0.206-0.501,0.291-0.764c1.584-4.874-1.084-10.109-5.958-11.693 c-4.874-1.584-10.109,1.084-11.693,5.958c-1.583,4.874,1.084,10.109,5.958,11.693c1.13,0.367,2.278,0.497,3.397,0.432l27.243,34.73 l-30.551-9.927c-0.742-3.013-2.968-5.589-6.137-6.618c-4.874-1.584-10.109,1.084-11.693,5.958s1.084,10.109,5.958,11.693 c3.165,1.028,6.476,0.256,8.847-1.741l30.799,10.007L17.77,117.373c-0.991-0.973-2.21-1.744-3.621-2.202 c-4.874-1.584-10.109,1.084-11.693,5.958s1.084,10.109,5.958,11.693c4.871,1.582,10.101-1.081,11.689-5.948l46.284-13.81 c1.062,0.88,2.298,1.585,3.689,2.037c4.333,1.408,8.895,0.033,11.775-3.13l33.208,10.79c0.154,2.162,0.836,4.173,1.92,5.913 l-20.788,28.613c-4.013-0.601-8.213,0.991-10.763,4.5c-0.737,1.014-1.27,2.112-1.625,3.246l-45.431,16.644 c-0.202-0.176-0.409-0.348-0.63-0.508c-4.147-3.013-9.951-2.094-12.964,2.053c-3.013,4.147-2.094,9.951,2.053,12.964 c4.147,3.013,9.951,2.094,12.964-2.053c0.7-0.964,1.179-2.019,1.464-3.106l41.455-15.188l-18.896,26.008 c-3.094-0.224-6.23,1.097-8.188,3.792c-3.013,4.147-2.094,9.951,2.053,12.964s9.951,2.094,12.964-2.053 c1.958-2.695,2.246-6.086,1.076-8.96l19.063-26.238L89.7,225.286c-1.233,0.642-2.345,1.564-3.218,2.765 c-3.013,4.147-2.094,9.951,2.053,12.964c4.147,3.013,9.951,2.094,12.964-2.053c3.01-4.143,2.095-9.941-2.043-12.956l1.192-48.211 c1.118-0.728,2.13-1.658,2.961-2.801c2.684-3.694,2.782-8.469,0.651-12.19l20.625-28.388c0.998,0.246,2.035,0.39,3.109,0.39 c1.074,0,2.111-0.145,3.109-0.39l20.691,28.48c-2.072,3.706-1.954,8.429,0.705,12.089c0.695,0.957,1.514,1.769,2.417,2.436 l2.26,48.15c-0.215,0.131-0.43,0.265-0.638,0.416c-4.147,3.013-5.066,8.817-2.053,12.964c3.013,4.147,8.817,5.066,12.964,2.053 c4.147-3.013,5.066-8.817,2.053-12.964c-0.71-0.977-1.579-1.768-2.541-2.378l-2.102-44.781l19.399,26.701 c-1.167,2.873-0.879,6.262,1.078,8.955c3.013,4.147,8.817,5.066,12.964,2.053c4.147-3.013,5.066-8.817,2.053-12.964 c-1.959-2.696-5.098-4.018-8.194-3.791l-18.91-26.028l41.306,14.426c0.232,1.363,0.764,2.695,1.631,3.889 c3.013,4.147,8.817,5.066,12.964,2.053c4.147-3.013,5.066-8.817,2.053-12.964c-3.013-4.147-8.817-5.066-12.964-2.053 c-0.003,0.003-0.006,0.005-0.01,0.008l-45.895-16.029c-0.354-1.174-0.896-2.312-1.658-3.36c-2.574-3.542-6.829-5.128-10.875-4.48 l-20.796-28.624c1.084-1.74,1.766-3.751,1.92-5.913l33.206-10.789c2.88,3.171,7.448,4.551,11.787,3.141 c1.453-0.472,2.742-1.214,3.834-2.15l45.925,13.117c0.061,0.266,0.129,0.532,0.215,0.797c1.584,4.874,6.818,7.542,11.693,5.958 C252.459,131.25,255.127,126.016,253.543,121.141z" />
+							</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_3">
+						<svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="#cefb5c" rx="15" />
+							<text x="65%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="60"
+								font-family="Arial, sans-serif" fill="none" stroke="black" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								JS
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_js skill-container" id="skill_js">
+
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#474747" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#27302c" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="311px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="311" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<text x="100" y="115" text-anchor="middle" fill="#27302c" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">Javascript</text>
+
+							<text x="100" y="155" text-anchor="middle" fill="#27302c" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">45%</text>
+						</svg>
+
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_4">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block skill_block_4" onclick="setTimeout(block_4_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_4_hideHiddenBox, 0)">
+					<div class="skills_c_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg width="78px" height="78px" viewBox="0 0 15 15" version="1.1" id="lighthouse-JP"
-						xmlns="http://www.w3.org/2000/svg" fill="#a6c82d">
+						<svg class="animate__animated skill_block_4_svg" fill="#b0ac3a" width="78px" height="78px"
+							viewBox="0 0 15 15" version="1.1" id="lighthouse-JP" xmlns="http://www.w3.org/2000/svg">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<path
-								d="M9.5,7.4c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2C8.6,5.4,9.5,6.3,9.5,7.4z M14,7.5C14,7.8,13.8,8,13.5,8h-1.6&#10;&#9;c-0.1,0.9-0.311,1.582-0.911,2.282l1.064,1.064c0.2,0.2,0.196,0.504-0.004,0.704c-0.209,0.209-0.5,0.207-0.704,0.004L10.3,11&#10;&#9;c-0.6,0.5-1.4,0.8-2.3,0.9v1.6C8,13.8,7.8,14,7.5,14S7,13.8,7,13.5v-1.6c-0.9-0.1-1.7-0.4-2.3-0.9l-1.1,1.1&#10;&#9;c-0.207,0.207-0.48,0.213-0.696-0.004c-0.2-0.2-0.207-0.5-0.007-0.7L4,10.3C3.5,9.7,3.1,8.9,3,8H1.5C1.2,8,1,7.8,1,7.5S1.2,7,1.5,7&#10;&#9;H3c0.1-0.9,0.4-1.7,1-2.4l-1-1C2.8,3.4,2.8,3.1,3,2.9s0.5-0.2,0.7,0l1,1l0,0C5.3,3.4,6.1,3.1,7,3V1.5C7,1.2,7.2,1,7.5,1S8,1.2,8,1.5&#10;&#9;V3c0.9,0.1,1.7,0.5,2.3,1l0,0l1.1-1.1c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7L11,4.7l0,0c0.5,0.7,0.8,1.4,0.9,2.3h1.6&#10;&#9;C13.8,7,14,7.2,14,7.5z M11.1,7.4c0-2-1.6-3.6-3.6-3.6S3.8,5.5,3.8,7.4S5.4,11,7.4,11S11.1,9.4,11.1,7.4z" />
-						</g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M9.5,7.4c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2C8.6,5.4,9.5,6.3,9.5,7.4z M14,7.5C14,7.8,13.8,8,13.5,8h-1.6&#10;&#9;c-0.1,0.9-0.311,1.582-0.911,2.282l1.064,1.064c0.2,0.2,0.196,0.504-0.004,0.704c-0.209,0.209-0.5,0.207-0.704,0.004L10.3,11&#10;&#9;c-0.6,0.5-1.4,0.8-2.3,0.9v1.6C8,13.8,7.8,14,7.5,14S7,13.8,7,13.5v-1.6c-0.9-0.1-1.7-0.4-2.3-0.9l-1.1,1.1&#10;&#9;c-0.207,0.207-0.48,0.213-0.696-0.004c-0.2-0.2-0.207-0.5-0.007-0.7L4,10.3C3.5,9.7,3.1,8.9,3,8H1.5C1.2,8,1,7.8,1,7.5S1.2,7,1.5,7&#10;&#9;H3c0.1-0.9,0.4-1.7,1-2.4l-1-1C2.8,3.4,2.8,3.1,3,2.9s0.5-0.2,0.7,0l1,1l0,0C5.3,3.4,6.1,3.1,7,3V1.5C7,1.2,7.2,1,7.5,1S8,1.2,8,1.5&#10;&#9;V3c0.9,0.1,1.7,0.5,2.3,1l0,0l1.1-1.1c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7L11,4.7l0,0c0.5,0.7,0.8,1.4,0.9,2.3h1.6&#10;&#9;C13.8,7,14,7.2,14,7.5z M11.1,7.4c0-2-1.6-3.6-3.6-3.6S3.8,5.5,3.8,7.4S5.4,11,7.4,11S11.1,9.4,11.1,7.4z" />
+							</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_4">
+						<svg width="300" height="300" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="none" rx="15" />
+							<text x="70%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="75"
+								font-family="Arial, sans-serif" fill="none" stroke="white" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								C
+							</text>
+						</svg>
+
+
+					</div>
+					<div class="hidden_skill_block_c skill-container" id="skill_c">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#cefb5c6b" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#cefb5c" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="283px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="283" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<text x="100" y="115" text-anchor="middle" fill="#cefb5c" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">C</text>
+
+							<text x="100" y="155" text-anchor="middle" fill="#cefb5c" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">50%</text>
+						</svg>
+					</div>
 				</div>
 			</div>
 
 			<div class="skill_iceblock_row row">
-				<div class="skills_ice_block  skill_block_5">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_5" onclick="setTimeout(block_5_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_5_hideHiddenBox, 0)">
+					<div class="skills_java_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg width="68px" height="68px" viewBox="0 0 24 24"
-						xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
-						version="1.1" xmlns:cc="http://creativecommons.org/ns#"
-						xmlns:dc="http://purl.org/dc/elements/1.1/" fill="#000000">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_5_svg" width="68px" height="68px" viewBox="0 0 24 24"
+							xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+							version="1.1" xmlns:cc="http://creativecommons.org/ns#"
+							xmlns:dc="http://purl.org/dc/elements/1.1/" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<g transform="translate(0 -1028.4)">
-								<path
-									d="m16 1030.4v1c-0.312 0.1-0.617 0.2-0.875 0.4l-0.75-0.8-0.719 0.7 0.75 0.8c-0.168 0.2-0.28 0.6-0.344 0.9h-1.062v1h1.062c0.064 0.3 0.176 0.6 0.344 0.8l-0.75 0.8 0.719 0.7 0.75-0.7c0.258 0.1 0.563 0.2 0.875 0.3v1.1h1v-1.1c0.312-0.1 0.617-0.2 0.875-0.3l0.75 0.7 0.719-0.7-0.75-0.8c0.168-0.2 0.28-0.5 0.344-0.8h1.062v-1h-1.062c-0.064-0.3-0.176-0.7-0.344-0.9l0.75-0.8-0.719-0.7-0.75 0.8c-0.258-0.2-0.563-0.3-0.875-0.4v-1h-1zm0.5 2c0.828 0 1.5 0.6 1.5 1.5 0 0.8-0.672 1.5-1.5 1.5s-1.5-0.7-1.5-1.5c0-0.9 0.672-1.5 1.5-1.5z"
-									fill="#8a9565" />
-								<path
-									d="m19 1035.3v1.1c-0.27 0-0.534 0.1-0.781 0.2l-0.531-0.9-0.876 0.5 0.532 0.9c-0.224 0.2-0.419 0.4-0.594 0.6l-0.906-0.6-0.5 0.9 0.906 0.5c-0.096 0.3-0.181 0.6-0.219 0.8h-1.031v1h1.031c0.038 0.3 0.123 0.6 0.219 0.8l-0.906 0.5 0.5 0.9 0.906-0.5c0.175 0.2 0.37 0.4 0.594 0.6l-0.532 0.9 0.876 0.5 0.531-0.9c0.247 0.1 0.511 0.2 0.781 0.2v1h1v-1c0.27 0 0.534-0.1 0.781-0.2l0.531 0.9 0.876-0.5-0.532-0.9c0.224-0.2 0.419-0.4 0.594-0.6l0.906 0.5 0.5-0.9-0.906-0.5c0.096-0.2 0.181-0.5 0.219-0.8h1.031v-1h-1.031c-0.038-0.2-0.123-0.5-0.219-0.8l0.906-0.5-0.5-0.9-0.906 0.6c-0.175-0.2-0.37-0.4-0.594-0.6l0.532-0.9-0.876-0.5-0.531 0.9c-0.247-0.1-0.511-0.2-0.781-0.2v-1.1h-1zm0.5 2c1.381 0 2.5 1.2 2.5 2.5 0 1.4-1.119 2.5-2.5 2.5s-2.5-1.1-2.5-2.5c0-1.3 1.119-2.5 2.5-2.5z"
-									fill="#b6bf88" />
-								<path
-									d="m10 1033.3-2.0312 0.1v2.1c-0.3602 0-0.712 0.1-1.0626 0.2l-1.0624-1.8-1.7188 1 1.0312 1.8c-0.2891 0.3-0.5468 0.5-0.7812 0.8l-1.8125-1-1 1.7 1.8125 1.1c-0.1343 0.3-0.2489 0.7-0.3125 1.1h-2.0938l0.00005 2h2.125c0.0627 0.4 0.1498 0.7 0.2812 1.1l-1.8125 1 1 1.7 1.8125-1c0.2379 0.3 0.5008 0.5 0.7812 0.8l-1.0624 1.8 1.75 1 1.0312-1.8c0.3599 0.1 0.7461 0.2 1.125 0.3v2.1h2v-2.1c0.36-0.1 0.712-0.2 1.062-0.3l1.063 1.8 1.719-1-1.032-1.8c0.29-0.3 0.547-0.5 0.782-0.8l1.812 1 1.032-1.7-1.844-1c0.134-0.4 0.249-0.8 0.312-1.1h2.094v-2.1h-2.125c-0.063-0.3-0.15-0.7-0.281-1l1.812-1.1-1-1.7-1.812 1c-0.238-0.2-0.501-0.5-0.782-0.7l1.063-1.9-1.75-1-1.031 1.8c-0.36-0.1-0.746-0.2-1.1252-0.2l0.0312-2.2zm-1 5.1c1.657 0 3 1.3 3 3 0 1.6-1.343 3-3 3-1.6569 0-3-1.4-3-3 0-1.7 1.3431-3 3-3z"
-									fill="#b3c072" />
+							<g id="SVGRepo_iconCarrier">
+								<g transform="translate(0 -1028.4)">
+									<path
+										d="m16 1030.4v1c-0.312 0.1-0.617 0.2-0.875 0.4l-0.75-0.8-0.719 0.7 0.75 0.8c-0.168 0.2-0.28 0.6-0.344 0.9h-1.062v1h1.062c0.064 0.3 0.176 0.6 0.344 0.8l-0.75 0.8 0.719 0.7 0.75-0.7c0.258 0.1 0.563 0.2 0.875 0.3v1.1h1v-1.1c0.312-0.1 0.617-0.2 0.875-0.3l0.75 0.7 0.719-0.7-0.75-0.8c0.168-0.2 0.28-0.5 0.344-0.8h1.062v-1h-1.062c-0.064-0.3-0.176-0.7-0.344-0.9l0.75-0.8-0.719-0.7-0.75 0.8c-0.258-0.2-0.563-0.3-0.875-0.4v-1h-1zm0.5 2c0.828 0 1.5 0.6 1.5 1.5 0 0.8-0.672 1.5-1.5 1.5s-1.5-0.7-1.5-1.5c0-0.9 0.672-1.5 1.5-1.5z"
+										fill="#8a9565" />
+									<path
+										d="m19 1035.3v1.1c-0.27 0-0.534 0.1-0.781 0.2l-0.531-0.9-0.876 0.5 0.532 0.9c-0.224 0.2-0.419 0.4-0.594 0.6l-0.906-0.6-0.5 0.9 0.906 0.5c-0.096 0.3-0.181 0.6-0.219 0.8h-1.031v1h1.031c0.038 0.3 0.123 0.6 0.219 0.8l-0.906 0.5 0.5 0.9 0.906-0.5c0.175 0.2 0.37 0.4 0.594 0.6l-0.532 0.9 0.876 0.5 0.531-0.9c0.247 0.1 0.511 0.2 0.781 0.2v1h1v-1c0.27 0 0.534-0.1 0.781-0.2l0.531 0.9 0.876-0.5-0.532-0.9c0.224-0.2 0.419-0.4 0.594-0.6l0.906 0.5 0.5-0.9-0.906-0.5c0.096-0.2 0.181-0.5 0.219-0.8h1.031v-1h-1.031c-0.038-0.2-0.123-0.5-0.219-0.8l0.906-0.5-0.5-0.9-0.906 0.6c-0.175-0.2-0.37-0.4-0.594-0.6l0.532-0.9-0.876-0.5-0.531 0.9c-0.247-0.1-0.511-0.2-0.781-0.2v-1.1h-1zm0.5 2c1.381 0 2.5 1.2 2.5 2.5 0 1.4-1.119 2.5-2.5 2.5s-2.5-1.1-2.5-2.5c0-1.3 1.119-2.5 2.5-2.5z"
+										fill="#b6bf88" />
+									<path
+										d="m10 1033.3-2.0312 0.1v2.1c-0.3602 0-0.712 0.1-1.0626 0.2l-1.0624-1.8-1.7188 1 1.0312 1.8c-0.2891 0.3-0.5468 0.5-0.7812 0.8l-1.8125-1-1 1.7 1.8125 1.1c-0.1343 0.3-0.2489 0.7-0.3125 1.1h-2.0938l0.00005 2h2.125c0.0627 0.4 0.1498 0.7 0.2812 1.1l-1.8125 1 1 1.7 1.8125-1c0.2379 0.3 0.5008 0.5 0.7812 0.8l-1.0624 1.8 1.75 1 1.0312-1.8c0.3599 0.1 0.7461 0.2 1.125 0.3v2.1h2v-2.1c0.36-0.1 0.712-0.2 1.062-0.3l1.063 1.8 1.719-1-1.032-1.8c0.29-0.3 0.547-0.5 0.782-0.8l1.812 1 1.032-1.7-1.844-1c0.134-0.4 0.249-0.8 0.312-1.1h2.094v-2.1h-2.125c-0.063-0.3-0.15-0.7-0.281-1l1.812-1.1-1-1.7-1.812 1c-0.238-0.2-0.501-0.5-0.782-0.7l1.063-1.9-1.75-1-1.031 1.8c-0.36-0.1-0.746-0.2-1.1252-0.2l0.0312-2.2zm-1 5.1c1.657 0 3 1.3 3 3 0 1.6-1.343 3-3 3-1.6569 0-3-1.4-3-3 0-1.7 1.3431-3 3-3z"
+										fill="#b3c072" />
+								</g>
 							</g>
-						</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loading_svg_block_5 loader_svg_ice_block">
+						<svg width="300" height="350" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="#202020" rx="15" />
+							<text x="55%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="70"
+								font-family="Arial, sans-serif" fill="none" stroke="white" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								JAVA
+							</text>
+						</svg>
+					</div>
+					<div class="hidden_skill_block_java skill-container" id="skill_java">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#cefb5c6b" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#cefb5c" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="452px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="452" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#cefb5c" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">JAVA</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#cefb5c" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">20%</text>
+						</svg>
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_6">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_6" onclick="setTimeout(block_6_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_6_hideHiddenBox, 0)">
+					<div class="skills_css_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg width="68px" height="68px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_6_svg" width="68px" height="68px" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<path d="M11.5 8.5V4.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M6.5 14.5V18.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M16.5 16.4998L16.5 18.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M11.5 18.5V12.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M6.5 4.5V10.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M16.5 4.5V12.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M9.5 8.5L13.5 8.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M4.5 14.5L8.5 14.5" stroke="#464743" stroke-linecap="round" />
-							<path d="M14.5 16.5H18.5" stroke="#464743" stroke-linecap="round" />
-						</g>
+							<g id="SVGRepo_iconCarrier">
+								<path d="M11.5 8.5V4.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M6.5 14.5V18.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M16.5 16.4998L16.5 18.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M11.5 18.5V12.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M6.5 4.5V10.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M16.5 4.5V12.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M9.5 8.5L13.5 8.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M4.5 14.5L8.5 14.5" stroke="#464743" stroke-linecap="round" />
+								<path d="M14.5 16.5H18.5" stroke="#464743" stroke-linecap="round" />
+							</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loading_svg_block_6 loader_svg_ice_block">
+						<svg width="300" height="300" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+							<!-- Background -->
+							<rect width="100%" height="100%" fill="#a9cc4f" rx="10" />
+
+							<!-- Text: CSS -->
+							<text x="45" y="90" font-size="60" font-family="Arial, sans-serif" fill="none"
+								stroke="black" stroke-width="2" stroke-dasharray="300" stroke-dashoffset="300">
+								CSS
+								<animate attributeName="stroke-dashoffset" from="300" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_css skill-container" id="skill_css">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#3c4230" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#14180c" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="147px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="147" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#14180c" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">CSS</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#14180c" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">74%</text>
+						</svg>
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_7">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_7" onclick="setTimeout(block_7_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_7_hideHiddenBox, 0)">
+					<div class="skills_git_bash_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg width="68px" height="68px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_7_svg" width="68px" height="68px" viewBox="0 0 24 24"
+							fill="none" xmlns="http://www.w3.org/2000/svg">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M5.0333 14.8284L6.44751 16.2426L10.6902 12L6.44751 7.75733L5.0333 9.17155L7.86172 12L5.0333 14.8284Z"
+									fill="#b6d228" />
+								<path d="M15 14H11V16H15V14Z" fill="#b6d228" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z"
+									fill="#b6d228" />
+							</g>
+
+						</svg>
+					</div>
+					<div class="loading_svg_block_7 loader_svg_ice_block">
+						<svg height="100" viewBox="31.98258924 32.28452272 135.54499681 132.49547728" width="100"
+							xmlns="http://www.w3.org/2000/svg">
+							<!-- Red shape -->
 							<path
-								d="M5.0333 14.8284L6.44751 16.2426L10.6902 12L6.44751 7.75733L5.0333 9.17155L7.86172 12L5.0333 14.8284Z"
-								fill="#b6d228" />
-							<path d="M15 14H11V16H15V14Z" fill="#b6d228" />
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z"
-								fill="#b6d228" />
-						</g>
+								d="m95.72 81.45v12.55l-30.11-30.1 10-10 15.19 15.2a9.75 9.75 0 0 0 -.61 3.43 9.91 9.91 0 0 0 5.53 8.92zm9.23 1.81 4.68 4.68-4.68 4.69zm28.64-19.26-18.09 18.07-6.09-6.07a9.83 9.83 0 0 0 .54-4.67 10 10 0 0 0 -9.39-8.68 9.64 9.64 0 0 0 -3.89.6l-15.2-15.25 12.88-12.84a7.36 7.36 0 0 1 10.42 0z"
+								fill="none" stroke="#ff8080" stroke-width="2" stroke-dasharray="300"
+								stroke-dashoffset="300">
+								<animate attributeName="stroke-dashoffset" from="300" to="0" dur="0.5s" fill="freeze"
+									repeatCount="indefinite" />
+							</path>
 
-					</svg>
+							<!-- Blue shape -->
+							<path
+								d="m89.74 105.53-27.36 27.36-27.15-26.89a8.49 8.49 0 0 1 .09-11.86l28-28 26.42 26.51a9.12 9.12 0 0 1 0 12.88z"
+								fill="none" stroke="#80b3ff" stroke-width="2" stroke-dasharray="250"
+								stroke-dashoffset="250">
+								<animate attributeName="stroke-dashoffset" from="250" to="0" dur="0.5s" begin="0.5s"
+									fill="freeze" repeatCount="indefinite" />
+							</path>
+
+							<!-- Yellow shape -->
+							<path
+								d="m105 108.79v11.49a9.46 9.46 0 0 1 4.46 9.88 9.32 9.32 0 0 1 -7.42 7.53 9.47 9.47 0 0 1 -6.32-17.69v-12.7a1 1 0 0 0 -1.63-.68l-28.67 28.66 29.5 29.5a7.33 7.33 0 0 0 10.36 0l27.83-27.78z"
+								fill="none" stroke="#ffe680" stroke-width="2" stroke-dasharray="300"
+								stroke-dashoffset="300">
+								<animate attributeName="stroke-dashoffset" from="300" to="0" dur="0.5s" begin="1s"
+									fill="freeze" repeatCount="indefinite" />
+							</path>
+
+							<!-- Green shape -->
+							<path
+								d="m163.54 107.45-26.54 26.55-28.58-28.58a8.56 8.56 0 0 1 0-12.1l3.29-3.32 7.29 7.27a9.92 9.92 0 1 0 5.88-5.88l-7.25-7.24 18.54-18.53 27.37 27.38a10.19 10.19 0 0 1 0 14.45z"
+								fill="none" stroke="#8dd35f" stroke-width="2" stroke-dasharray="320"
+								stroke-dashoffset="320">
+								<animate attributeName="stroke-dashoffset" from="320" to="0" dur="0.5s" begin="1.5s"
+									fill="freeze" repeatCount="indefinite" />
+							</path>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_git_bash skill-container" id="skill_git_bash">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#3c4230" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#b7bb47" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="396px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="396" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#b7bb47" font-size="25px"
+								font-weight="bold" transform="rotate(90, 108, 108)">GIT&GITHUB</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#b7bb47" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">74%</text>
+						</svg>
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_8">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_8" onclick="setTimeout(block_8_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_8_hideHiddenBox, 0)">
+					<div class="skills_dsa_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg height="68px" width="68px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495 495" xml:space="preserve"
-						fill="#000000">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_8_svg" height="68px" width="68px" version="1.1"
+							id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 495 495" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<g>
-								<path style="fill:#3c4230;"
-									d="M392.07,248.48c8.02,0,15.69,1.85,22.81,5.51l29.14,14.99V101.96H336.7C337.23,98,337.5,94,337.5,90 c0-49.63-40.37-90-90-90v495h196.52V327.98l-29.14,14.99c-7.12,3.65-14.79,5.51-22.81,5.51c-27.57,0-50-22.43-50-50 S364.5,248.48,392.07,248.48z" />
-								<path style="fill:#14180c;"
-									d="M157.5,90c0,4,0.27,8,0.8,11.96H50.98v167.02l29.14-14.99c7.12-3.66,14.79-5.51,22.81-5.51 c27.57,0,50,22.43,50,50s-22.43,50-50,50c-8.02,0-15.69-1.86-22.81-5.51l-29.14-14.99V495H247.5V0C197.87,0,157.5,40.37,157.5,90z" />
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path style="fill:#3c4230;"
+										d="M392.07,248.48c8.02,0,15.69,1.85,22.81,5.51l29.14,14.99V101.96H336.7C337.23,98,337.5,94,337.5,90 c0-49.63-40.37-90-90-90v495h196.52V327.98l-29.14,14.99c-7.12,3.65-14.79,5.51-22.81,5.51c-27.57,0-50-22.43-50-50 S364.5,248.48,392.07,248.48z" />
+									<path style="fill:#14180c;"
+										d="M157.5,90c0,4,0.27,8,0.8,11.96H50.98v167.02l29.14-14.99c7.12-3.66,14.79-5.51,22.81-5.51 c27.57,0,50,22.43,50,50s-22.43,50-50,50c-8.02,0-15.69-1.86-22.81-5.51l-29.14-14.99V495H247.5V0C197.87,0,157.5,40.37,157.5,90z" />
+								</g>
 							</g>
-						</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_8">
+						<svg width="300" height="300" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+							<!-- Background -->
+							<rect width="100%" height="100%" fill="none" rx="15" />
+
+							<!-- DSA Text with Stroke Animation -->
+							<text x="58%" y="70%" dominant-baseline="middle" text-anchor="middle" font-size="70"
+								font-family="Arial, sans-serif" fill="none" stroke="black" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze"
+									repeatCount="indefinite" />
+								DSA
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_dsa skill-container" id="skill_dsa">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#3c4230" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#14180c" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="441px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="441" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#14180c" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">DSA</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#14180c" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">22%</text>
+						</svg>
+					</div>
 				</div>
+
 			</div>
 
 			<div class="skill_iceblock_row row">
-				<div class="skills_ice_block  skill_block_9">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_9" onclick="setTimeout(block_9_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_9_hideHiddenBox, 0)">
+					<diV class="skills_come_9_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg height="68px" width="68px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280.176 280.176" xml:space="preserve"
-						fill="#000000">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_9_svg" height="68px" width="68px" version="1.1"
+							id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 280.176 280.176" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-							<g>
-								<path style="fill:#6d931a;"
-									d="M0,161.965l140.092-70.042l140.084,70.042l-140.084,70.042C140.092,232.007,0,161.965,0,161.965z" />
-								<path style="fill:#94cf26;"
-									d="M0,118.202l140.092-70.033l140.084,70.042l-140.084,70.042L0,118.202z" />
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path style="fill:#6d931a;"
+										d="M0,161.965l140.092-70.042l140.084,70.042l-140.084,70.042C140.092,232.007,0,161.965,0,161.965z" />
+									<path style="fill:#94cf26;"
+										d="M0,118.202l140.092-70.033l140.084,70.042l-140.084,70.042L0,118.202z" />
+								</g>
 							</g>
-						</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="hidden_skill_block_come_9 skill-container" id="skill_come_9">
+						<p>Comming Soon...</p>
+					</div>
+				</diV>
+				<div class="skills_ice_block  skill_block_10" onclick="setTimeout(block_10_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_10_hideHiddenBox, 0)">
+					<div class="skills_come_10_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_10_svg" fill="#c1d530" width="68px" height="68px"
+							viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" stroke="#c1d530">
+
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+							<g id="SVGRepo_iconCarrier">
+
+								<path
+									d="M19.5 7c-.657 0-.657 1 0 1H22c3.887 0 7 3.113 7 7s-3.113 7-7 7h-2c-3.887 0-7-3.113-7-7v-.5c0-.672-1-.648-1 0v.5c0 4.423 3.577 8 8 8h2c4.423 0 8-3.577 8-8s-3.577-8-8-8zM8 7c-4.423 0-8 3.577-8 8s3.577 8 8 8h2.5c.665 0 .66-1 0-1H8c-3.887 0-7-3.113-7-7s3.113-7 7-7h2c3.887 0 7 3.113 7 7v.5c0 .676 1 .656 1 0V15c0-4.423-3.577-8-8-8z" />
+
+							</g>
+
+						</svg>
+					</div>
+					<div class="hidden_skill_block_come_10 skill-container" id="skill_come_10">
+						<p>Comming Soon...</p>
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_10">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_11" onclick="setTimeout(block_11_showHiddenBox, 0)"
+					onmouseleave="setTimeout( block_11_hideHiddenBox, 0)">
+					<div class="skills_come_11_main_animation">
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg fill="#c1d530" width="68px" height="68px" viewBox="0 0 30 30"
-						xmlns="http://www.w3.org/2000/svg" stroke="#c1d530">
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_11_svg" height="68px" width="68px" version="1.1"
+							id="_x35_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
-						<g id="SVGRepo_iconCarrier">
-
-							<path
-								d="M19.5 7c-.657 0-.657 1 0 1H22c3.887 0 7 3.113 7 7s-3.113 7-7 7h-2c-3.887 0-7-3.113-7-7v-.5c0-.672-1-.648-1 0v.5c0 4.423 3.577 8 8 8h2c4.423 0 8-3.577 8-8s-3.577-8-8-8zM8 7c-4.423 0-8 3.577-8 8s3.577 8 8 8h2.5c.665 0 .66-1 0-1H8c-3.887 0-7-3.113-7-7s3.113-7 7-7h2c3.887 0 7 3.113 7 7v.5c0 .676 1 .656 1 0V15c0-4.423-3.577-8-8-8z" />
-
-						</g>
-
-					</svg>
-				</div>
-				<div class="skills_ice_block  skill_block_11">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg height="68px" width="68px" version="1.1" id="_x35_" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
-						fill="#000000">
-
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-
-						<g id="SVGRepo_iconCarrier">
-							<g>
+							<g id="SVGRepo_iconCarrier">
 								<g>
 									<g>
 										<g>
-											<path style="fill:#202a0f;"
-												d="M403.383,332.812v111.589c0,37.366-90.273,67.599-201.692,67.599 c-70.571,0-132.734-12.144-168.742-30.573c-18.513-9.426-30.063-20.466-32.44-32.44C0.169,447.458,0,445.93,0,444.401V332.812 c0-0.34,0-0.679,0.084-1.018c-0.084-0.17-0.084-0.255,0-0.34c0-0.595,0.085-1.189,0.17-1.783c0.085-0.255,0.085-0.51,0.17-0.765 c0.085-0.68,0.254-1.358,0.51-2.038v-0.085c0.34-1.358,0.849-2.633,1.444-3.991c11.21-24.373,61.23-44.499,128.318-52.907 c8.747-1.105,17.834-2.038,27.09-2.718h0.51c14.012-1.104,28.535-1.613,43.396-1.613s29.383,0.509,43.395,1.613h0.509 c9.256,0.68,18.343,1.613,27.09,2.718c67.089,8.407,117.108,28.534,128.318,52.907c0.595,1.358,1.104,2.633,1.444,3.991v0.085 c0.255,0.68,0.424,1.358,0.509,2.038c0.17,0.849,0.255,1.613,0.34,2.548v0.34C403.383,332.133,403.383,332.472,403.383,332.812z " />
-											<path style="opacity:0.1;fill:#78905a;"
-												d="M403.383,333.152v5.35c0,37.366-90.273,67.683-201.692,67.683 C90.272,406.185,0,375.868,0,338.502v-5.35c0,0.849,0.084,1.613,0.169,2.378c2.633,26.326,50.274,48.916,117.958,59.191 c2.378,0.34,4.671,0.68,7.049,1.019c3.821,0.594,7.643,1.104,11.549,1.529c1.614,0.085,3.312,0.255,5.01,0.509 c9.427,1.019,19.193,1.784,29.213,2.293c6.709,0.339,13.503,0.594,20.382,0.679c3.397,0.085,6.879,0.085,10.361,0.085 c3.482,0,6.963,0,10.36-0.085c6.879-0.085,13.672-0.34,20.382-0.679c10.021-0.509,19.787-1.274,29.213-2.293 c1.698-0.254,3.397-0.424,5.01-0.509c3.907-0.425,7.728-0.935,11.549-1.529c2.378-0.339,4.671-0.679,7.049-1.019 c67.684-10.275,115.325-32.865,117.958-59.191C403.298,334.765,403.383,334.001,403.383,333.152z" />
+											<g>
+												<path style="fill:#202a0f;"
+													d="M403.383,332.812v111.589c0,37.366-90.273,67.599-201.692,67.599 c-70.571,0-132.734-12.144-168.742-30.573c-18.513-9.426-30.063-20.466-32.44-32.44C0.169,447.458,0,445.93,0,444.401V332.812 c0-0.34,0-0.679,0.084-1.018c-0.084-0.17-0.084-0.255,0-0.34c0-0.595,0.085-1.189,0.17-1.783c0.085-0.255,0.085-0.51,0.17-0.765 c0.085-0.68,0.254-1.358,0.51-2.038v-0.085c0.34-1.358,0.849-2.633,1.444-3.991c11.21-24.373,61.23-44.499,128.318-52.907 c8.747-1.105,17.834-2.038,27.09-2.718h0.51c14.012-1.104,28.535-1.613,43.396-1.613s29.383,0.509,43.395,1.613h0.509 c9.256,0.68,18.343,1.613,27.09,2.718c67.089,8.407,117.108,28.534,128.318,52.907c0.595,1.358,1.104,2.633,1.444,3.991v0.085 c0.255,0.68,0.424,1.358,0.509,2.038c0.17,0.849,0.255,1.613,0.34,2.548v0.34C403.383,332.133,403.383,332.472,403.383,332.812z " />
+												<path style="opacity:0.1;fill:#78905a;"
+													d="M403.383,333.152v5.35c0,37.366-90.273,67.683-201.692,67.683 C90.272,406.185,0,375.868,0,338.502v-5.35c0,0.849,0.084,1.613,0.169,2.378c2.633,26.326,50.274,48.916,117.958,59.191 c2.378,0.34,4.671,0.68,7.049,1.019c3.821,0.594,7.643,1.104,11.549,1.529c1.614,0.085,3.312,0.255,5.01,0.509 c9.427,1.019,19.193,1.784,29.213,2.293c6.709,0.339,13.503,0.594,20.382,0.679c3.397,0.085,6.879,0.085,10.361,0.085 c3.482,0,6.963,0,10.36-0.085c6.879-0.085,13.672-0.34,20.382-0.679c10.021-0.509,19.787-1.274,29.213-2.293 c1.698-0.254,3.397-0.424,5.01-0.509c3.907-0.425,7.728-0.935,11.549-1.529c2.378-0.339,4.671-0.679,7.049-1.019 c67.684-10.275,115.325-32.865,117.958-59.191C403.298,334.765,403.383,334.001,403.383,333.152z" />
+												<path style="fill:#78905a;"
+													d="M403.383,332.472v0.68c0,0.849-0.085,1.613-0.17,2.378 c-3.567,26.411-50.954,48.746-117.958,59.191c-2.378,0.34-4.671,0.68-7.049,1.019c-2.378,0.34-4.756,0.594-7.133,0.934 c-1.444,0.17-2.973,0.34-4.416,0.595c-1.613,0.085-3.312,0.255-5.01,0.509c-6.285,0.594-12.738,1.189-19.278,1.614 c-3.312,0.255-6.624,0.509-9.936,0.679c-6.709,0.255-13.503,0.509-20.382,0.679c-3.397,0.085-6.879,0.085-10.36,0.085 c-3.482,0-6.964,0-10.361-0.085c-6.879-0.17-13.672-0.424-20.382-0.679c-3.312-0.17-6.624-0.424-9.936-0.679 c-6.539-0.425-12.993-1.02-19.278-1.614c-1.698-0.254-3.397-0.424-5.01-0.509c-1.443-0.255-2.972-0.425-4.416-0.595 c-2.378-0.34-4.756-0.594-7.133-0.934c-2.378-0.339-4.671-0.679-7.049-1.019C51.123,384.276,3.736,361.941,0.169,335.53 C0.084,334.765,0,334.001,0,333.152v-0.68c0-0.254,0-0.424,0.084-0.678c-0.084-0.17-0.084-0.255,0-0.34 c0.085-0.935,0.17-1.699,0.34-2.548c0.085-0.425,0.169-0.849,0.169-1.274c-0.084-0.169,0-0.339,0.085-0.509 c0-0.17,0-0.425,0.085-0.68c0.17-0.509,0.255-1.103,0.51-1.613c0.255-0.765,0.595-1.613,0.934-2.463 c10.531-24.203,58.512-44.245,123.308-53.162c7.728-1.103,15.711-2.038,23.948-2.717c0.085-0.085,0.255-0.085,0.34-0.085 c16.56-1.529,33.969-2.293,51.888-2.293c17.919,0,35.328,0.764,51.888,2.293c0.085,0,0.255,0,0.34,0.085 c8.238,0.679,16.221,1.614,23.948,2.717c64.796,8.917,112.778,28.959,123.308,53.162c0.594,1.359,1.104,2.718,1.444,4.076 c0.17,0.85,0.17,1.614,0.339,2.463c0.17,0.849,0.255,1.613,0.34,2.548v0.34C403.298,331.963,403.383,332.218,403.383,332.472z" />
+											</g>
 											<path style="fill:#78905a;"
-												d="M403.383,332.472v0.68c0,0.849-0.085,1.613-0.17,2.378 c-3.567,26.411-50.954,48.746-117.958,59.191c-2.378,0.34-4.671,0.68-7.049,1.019c-2.378,0.34-4.756,0.594-7.133,0.934 c-1.444,0.17-2.973,0.34-4.416,0.595c-1.613,0.085-3.312,0.255-5.01,0.509c-6.285,0.594-12.738,1.189-19.278,1.614 c-3.312,0.255-6.624,0.509-9.936,0.679c-6.709,0.255-13.503,0.509-20.382,0.679c-3.397,0.085-6.879,0.085-10.36,0.085 c-3.482,0-6.964,0-10.361-0.085c-6.879-0.17-13.672-0.424-20.382-0.679c-3.312-0.17-6.624-0.424-9.936-0.679 c-6.539-0.425-12.993-1.02-19.278-1.614c-1.698-0.254-3.397-0.424-5.01-0.509c-1.443-0.255-2.972-0.425-4.416-0.595 c-2.378-0.34-4.756-0.594-7.133-0.934c-2.378-0.339-4.671-0.679-7.049-1.019C51.123,384.276,3.736,361.941,0.169,335.53 C0.084,334.765,0,334.001,0,333.152v-0.68c0-0.254,0-0.424,0.084-0.678c-0.084-0.17-0.084-0.255,0-0.34 c0.085-0.935,0.17-1.699,0.34-2.548c0.085-0.425,0.169-0.849,0.169-1.274c-0.084-0.169,0-0.339,0.085-0.509 c0-0.17,0-0.425,0.085-0.68c0.17-0.509,0.255-1.103,0.51-1.613c0.255-0.765,0.595-1.613,0.934-2.463 c10.531-24.203,58.512-44.245,123.308-53.162c7.728-1.103,15.711-2.038,23.948-2.717c0.085-0.085,0.255-0.085,0.34-0.085 c16.56-1.529,33.969-2.293,51.888-2.293c17.919,0,35.328,0.764,51.888,2.293c0.085,0,0.255,0,0.34,0.085 c8.238,0.679,16.221,1.614,23.948,2.717c64.796,8.917,112.778,28.959,123.308,53.162c0.594,1.359,1.104,2.718,1.444,4.076 c0.17,0.85,0.17,1.614,0.339,2.463c0.17,0.849,0.255,1.613,0.34,2.548v0.34C403.298,331.963,403.383,332.218,403.383,332.472z" />
+												d="M336.696,426.451v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,435.4,320.448,431.364,336.696,426.451z" />
 										</g>
-										<path style="fill:#78905a;"
-											d="M336.696,426.451v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,435.4,320.448,431.364,336.696,426.451z" />
-									</g>
-									<path style="opacity:0.3;fill:#23700f;"
-										d="M402.619,326.443c-0.085,0.17-0.085,0.255-0.17,0.34v0.085 c-9.511,34.309-95.708,61.144-200.757,61.144c-105.05,0-191.246-26.835-200.758-61.144v-0.085 c-0.085-0.085-0.085-0.17-0.085-0.255l-0.085-0.085c0.17-0.509,0.255-1.103,0.51-1.613c0.255-0.765,0.595-1.613,0.934-2.463 c10.531-24.203,58.512-44.245,123.308-53.162c7.728-1.103,15.711-2.038,23.948-2.717c0.085-0.085,0.255-0.085,0.34-0.085 c16.56-1.529,33.969-2.293,51.888-2.293c17.919,0,35.328,0.764,51.888,2.293c0.085,0,0.255,0,0.34,0.085 c8.238,0.679,16.221,1.614,23.948,2.717c64.796,8.917,112.778,28.959,123.308,53.162 C401.77,323.726,402.279,325.085,402.619,326.443z" />
-									<g>
+										<path style="opacity:0.3;fill:#23700f;"
+											d="M402.619,326.443c-0.085,0.17-0.085,0.255-0.17,0.34v0.085 c-9.511,34.309-95.708,61.144-200.757,61.144c-105.05,0-191.246-26.835-200.758-61.144v-0.085 c-0.085-0.085-0.085-0.17-0.085-0.255l-0.085-0.085c0.17-0.509,0.255-1.103,0.51-1.613c0.255-0.765,0.595-1.613,0.934-2.463 c10.531-24.203,58.512-44.245,123.308-53.162c7.728-1.103,15.711-2.038,23.948-2.717c0.085-0.085,0.255-0.085,0.34-0.085 c16.56-1.529,33.969-2.293,51.888-2.293c17.919,0,35.328,0.764,51.888,2.293c0.085,0,0.255,0,0.34,0.085 c8.238,0.679,16.221,1.614,23.948,2.717c64.796,8.917,112.778,28.959,123.308,53.162 C401.77,323.726,402.279,325.085,402.619,326.443z" />
 										<g>
-											<path style="fill:#202a0f;"
-												d="M403.383,200.842v111.505c0,3.396-0.765,6.793-2.208,10.02c-0.085,0.17-0.17,0.34-0.17,0.425 c-15.031,32.44-98.51,57.153-199.314,57.153c-100.804,0-184.283-24.713-199.314-57.153c0-0.085-0.085-0.255-0.17-0.425 c-0.34-0.849-0.679-1.698-0.934-2.463c-0.255-0.848-0.51-1.613-0.68-2.462c0,0,0-0.085,0-0.17 c-0.254-0.679-0.34-1.444-0.425-2.208C0.084,314.129,0,313.28,0,312.346V200.758c0-1.954,0.34-3.992,0.849-5.86 c0.085-0.17,0.085-0.34,0.17-0.425c0.34-1.273,0.849-2.547,1.359-3.736c11.295-24.373,61.399-44.499,128.403-52.907 c8.747-1.104,17.749-2.038,27.005-2.718c14.098-1.018,28.789-1.613,43.906-1.613c15.116,0,29.807,0.595,43.905,1.613 c9.256,0.68,18.258,1.614,27.005,2.718c67.004,8.407,117.108,28.534,128.403,52.907c0.51,1.189,1.019,2.463,1.359,3.736 c0.085,0.085,0.085,0.255,0.17,0.425C403.043,196.85,403.383,198.804,403.383,200.842z" />
-											<path style="opacity:0.1;fill:#78905a;"
-												d="M403.383,201.182v5.351c0,28.278-51.888,52.482-125.516,62.672 c-1.699,0.17-3.482,0.425-5.18,0.68c-22.08,2.717-46.029,4.246-70.995,4.246c-24.967,0-48.916-1.529-70.996-4.246 c-1.699-0.255-3.482-0.51-5.18-0.68C51.888,259.015,0,234.811,0,206.533v-5.351c0,0.765,0.084,1.614,0.169,2.378 c2.718,26.921,52.652,49.935,122.969,59.871c0.679,0.085,1.358,0.17,2.038,0.255c5.435,0.848,10.87,1.443,16.56,2.038 c2.548,0.255,5.096,0.509,7.728,0.764c2.718,0.254,5.52,0.509,8.322,0.679h0.51c10.7,0.85,21.74,1.359,33.035,1.529 c3.397,0.084,6.879,0.084,10.361,0.084c3.482,0,6.963,0,10.36-0.084c11.295-0.17,22.335-0.679,33.035-1.529h0.509 c2.803-0.17,5.605-0.425,8.322-0.679c2.633-0.255,5.18-0.509,7.728-0.764c5.69-0.595,11.125-1.19,16.56-2.038l2.039-0.255 c70.316-9.936,120.25-32.95,122.968-59.871C403.298,202.796,403.383,201.947,403.383,201.182z" />
+											<g>
+												<path style="fill:#202a0f;"
+													d="M403.383,200.842v111.505c0,3.396-0.765,6.793-2.208,10.02c-0.085,0.17-0.17,0.34-0.17,0.425 c-15.031,32.44-98.51,57.153-199.314,57.153c-100.804,0-184.283-24.713-199.314-57.153c0-0.085-0.085-0.255-0.17-0.425 c-0.34-0.849-0.679-1.698-0.934-2.463c-0.255-0.848-0.51-1.613-0.68-2.462c0,0,0-0.085,0-0.17 c-0.254-0.679-0.34-1.444-0.425-2.208C0.084,314.129,0,313.28,0,312.346V200.758c0-1.954,0.34-3.992,0.849-5.86 c0.085-0.17,0.085-0.34,0.17-0.425c0.34-1.273,0.849-2.547,1.359-3.736c11.295-24.373,61.399-44.499,128.403-52.907 c8.747-1.104,17.749-2.038,27.005-2.718c14.098-1.018,28.789-1.613,43.906-1.613c15.116,0,29.807,0.595,43.905,1.613 c9.256,0.68,18.258,1.614,27.005,2.718c67.004,8.407,117.108,28.534,128.403,52.907c0.51,1.189,1.019,2.463,1.359,3.736 c0.085,0.085,0.085,0.255,0.17,0.425C403.043,196.85,403.383,198.804,403.383,200.842z" />
+												<path style="opacity:0.1;fill:#78905a;"
+													d="M403.383,201.182v5.351c0,28.278-51.888,52.482-125.516,62.672 c-1.699,0.17-3.482,0.425-5.18,0.68c-22.08,2.717-46.029,4.246-70.995,4.246c-24.967,0-48.916-1.529-70.996-4.246 c-1.699-0.255-3.482-0.51-5.18-0.68C51.888,259.015,0,234.811,0,206.533v-5.351c0,0.765,0.084,1.614,0.169,2.378 c2.718,26.921,52.652,49.935,122.969,59.871c0.679,0.085,1.358,0.17,2.038,0.255c5.435,0.848,10.87,1.443,16.56,2.038 c2.548,0.255,5.096,0.509,7.728,0.764c2.718,0.254,5.52,0.509,8.322,0.679h0.51c10.7,0.85,21.74,1.359,33.035,1.529 c3.397,0.084,6.879,0.084,10.361,0.084c3.482,0,6.963,0,10.36-0.084c11.295-0.17,22.335-0.679,33.035-1.529h0.509 c2.803-0.17,5.605-0.425,8.322-0.679c2.633-0.255,5.18-0.509,7.728-0.764c5.69-0.595,11.125-1.19,16.56-2.038l2.039-0.255 c70.316-9.936,120.25-32.95,122.968-59.871C403.298,202.796,403.383,201.947,403.383,201.182z" />
+												<path style="fill:#78905a;"
+													d="M403.383,200.418v0.764c0,0.765-0.085,1.614-0.17,2.378 c-3.652,26.921-53.332,49.765-122.968,59.871l-2.039,0.255c-2.378,0.339-4.756,0.594-7.133,0.933 c-3.142,0.34-6.2,0.68-9.426,1.105c-2.633,0.255-5.35,0.509-8.068,0.679c-2.803,0.254-5.605,0.509-8.492,0.764 c-0.934,0-1.784,0.085-2.718,0.17c-3.312,0.255-6.624,0.425-9.936,0.595c-6.709,0.339-13.503,0.594-20.382,0.764h-20.721 c-6.879-0.17-13.672-0.425-20.382-0.764c-3.312-0.17-6.624-0.34-9.936-0.595c-0.934-0.085-1.783-0.17-2.718-0.17 c-2.887-0.255-5.69-0.51-8.492-0.764c-2.718-0.17-5.435-0.424-8.068-0.679c-3.227-0.425-6.284-0.765-9.426-1.105 c-2.378-0.339-4.756-0.594-7.133-0.933c-0.679-0.085-1.359-0.17-2.038-0.255C53.501,253.324,3.821,230.481,0.169,203.56 C0.084,202.796,0,201.947,0,201.182v-0.764c0-0.849,0.084-1.699,0.169-2.547c0.085-0.85,0.17-1.699,0.425-2.548 c0-0.255,0.085-0.595,0.17-0.85h401.855c0.185,0.708,0.159,1.442,0.277,2.153c0.208,1.034,0.343,2.082,0.404,3.142 C403.306,199.987,403.383,200.195,403.383,200.418z" />
+											</g>
 											<path style="fill:#78905a;"
-												d="M403.383,200.418v0.764c0,0.765-0.085,1.614-0.17,2.378 c-3.652,26.921-53.332,49.765-122.968,59.871l-2.039,0.255c-2.378,0.339-4.756,0.594-7.133,0.933 c-3.142,0.34-6.2,0.68-9.426,1.105c-2.633,0.255-5.35,0.509-8.068,0.679c-2.803,0.254-5.605,0.509-8.492,0.764 c-0.934,0-1.784,0.085-2.718,0.17c-3.312,0.255-6.624,0.425-9.936,0.595c-6.709,0.339-13.503,0.594-20.382,0.764h-20.721 c-6.879-0.17-13.672-0.425-20.382-0.764c-3.312-0.17-6.624-0.34-9.936-0.595c-0.934-0.085-1.783-0.17-2.718-0.17 c-2.887-0.255-5.69-0.51-8.492-0.764c-2.718-0.17-5.435-0.424-8.068-0.679c-3.227-0.425-6.284-0.765-9.426-1.105 c-2.378-0.339-4.756-0.594-7.133-0.933c-0.679-0.085-1.359-0.17-2.038-0.255C53.501,253.324,3.821,230.481,0.169,203.56 C0.084,202.796,0,201.947,0,201.182v-0.764c0-0.849,0.084-1.699,0.169-2.547c0.085-0.85,0.17-1.699,0.425-2.548 c0-0.255,0.085-0.595,0.17-0.85h401.855c0.185,0.708,0.159,1.442,0.277,2.153c0.208,1.034,0.343,2.082,0.404,3.142 C403.306,199.987,403.383,200.195,403.383,200.418z" />
+												d="M336.696,294.411v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,303.359,320.448,299.324,336.696,294.411z" />
 										</g>
-										<path style="fill:#78905a;"
-											d="M336.696,294.411v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,303.359,320.448,299.324,336.696,294.411z" />
-									</g>
-									<path style="opacity:0.3;fill:#23700f;"
-										d="M402.534,194.472v0.425c-9.766,34.309-95.878,61.144-200.842,61.144 c-104.965,0-191.076-26.835-200.843-61.144v-0.425H402.534z" />
-									<g>
+										<path style="opacity:0.3;fill:#23700f;"
+											d="M402.534,194.472v0.425c-9.766,34.309-95.878,61.144-200.842,61.144 c-104.965,0-191.076-26.835-200.843-61.144v-0.425H402.534z" />
 										<g>
-											<path style="fill:#202a0f;"
-												d="M403.383,68.787v111.504c0,3.566-0.85,7.049-2.378,10.445c-0.594,1.274-1.274,2.463-2.038,3.736 c-19.363,30.573-100.294,53.502-197.275,53.502c-96.982,0-177.913-22.929-197.276-53.502c-0.764-1.273-1.444-2.462-2.038-3.736 c0-0.085-0.085-0.255-0.17-0.425c-0.34-0.763-0.679-1.613-0.934-2.462c-0.255-0.679-0.425-1.359-0.595-2.038 c-0.085-0.255-0.169-0.594-0.169-0.849c-0.17-0.68-0.255-1.274-0.34-1.953C0.084,182.074,0,181.225,0,180.291V68.702 C0.679,31.506,90.698,1.528,201.692,1.528c68.617,0,129.252,11.465,165.684,29.044c21.231,10.191,34.309,22.505,35.838,35.838 C403.298,67.173,403.383,68.023,403.383,68.787z" />
-											<path style="opacity:0.1;fill:#78905a;"
-												d="M403.383,69.127v5.35c0,28.958-54.351,53.671-130.781,63.352 c-22.08,2.718-45.943,4.246-70.91,4.246c-24.967,0-48.831-1.528-70.911-4.246C54.35,128.148,0,103.435,0,74.478v-5.35 c0,30.402,59.616,56.049,141.736,64.541c5.266,0.51,10.615,1.019,16.05,1.443c14.098,1.02,28.789,1.614,43.906,1.614 c15.116,0,29.807-0.594,43.905-1.614c5.435-0.424,10.785-0.933,16.051-1.443C343.767,125.176,403.383,99.529,403.383,69.127z" />
+											<g>
+												<path style="fill:#202a0f;"
+													d="M403.383,68.787v111.504c0,3.566-0.85,7.049-2.378,10.445c-0.594,1.274-1.274,2.463-2.038,3.736 c-19.363,30.573-100.294,53.502-197.275,53.502c-96.982,0-177.913-22.929-197.276-53.502c-0.764-1.273-1.444-2.462-2.038-3.736 c0-0.085-0.085-0.255-0.17-0.425c-0.34-0.763-0.679-1.613-0.934-2.462c-0.255-0.679-0.425-1.359-0.595-2.038 c-0.085-0.255-0.169-0.594-0.169-0.849c-0.17-0.68-0.255-1.274-0.34-1.953C0.084,182.074,0,181.225,0,180.291V68.702 C0.679,31.506,90.698,1.528,201.692,1.528c68.617,0,129.252,11.465,165.684,29.044c21.231,10.191,34.309,22.505,35.838,35.838 C403.298,67.173,403.383,68.023,403.383,68.787z" />
+												<path style="opacity:0.1;fill:#78905a;"
+													d="M403.383,69.127v5.35c0,28.958-54.351,53.671-130.781,63.352 c-22.08,2.718-45.943,4.246-70.91,4.246c-24.967,0-48.831-1.528-70.911-4.246C54.35,128.148,0,103.435,0,74.478v-5.35 c0,30.402,59.616,56.049,141.736,64.541c5.266,0.51,10.615,1.019,16.05,1.443c14.098,1.02,28.789,1.614,43.906,1.614 c15.116,0,29.807-0.594,43.905-1.614c5.435-0.424,10.785-0.933,16.051-1.443C343.767,125.176,403.383,99.529,403.383,69.127z" />
+												<path style="fill:#78905a;"
+													d="M403.383,68.363v0.424c-0.51,30.487-59.956,56.219-141.736,64.881 c-5.266,0.51-10.615,1.019-16.051,1.443c-14.097,1.02-28.789,1.614-43.905,1.614c-15.117,0-29.808-0.594-43.906-1.614 c-5.435-0.424-10.785-0.933-16.05-1.443C59.956,125.006,0.51,99.274,0,68.787v-0.424C0,30.657,90.272,0,201.692,0 c67.259,0,126.79,11.21,163.476,28.364c22.929,10.7,36.941,23.863,38.045,38.046C403.383,67.004,403.383,67.683,403.383,68.363z " />
+											</g>
 											<path style="fill:#78905a;"
-												d="M403.383,68.363v0.424c-0.51,30.487-59.956,56.219-141.736,64.881 c-5.266,0.51-10.615,1.019-16.051,1.443c-14.097,1.02-28.789,1.614-43.905,1.614c-15.117,0-29.808-0.594-43.906-1.614 c-5.435-0.424-10.785-0.933-16.05-1.443C59.956,125.006,0.51,99.274,0,68.787v-0.424C0,30.657,90.272,0,201.692,0 c67.259,0,126.79,11.21,163.476,28.364c22.929,10.7,36.941,23.863,38.045,38.046C403.383,67.004,403.383,67.683,403.383,68.363z " />
+												d="M336.696,162.37v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,171.319,320.448,167.283,336.696,162.37z" />
 										</g>
-										<path style="fill:#78905a;"
-											d="M336.696,162.37v31.189c-16.248,4.913-34.889,8.949-55.283,11.888v-31.189 C301.808,171.319,320.448,167.283,336.696,162.37z" />
 									</g>
+									<path style="opacity:0.2;fill:#FFFFFF;"
+										d="M201.692,0v512c-70.571,0-132.734-12.144-168.742-30.573 c-18.513-9.426-30.063-20.466-32.44-32.44C0.169,447.458,0,445.93,0,444.401V332.472c0-0.254,0-0.424,0.084-0.678 c-0.084-0.17-0.084-0.255,0-0.34c0-0.595,0.085-1.189,0.17-1.783c0-0.68,0.085-1.36,0.34-2.039c-0.084-0.169,0-0.339,0.085-0.509 c0-0.255,0-0.425,0.17-0.595c0.085-0.594,0.254-1.103,0.425-1.698c0.255-0.765,0.595-1.613,0.934-2.463 c-0.34-0.849-0.679-1.698-0.934-2.463c-0.255-0.848-0.51-1.613-0.68-2.462c0,0,0-0.085,0-0.17c-0.254-0.679-0.34-1.444-0.425-2.208 C0.084,314.129,0,313.28,0,312.346V200.418c0-0.849,0.084-1.699,0.169-2.547c0.085-0.85,0.17-1.699,0.425-2.548 c0-0.255,0.085-0.51,0.255-0.85c0.254-1.358,0.764-2.801,1.359-4.161c-0.34-0.763-0.679-1.613-0.934-2.462 c-0.255-0.679-0.425-1.359-0.595-2.038c-0.085-0.255-0.169-0.594-0.169-0.849c-0.17-0.68-0.255-1.274-0.34-1.953 C0.084,182.074,0,181.225,0,180.291V68.363C0,30.657,90.272,0,201.692,0z" />
 								</g>
-								<path style="opacity:0.2;fill:#FFFFFF;"
-									d="M201.692,0v512c-70.571,0-132.734-12.144-168.742-30.573 c-18.513-9.426-30.063-20.466-32.44-32.44C0.169,447.458,0,445.93,0,444.401V332.472c0-0.254,0-0.424,0.084-0.678 c-0.084-0.17-0.084-0.255,0-0.34c0-0.595,0.085-1.189,0.17-1.783c0-0.68,0.085-1.36,0.34-2.039c-0.084-0.169,0-0.339,0.085-0.509 c0-0.255,0-0.425,0.17-0.595c0.085-0.594,0.254-1.103,0.425-1.698c0.255-0.765,0.595-1.613,0.934-2.463 c-0.34-0.849-0.679-1.698-0.934-2.463c-0.255-0.848-0.51-1.613-0.68-2.462c0,0,0-0.085,0-0.17c-0.254-0.679-0.34-1.444-0.425-2.208 C0.084,314.129,0,313.28,0,312.346V200.418c0-0.849,0.084-1.699,0.169-2.547c0.085-0.85,0.17-1.699,0.425-2.548 c0-0.255,0.085-0.51,0.255-0.85c0.254-1.358,0.764-2.801,1.359-4.161c-0.34-0.763-0.679-1.613-0.934-2.462 c-0.255-0.679-0.425-1.359-0.595-2.038c-0.085-0.255-0.169-0.594-0.169-0.849c-0.17-0.68-0.255-1.274-0.34-1.953 C0.084,182.074,0,181.225,0,180.291V68.363C0,30.657,90.272,0,201.692,0z" />
 							</g>
-						</g>
 
-					</svg>
+						</svg>
+					</div>
+					<div class="hidden_skill_block_come_11 skill-container" id="skill_come_11">
+						<p>Comming Soon...</p>
+					</div>
 				</div>
-				<div class="skills_ice_block  skill_block_12">
-					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+				<div class="skills_ice_block  skill_block_12" onclick="setTimeout(block_cplusepluse_showHiddenBox, 0)"
+					onmouseleave="setTimeout(block_cplusepluse_hideHiddenBox, 0)">
+					<div class="skills_cplusepluse_main_animation">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-					<svg class="roll-in-left" height="68px" width="68px" version="1.1" id="Layer_1"
-						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 496.8 496.8" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+						<!DOCTYPE svg
+							PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+						<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+						<svg class="animate__animated skill_block_12_svg" height="68px" width="68px" version="1.1"
+							id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 496.8 496.8" xml:space="preserve" fill="#000000">
 
-						<g id="SVGRepo_iconCarrier">
-							<path style="fill:#336600;"
-								d="M114,12c26.4,12.8,46.4,36.8,55.2,65.6c56.8-24,120.8-27.2,177.6-3.2C333.2,32,293.2,0,246,0h-85.6 C143.6,0,128.4,5.6,114,12z" />
-							<path style="fill:#5ada16;"
-								d="M136.4,360l-88-88.8V106.4C48.4,48,97.2,0,155.6,0h85.6C258,0,272.4,4,286,11.2 C250.8,28,224.4,64,224.4,106.4V208l0,0v63.2L136.4,360z" />
-							<path style="fill:#73c224;"
-								d="M152.4,0h88.8C258,0,272.4,0.8,290,9.6c-36,17.6-65.6,54.4-65.6,96.8V208l0,0v63.2l-88,88.8l-88-88.8 " />
-							<path style="fill:#336600;"
-								d="M360.4,136l88,88.8v164.8c0,58.4-48.8,106.4-107.2,106.4h-85.6c-16.8,0-31.2-4-44.8-11.2 c35.2-17.6,61.6-53.6,61.6-96V288l0,0v-63.2L360.4,136z" />
-							<path style="fill:#304f03;"
-								d="M448.4,389.6c0,58.4-48.8,106.4-107.2,106.4h-85.6c-16.8,0-31.2-4-44.8-11.2 c35.2-17.6,61.6-53.6,61.6-96V288l0,0v-56" />
-							<path style="fill:#5ada16;"
-								d="M387.6,485.6c-26.4-12.8-52-38.4-60-66.4c-56.8,24-120.8,26.4-177.6,2.4 c13.6,42.4,54.4,75.2,101.6,75.2h89.6C358,496,374,492,387.6,485.6z" />
-							<path style="fill:#73c224;"
-								d="M251.6,496h89.6c16.8,0,32.8-4,46.4-11.2c-26.4-12.8-52-38.4-60-66.4" />
-						</g>
+							<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-					</svg>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+							<g id="SVGRepo_iconCarrier">
+								<path style="fill:#336600;"
+									d="M114,12c26.4,12.8,46.4,36.8,55.2,65.6c56.8-24,120.8-27.2,177.6-3.2C333.2,32,293.2,0,246,0h-85.6 C143.6,0,128.4,5.6,114,12z" />
+								<path style="fill:#5ada16;"
+									d="M136.4,360l-88-88.8V106.4C48.4,48,97.2,0,155.6,0h85.6C258,0,272.4,4,286,11.2 C250.8,28,224.4,64,224.4,106.4V208l0,0v63.2L136.4,360z" />
+								<path style="fill:#73c224;"
+									d="M152.4,0h88.8C258,0,272.4,0.8,290,9.6c-36,17.6-65.6,54.4-65.6,96.8V208l0,0v63.2l-88,88.8l-88-88.8 " />
+								<path style="fill:#336600;"
+									d="M360.4,136l88,88.8v164.8c0,58.4-48.8,106.4-107.2,106.4h-85.6c-16.8,0-31.2-4-44.8-11.2 c35.2-17.6,61.6-53.6,61.6-96V288l0,0v-63.2L360.4,136z" />
+								<path style="fill:#304f03;"
+									d="M448.4,389.6c0,58.4-48.8,106.4-107.2,106.4h-85.6c-16.8,0-31.2-4-44.8-11.2 c35.2-17.6,61.6-53.6,61.6-96V288l0,0v-56" />
+								<path style="fill:#5ada16;"
+									d="M387.6,485.6c-26.4-12.8-52-38.4-60-66.4c-56.8,24-120.8,26.4-177.6,2.4 c13.6,42.4,54.4,75.2,101.6,75.2h89.6C358,496,374,492,387.6,485.6z" />
+								<path style="fill:#73c224;"
+									d="M251.6,496h89.6c16.8,0,32.8-4,46.4-11.2c-26.4-12.8-52-38.4-60-66.4" />
+							</g>
+
+						</svg>
+					</div>
+					<div class="loader_svg_ice_block loading_svg_block_12">
+						<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="100%" fill="none" rx="15" />
+							<text x="60%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="70"
+								font-family="Arial, sans-serif" fill="none" stroke="white" stroke-width="2"
+								stroke-dasharray="500" stroke-dashoffset="500">
+								<animate attributeName="stroke-dashoffset" from="500" to="0" dur="2s" fill="freeze" />
+								C++
+							</text>
+						</svg>
+
+					</div>
+					<div class="hidden_skill_block_cplusepluse skill-container" id="skill_cplusepluse">
+						<svg width="200" height="200" viewBox="-25 -25 250 250" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+							<circle r="90" cx="100" cy="100" fill="transparent" stroke="#3c4230" stroke-width="6">
+							</circle>
+							<circle r="90" cx="100" cy="100" stroke="#a4d821" stroke-width="10" stroke-linecap="round"
+								stroke-dashoffset="271px" fill="transparent" stroke-dasharray="565.48px">
+								<animate attributeName="stroke-dashoffset" from="615.44" to="271" dur="1.5s"
+									fill="freeze" />
+							</circle>
+							<!-- Centered Text: HTML -->
+							<text x="100" y="115" text-anchor="middle" fill="#a4d821" font-size="28px"
+								font-weight="bold" transform="rotate(90, 108, 108)">C++</text>
+
+							<!-- Centered Text: 77% -->
+							<text x="100" y="155" text-anchor="middle" fill="#a4d821" font-size="18px"
+								font-weight="bold" transform="rotate(90, 108, 108)">52%</text>
+						</svg>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -2780,6 +3178,7 @@ z" />
 			</div>
 		</div>
 	</footer>
+
 	<script src="js/index.js">
 	</script>
 
@@ -2804,7 +3203,8 @@ z" />
 		});
 	</script>
 	<script>
-		AOS.init();
+		AOS.init({ once: true });
+
 	</script>
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
@@ -2866,6 +3266,35 @@ z" />
 	<script src="https://lottie.host/embed/cf2fb706-96a2-40f4-8d4f-47189c698ac3/h3R4xbo3eg.lottie"></script>
 
 	<script src="https://lottie.host/embed/43f5fc70-8c55-48b0-a441-f79f2014ce16/ZTN8VjNgW1.lottie"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+	<!-- AOS JS -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Locomotive Scroll JS -->
+	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+
+
+	<script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+	<script>
+		// Initialize Lenis
+		const lenis = new Lenis({
+			autoRaf: true,
+			duration: 1.5,           // Smooth transition duration
+			lerp: 0.05,              // Inertia effect (lower = more smooth)
+			wheelMultiplier: 0.2,   // 🛑 SCROLL SPEED CONTROL (desktop wheel)
+			touchMultiplier: 0.5    // 🛑 TOUCH DRAG SPEED CONTROL (mobile touch)
+		});
+
+
+		// Listen for the scroll event and log the event data
+		lenis.on('scroll', (e) => {
+			console.log(e);
+		});
+	</script>
+
+
 </body>
 
 </html>

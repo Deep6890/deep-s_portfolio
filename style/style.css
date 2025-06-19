@@ -10,6 +10,34 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #0d0d0e;
     color: #b4ee21;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* SCROLLBAR TRACK */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* BACKGROUND of scrollbar */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* THUMB (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #b3cc70;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0b95e;
 }
 
 h1,
@@ -423,6 +451,17 @@ header {
 
 
 /**/
+.Skills_discribtion.aos-animate {
+    animation: tracking-in-contract-bck 3s;
+}
+
+.my_svg.aos-animate {
+    animation: flicker-in-1 3s;
+}
+
+.pr_information.aos-animate {
+    animation: slide-in-blurred-right 0.5s;
+}
 
 .main_data_discribtive_skills {
     display: flex;
@@ -606,7 +645,11 @@ canvas {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 220px;
+    height: 250px;
+    width: 1250px;
+    margin: 50px;
+    max-width: 1920px;
+
 }
 
 .skills_ice_block {
@@ -616,10 +659,13 @@ canvas {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 220px;
-    width: 220px;
+    height: 230px;
+    width: 230px;
     background-color: #b4ee21;
     margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
 }
 
 
@@ -628,21 +674,45 @@ canvas {
     background-color: #c5c3c300;
     /* Transparent lime */
     color: #1A1A1A;
+
 }
+
+.skill_block_1:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
+}
+
 
 .skill_block_2 {
     background-color: #1A1A1A;
     color: #FFFFFF;
 }
 
+.skill_block_2:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
+}
+
+
 .skill_block_3 {
     background-color: #cefb5c;
     color: #1A1A1A;
 }
 
+.skill_block_3:hover {
+    box-shadow: rgb(18, 18, 17) 0px 0px 0px 5px;
+    border-radius: 5px;
+}
+
+
 .skill_block_4 {
     background-color: #7171711a;
     color: #1A1A1A;
+}
+
+.skill_block_4:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
 }
 
 .skill_block_5 {
@@ -650,9 +720,19 @@ canvas {
     color: #FFFFFF;
 }
 
+.skill_block_5:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
+}
+
 .skill_block_6 {
     background-color: #a9cc4f;
     color: #121212;
+}
+
+.skill_block_6:hover {
+    box-shadow: rgba(18, 18, 17, 0.242) 0px 0px 0px 5px;
+    border-radius: 5px;
 }
 
 .skill_block_7 {
@@ -660,9 +740,19 @@ canvas {
     color: #F5F5F5;
 }
 
+.skill_block_7:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
+}
+
 .skill_block_8 {
     background-color: #b7ff00;
     color: #0F0F0F;
+}
+
+.skill_block_8:hover {
+    box-shadow: rgba(18, 18, 17, 0.242) 0px 0px 0px 5px;
+    border-radius: 5px;
 }
 
 .skill_block_9 {
@@ -670,9 +760,19 @@ canvas {
     color: #FFFFFF;
 }
 
+.skill_block_9:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
+}
+
 .skill_block_10 {
     background-color: #101010;
     color: #F0F0F0;
+}
+
+.skill_block_10:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
 }
 
 .skill_block_11 {
@@ -680,9 +780,19 @@ canvas {
     color: #111111;
 }
 
+.skill_block_11:hover {
+    box-shadow: rgba(18, 18, 17, 0.242) 0px 0px 0px 5px;
+    border-radius: 5px;
+}
+
 .skill_block_12 {
     background-color: #272626;
     color: #FFFFFF;
+}
+
+.skill_block_12:hover {
+    box-shadow: rgb(83, 81, 49) 0px 0px 0px 2px;
+    border-radius: 5px;
 }
 
 .main_photography_container {
@@ -1001,4 +1111,64 @@ fream_block_2 {
     color: rgb(54, 57, 59);
     background-color: #F5F5F5;
     padding: 20px;
+}
+
+#skill_html,
+#skill_python {
+    display: none;
+}
+
+.skill_block_ani {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden_skill_block {
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.hidden_skill_block svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden_skill_block_python,
+.hidden_skill_block_js,
+.hidden_skill_block_c,
+.hidden_skill_block_java,
+.hidden_skill_block_css,
+.hidden_skill_block_git_bash,
+.hidden_skill_block_dsa,
+.hidden_skill_block_come_9,
+.hidden_skill_block_come_10,
+.hidden_skill_block_come_11,
+.hidden_skill_block_cplusepluse {
+    display: none;
+    /* You might also have other properties here like opacity: 0;
+       and transitions for smooth animation. */
+}
+
+.loading_svg_block_1,
+.loading_svg_block_2,
+.loading_svg_block_3,
+.loading_svg_block_4,
+.loading_svg_block_5,
+.loading_svg_block_6,
+.loading_svg_block_7,
+.loading_svg_block_8,
+.loading_svg_block_12 {
+    display: none;
+
+}
+
+.loader_svg_ice_block {
+    justify-content: center;
+    align-items: center;
 }

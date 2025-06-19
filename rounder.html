@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locomotive Scroll + AOS</title>
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    [data-scroll-container] {
+      overflow: hidden;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .section-1 {
+      background-color: #333;
+      color: white;
+    }
+
+    .section-2 {
+      background-color: #666;
+      color: white;
+    }
+
+    .section-3 {
+      background-color: #999;
+      color: black;
+    }
+  </style>
+</head>
+
+<body data-scroll-container>
+
+  <section class="section-1" data-scroll-section>
+    <div data-aos="fade-up">First Section</div>
+  </section>
+
+  <section class="section-2" data-scroll-section>
+    <div data-aos="zoom-in" data-aos-duration="1000">Second Section (Zoom In)</div>
+  </section>
+
+  <section class="section-3" data-scroll-section>
+    <div data-aos="fade-left" data-aos-duration="1000">Third Section (Fade Left)</div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Locomotive Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <script>
+    // Init AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      disable: 'mobile',
+    });
+
+    // Init Locomotive Scroll
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+
+    // Patch: manually trigger AOS when element is visible
+    scroll.on('scroll', () => {
+      document.querySelectorAll('[data-aos]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (inView && !el.classList.contains('aos-animate')) {
+          el.classList.add('aos-animate');
+        }
+      });
+    });
+
+    // On page load: force update scroll and AOS
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        scroll.update();
+        AOS.refreshHard();
+      }, 300);
+    });
+  </script>
+</body>
+</html>
