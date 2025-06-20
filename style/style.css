@@ -17,28 +17,40 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.main_website_global_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* SCROLLBAR TRACK */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* BACKGROUND of scrollbar */
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 /* THUMB (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #b3cc70;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  background-clip: content-box;
+    background: #b3cc70;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0b95e;
 }
 
 /* On hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #a0b95e;
-}
 
 h1,
 h2,
@@ -74,6 +86,7 @@ a.visited {
 
 /* Body inner class ^ property vise css*/
 /*     Global Property Vise Css   */
+
 .justify_space_between {
     display: flex;
     justify-content: space-between;
@@ -94,7 +107,10 @@ a.visited {
     width: 100%;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
 }
+
+
 
 .row {
     display: flex;
@@ -105,6 +121,7 @@ a.visited {
     width: 100%;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
 }
 
 .column {
@@ -142,8 +159,17 @@ hr {
     font-weight: 100;
 }
 
+@media (max-width: 480px) {
+    body{
+        overflow: scroll;
+    }
+    .container,
+    .row {
+        max-width: 480px;
+    }
+}
 
-/*Main HEader Css (Default Css)*/
+/*======================================================================= Main HEader Css (Default Css) ======================================== */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +264,7 @@ header {
 
 }
 
-/*   Main Index My Name   */
+/*  ======================================================================== Main Index My Name =============================================  */
 .main_content_m_name_container {
     display: flex;
     flex-wrap: wrap;
@@ -260,18 +286,27 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-size: 2.5rem;
-
-
+    font-size: 4rem;
     font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
-
-
-
+    margin-bottom: 15px;
 }
 
-/* My Main Biiodata  */
+@media (max-width:480px) {
+  .main_content_m_name_container {
+    max-width: 480px;
+    justify-content: center;
+  }  
+  .My_name_index{
+    font-size: 1.5rem;
+    font-weight: 100;
+    justify-content: center;
+  }
+}
+
+/*========================================================== My Main Biiodata ================================================================== */
+
 .main_bio_data_panel {
     display: flex;
     flex-wrap: wrap;
@@ -290,12 +325,10 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin: 90px;
-
-
-
     font-family: Candara Light;
     font-optical-sizing: auto;
     font-weight: 300;
+    font-size: 2rem;
     font-style: normal;
 
 }
@@ -322,6 +355,10 @@ header {
     margin: 0;
     padding: 0;
 }
+@media (max-width:480px){
+    
+}
+/* ==================================================== Linkdin Pulse =================================================================*/
 
 .pulse_main_typer {
 
@@ -426,6 +463,7 @@ header {
     z-index: 99;
 }
 
+/*Just A ONE CONTAINER*/
 .circle_ai {
     display: flex;
     flex-wrap: wrap;
@@ -450,7 +488,7 @@ header {
 }
 
 
-/**/
+/* ==================================================== AOS Library Duration Change from default ===========================================*/
 .Skills_discribtion.aos-animate {
     animation: tracking-in-contract-bck 3s;
 }
@@ -483,6 +521,7 @@ header {
     font-size: 3.5rem;
 }
 
+/*Skill Structure*/
 .Skills_discribtion {
 
     display: flex;
@@ -506,6 +545,7 @@ header {
     display: flex;
 }
 
+/*My Own svg*/
 .my_svg_main_container {
 
     display: flex;
@@ -555,7 +595,7 @@ header {
 
 }
 
-
+/*My svg's css ended*/
 
 .skills_icon_heading {
     font-size: 2.5rem;
@@ -572,6 +612,9 @@ header {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+/* ====================================================== Introduction Portion Ended ======================================================== */
+/* ====================================================== Venn Diagram skill portion started just a graph ===================================== */
 
 #skill_venn {
     width: 50%;
@@ -593,6 +636,19 @@ canvas {
 
 }
 
+.radar_skill {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    background-color: #0d0d0e;
+
+}
+
+/* ========================================================== Venn Diagram skill portion ended here ============================================*/
 .skill {
     height: 100px;
     width: 100px;
@@ -604,6 +660,7 @@ canvas {
     color: #333;
 }
 
+/* ============================================================ Added SPLIDE Library for slider ================================================*/
 .splide {
 
     display: flex;
@@ -628,18 +685,7 @@ canvas {
 
 }
 
-.radar_skill {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #333;
-    width: 100%;
-    background-color: #0d0d0e;
-
-}
-
+/* =================================================================Skill Portion For ICEBLOCK structure stylesheets ========================== */
 .skill_iceblock_row {
     display: flex;
     justify-content: center;
@@ -652,6 +698,7 @@ canvas {
 
 }
 
+/* main global ice block container css */
 .skills_ice_block {
     margin-top: 100px;
     display: flex;
@@ -670,6 +717,7 @@ canvas {
 
 
 /* 12 blocks with background + text color maintained */
+/* ice block hover effect css */
 .skill_block_1 {
     background-color: #c5c3c300;
     /* Transparent lime */
@@ -795,6 +843,70 @@ canvas {
     border-radius: 5px;
 }
 
+#skill_html,
+#skill_python {
+    display: none;
+}
+
+.skill_block_ani {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden_skill_block {
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.hidden_skill_block svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden_skill_block_python,
+.hidden_skill_block_js,
+.hidden_skill_block_c,
+.hidden_skill_block_java,
+.hidden_skill_block_css,
+.hidden_skill_block_git_bash,
+.hidden_skill_block_dsa,
+.hidden_skill_block_come_9,
+.hidden_skill_block_come_10,
+.hidden_skill_block_come_11,
+.hidden_skill_block_cplusepluse {
+    display: none;
+    /* You might also have other properties here like opacity: 0;
+       and transitions for smooth animation. */
+}
+
+.loading_svg_block_1,
+.loading_svg_block_2,
+.loading_svg_block_3,
+.loading_svg_block_4,
+.loading_svg_block_5,
+.loading_svg_block_6,
+.loading_svg_block_7,
+.loading_svg_block_8,
+.loading_svg_block_12 {
+    display: none;
+
+}
+
+.loader_svg_ice_block {
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================================= Skill Block portion ended =============================================================== */
+/* ================================================== Photography container started ============================================================*/
+
+/*Tumbnail image/ photograph*/
 .main_photography_container {
     display: flex;
     justify-content: center;
@@ -856,6 +968,8 @@ canvas {
     margin-bottom: 50px;
 }
 
+/* ======================================================== Main Container tumbnail was ended here ========================================== */
+/* ===============================================Photography Fream container and elemnt's css starts =================================================*/
 .photography_container {
     display: flex;
     justify-content: center;
@@ -950,6 +1064,8 @@ fream_block_2 {
 
 }
 
+/* ============================================================ MAin Fram section ended here ==================================================*/
+/* ================================================================= Project Section ========================================================*/
 .project_section {
 
     display: flex;
@@ -993,6 +1109,7 @@ fream_block_2 {
     padding: 10px;
 }
 
+/* ===================================================== Project Section Was Endede Here ====================================================== */
 .quote_section {
     display: flex;
     justify-content: center;
@@ -1022,6 +1139,7 @@ fream_block_2 {
 
 }
 
+/* ======================================================== Final Cta And Buttons are here ================================================== */
 .final_cta {
     display: flex;
     justify-content: center;
@@ -1078,6 +1196,8 @@ fream_block_2 {
     margin-top: 50px;
 }
 
+/* ============================================================= CTA ended Here ============================================================ */
+/* ==================================================================== Lines Section Started ================================================= */
 .lines {
     display: flex;
     justify-content: center;
@@ -1101,74 +1221,18 @@ fream_block_2 {
     margin-bottom: 100px;
 }
 
+/* ================================================================== Footer And Ending Portion of section are there =================================*/
 .footer_main_container {
 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: 'Espacio Novo Medium', sans-serif;
-    color: rgb(54, 57, 59);
-    background-color: #F5F5F5;
+    font-family: 'Espacio Novo Medium', sans-serif, benc;
+    color: rgb(166, 170, 172);
+    background-color: #000000;
     padding: 20px;
-}
-
-#skill_html,
-#skill_python {
-    display: none;
-}
-
-.skill_block_ani {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.hidden_skill_block {
-    display: none;
-    justify-content: center;
-    flex-direction: row;
-
-}
-
-.hidden_skill_block svg {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.hidden_skill_block_python,
-.hidden_skill_block_js,
-.hidden_skill_block_c,
-.hidden_skill_block_java,
-.hidden_skill_block_css,
-.hidden_skill_block_git_bash,
-.hidden_skill_block_dsa,
-.hidden_skill_block_come_9,
-.hidden_skill_block_come_10,
-.hidden_skill_block_come_11,
-.hidden_skill_block_cplusepluse {
-    display: none;
-    /* You might also have other properties here like opacity: 0;
-       and transitions for smooth animation. */
-}
-
-.loading_svg_block_1,
-.loading_svg_block_2,
-.loading_svg_block_3,
-.loading_svg_block_4,
-.loading_svg_block_5,
-.loading_svg_block_6,
-.loading_svg_block_7,
-.loading_svg_block_8,
-.loading_svg_block_12 {
-    display: none;
-
-}
-
-.loader_svg_ice_block {
-    justify-content: center;
-    align-items: center;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
