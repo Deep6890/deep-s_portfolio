@@ -36,7 +36,7 @@ https://deep6890.github.io/deep-s_portfolio/
 
 Let's Make Something inovative together :)
 Linkdin: https://www.linkedin.com/in/deep-kayastha-763514319
-Instagram: ![{B273B541-D7DC-4508-B1C1-EA66717DE580}](https://github.com/user-attachments/assets/c459fae2-6722-4472-8f8d-9c0d70614367)
+Instagram: https://www.instagram.com/deep__kayastha/
 Gmail: deepkayastha6890@gmail.com
 
 
