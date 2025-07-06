@@ -15,6 +15,7 @@ https://deep6890.github.io/deep-s_portfolio/
 
 ## 📁 Features
 
+- 🏁 Dynamic and interactive UI
 - ✨ Clean and modern UI
 - 📱 Fully responsive design
 - 🧠 About Me section
@@ -23,7 +24,13 @@ https://deep6890.github.io/deep-s_portfolio/
 - 📫 Contact form or contact info
 
 ## 📸 Preview
---
+1) My Instroduction
+   ![{D32C9BBE-EA91-4040-A941-B542EFD9F31B}](https://github.com/user-attachments/assets/a52fcb7a-7363-4f93-98a8-db592199cedb)
+
+2) About Section
+   ![{C274E1C6-E02C-4B0B-85E5-8E5D494BC7CF}](https://github.com/user-attachments/assets/3ac8ba15-9be4-4dff-ac26-8e9f873df933)
+
+
 
 ## 📌 Getting Started
 
