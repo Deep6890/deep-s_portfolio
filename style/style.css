@@ -160,9 +160,10 @@ hr {
 }
 
 @media (max-width: 480px) {
-    body{
+    body {
         overflow: scroll;
     }
+
     .container,
     .row {
         max-width: 480px;
@@ -294,18 +295,19 @@ header {
 }
 
 @media (max-width:480px) {
-  .main_content_m_name_container {
-    max-width: 480px;
-    justify-content: center;
-  }  
-  .My_name_index{
-    font-size: 1.5rem;
-    font-weight: 100;
-    justify-content: center;
-  }
+    .main_content_m_name_container {
+        max-width: 480px;
+        justify-content: center;
+    }
+
+    .My_name_index {
+        font-size: 1.5rem;
+        font-weight: 100;
+        justify-content: center;
+    }
 }
 
-/*========================================================== My Main Biiodata ================================================================== */
+/*========================================================== My Main Biodata ================================================================== */
 
 .main_bio_data_panel {
     display: flex;
@@ -355,9 +357,9 @@ header {
     margin: 0;
     padding: 0;
 }
-@media (max-width:480px){
-    
-}
+
+@media (max-width:480px) {}
+
 /* ==================================================== Linkdin Pulse =================================================================*/
 
 .pulse_main_typer {
@@ -586,6 +588,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    font-size: 1.8rem;
 }
 
 .svg_inner_style {
@@ -598,7 +601,7 @@ header {
 /*My svg's css ended*/
 
 .skills_icon_heading {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 100px;
     font-family: 'Star Killers';
     display: flex;
@@ -955,7 +958,7 @@ canvas {
     justify-content: center;
     align-items: center;
     font-family: 'Star Killers';
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin-left: 0px;
 }
 
@@ -968,8 +971,8 @@ canvas {
     margin-bottom: 50px;
 }
 
-/* ======================================================== Main Container tumbnail was ended here ========================================== */
-/* ===============================================Photography Fream container and elemnt's css starts =================================================*/
+/* ======================================================== Main Container thumbnail was ended here ========================================== */
+/* ===============================================Photography  container and element's css starts =================================================*/
 .photography_container {
     display: flex;
     justify-content: center;
@@ -991,6 +994,11 @@ canvas {
     color: aliceblue;
     font-size: 1.5rem;
     flex-direction: column;
+}
+
+.photograph_main_header {
+    display: flex;
+    font-size: 2.5rem;
 }
 
 .photography_trailer {
@@ -1125,7 +1133,7 @@ fream_block_2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .final_quote_section {
@@ -1196,6 +1204,114 @@ fream_block_2 {
     margin-top: 50px;
 }
 
+.freedBackMainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+    background-color: #484f5404;
+    flex-direction: column;
+}
+
+
+.freedBackEmoji {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    width: 30%;
+}
+.freedBackHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.freedBackHeader h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Candara Light;
+}
+.freedBackPannel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.freedBackPannelHeader {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    width: 100%;
+}
+
+.freedBackPannelHeader h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Candara Light;
+}
+
+.freedBackMainInput {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start ;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.freedBackPannelInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.freedBackPannelInput textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    resize: vertical;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.freedBackPannelInput textarea:focus {
+    outline: none;
+    resize: none;
+    border: 1px solid #95fa5a;
+    box-shadow: 0 0 4px #bdfa5a;    
+}
+
+.inputOverLapclassFreed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    border: none;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
+}
+.inputOverLapclassFreed button:hover{
+    
+    box-shadow: 0 4px 8px rgba(231, 228, 228, 0.4);
+}
 /* ============================================================= CTA ended Here ============================================================ */
 /* ==================================================================== Lines Section Started ================================================= */
 .lines {
