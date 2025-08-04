@@ -665,6 +665,36 @@ function box_12_sequence() {
         box_12_sequence();
     }, 5000);
 }
+let starButton1 = document.getElementById("starButton1");
+let starButton2 = document.getElementById("starButton2");
+let starButton3 = document.getElementById("starButton3");
+let starButton4 = document.getElementById("starButton4");
+let starButton5 = document.getElementById("starButton5");
 
+function starColorChange1() {
+    starButton1.querySelector(".star-icon").style.fill = "gold";
+}
+function starColorChange2() {
+    starButton1.querySelector(".star-icon").style.fill = "gold";
+    starButton2.querySelector(".star-icon").style.fill = "gold";
+}
+function starColorChange3() {
+    starButton1.querySelector(".star-icon").style.fill = "gold";
+    starButton2.querySelector(".star-icon").style.fill = "gold";
+    starButton3.querySelector(".star-icon").style.fill = "gold";
+}
+function starColorChange4() {
+    starButton1.querySelector(".star-icon").style.fill = "gold";
+    starButton2.querySelector(".star-icon").style.fill = "gold";
+    starButton3.querySelector(".star-icon").style.fill = "gold";
+    starButton4.querySelector(".star-icon").style.fill = "gold";
+}
+function starColorChange5() {
+    starButton1.querySelector(".star-icon").style.fill = "gold";
+    starButton2.querySelector(".star-icon").style.fill = "gold";
+    starButton3.querySelector(".star-icon").style.fill = "gold";
+    starButton4.querySelector(".star-icon").style.fill = "gold";
+    starButton5.querySelector(".star-icon").style.fill = "gold";
+}
 // Start the infinite loop
 box_12_sequence();
