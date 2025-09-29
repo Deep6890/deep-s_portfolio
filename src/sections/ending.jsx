@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Linkedin from '../assets/linkedin.svg'
+import Linkedin from '../assets/LinkedIn.svg'
 import Github from '../assets/GitHub.png'
 import Instagram from '../assets/256px-Instagram_icon.png'
 export default function Ending() {
