@@ -67,7 +67,7 @@ export default function Ending() {
                     <p className='text-lg text-gray-700 mb-6'>Or connect with me on:</p>
                     <div className='flex justify-center items-center space-x-8'>
                         {/* LinkedIn */}
-                        <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
+                        <a href='https://www.linkedin.com/in/deep-kayastha-763514319/' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
                             <div className='w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform'>
                                 <img src={Linkedin} alt='LinkedIn' className='w-12 h-12 object-contain' />
                             </div>
@@ -75,7 +75,7 @@ export default function Ending() {
                         </a>
 
                         {/* GitHub */}
-                        <a href='https://github.com' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
+                        <a href='https://github.com/Deep6890' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
                             <div className='w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform'>
                                 <img src={Github} alt='GitHub' className='w-12 h-12 object-contain' />
                             </div>
@@ -83,7 +83,7 @@ export default function Ending() {
                         </a>
 
                         {/* Instagram */}
-                        <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
+                        <a href='https://www.instagram.com/deep__kayastha/' target='_blank' rel='noopener noreferrer' className='flex flex-col items-center group'>
                             <div className='w-16 h-16 flex items-center justify-center hover:scale-110 transition-transform'>
                                 <img src={Instagram} alt='Instagram' className='w-12 h-12 object-contain' />
                             </div>

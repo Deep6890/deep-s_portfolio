@@ -10,6 +10,19 @@ import Typography from '@mui/material/Typography';
 export default function Line() {
     return (
         <>
+            <div className='relative mb-16 text-center'>
+                <h1 className='font-display text-6xl font-bold text-gray-800 mb-4 tracking-tight'>
+                    <span className='bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent'>
+                        Timeline
+                    </span>
+                    <span className='text-3xl font-light text-gray-400 ml-2'>& Milestones</span>
+                </h1>
+                <div className='flex items-center justify-center gap-4 mt-6'>
+                    <div className='w-16 h-px bg-gradient-to-r from-transparent to-gray-300'></div>
+                    <span className='font-mono text-sm text-gray-500 px-4'>JOURNEY PROGRESS</span>
+                    <div className='w-16 h-px bg-gradient-to-l from-transparent to-gray-300'></div>
+                </div>
+            </div>
             <div className="flex w-full">
                 <Timeline position="alternate">
 

@@ -44,7 +44,21 @@ export default function BroadMindIdeas() {
     ];
 
     return (
-        <div className="w-full h-screen flex flex-wrap justify-center items-center gap-8 p-10">
+        <div className="w-full h-screen flex flex-col items-center justify-center p-10">
+            <div className='relative mb-16 text-center'>
+                <h1 className='font-display text-7xl font-bold text-gray-800 mb-4 tracking-tight'>
+                    <span className='bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent'>
+                        Goals
+                    </span>
+                    <span className='text-4xl font-light text-gray-400 ml-2'>& Aspirations</span>
+                </h1>
+                <div className='flex items-center justify-center gap-4 mt-6'>
+                    <div className='w-16 h-px bg-gradient-to-r from-transparent to-gray-300'></div>
+                    <span className='font-mono text-sm text-gray-500 px-4'>FUTURE VISION</span>
+                    <div className='w-16 h-px bg-gradient-to-l from-transparent to-gray-300'></div>
+                </div>
+            </div>
+            <div className="w-full flex flex-wrap justify-center items-center gap-8">
             {ideas.map((idea, idx) => (
                 <div
                     key={idx}
@@ -75,6 +89,7 @@ export default function BroadMindIdeas() {
                     {idea}
                 </div>
             ))}
+            </div>
         </div>
     );
 }

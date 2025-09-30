@@ -38,149 +38,164 @@ export default function Skills() {
     }, []);
 
     return (
-        <div className="relative mt-10 mb-10">
-            <div className="glide" ref={glideRef}>
-                <div className="glide__track" data-glide-el="track">
-                    <ul className="glide__slides">
-                        {/* Slide 1 */}
-                        <li className="glide__slide">
-                            <div className="w-full h-full flex flex-col items-center justify-center gap-6">
-                                <div className="flex items-center gap-12">
-                                    <div className="w-40 h-40">
-                                        <Oval width="100%" height="100%">
-                                            <img src={Python} alt="Python" className="w-20 h-20" />
-                                        </Oval>
-                                    </div>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Numpy} alt="Numpy" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Pandas} alt="Pandas" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Pytorch} alt="Pytorch" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Matploatlib} alt="Matplotlib" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="mt-4 max-w-md text-center text-gray-700">
-                                    Skilled in Python and its popular data science libraries like Numpy, Pandas, Pytorch, and Matplotlib.
-                                </p>
-                            </div>
-                        </li>
-
-                        {/* Slide 2 */}
-                        <li className="glide__slide">
-                            <div className="w-full h-full flex flex-col items-center justify-center gap-6">
-                                <div className="flex items-center gap-12">
-                                    <div className="w-40 h-40">
-                                        <Oval width="100%" height="100%">
-                                            <img src={Html} alt="HTML" className="w-20 h-20" />
-                                        </Oval>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Javascript} alt="Javascript" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Css} alt="CSS" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={ReactLogo} alt="React" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Flask} alt="Flask" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={TailwindcssLogo} alt="Tailwind" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Gcloud} alt="Google Cloud" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="mt-4 max-w-md text-center text-gray-700">
-                                    Experienced with frontend and backend technologies including HTML, CSS, JavaScript, React, Flask, Tailwind CSS, and Google Cloud.
-                                </p>
-                            </div>
-                        </li>
-
-                        {/* Slide 3 */}
-                        <li className="glide__slide">
-                            <div className="w-full h-full flex flex-col items-center justify-center gap-6">
-                                <div className="flex items-center gap-12">
-                                    <div className="w-40 h-40">
-                                        <Oval width="100%" height="100%">
-                                            <img src={cplusepluse} alt="C++" className="w-20 h-20" />
-                                        </Oval>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={Java} alt="Java" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={C} alt="C" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                        <div className="w-16 h-16">
-                                            <Oval width="100%" height="100%">
-                                                <img src={JSON} alt="JSON" className="w-8 h-8" />
-                                            </Oval>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="mt-4 max-w-md text-center text-gray-700">
-                                    Proficient in C, C++, Java, and working knowledge of data interchange format JSON.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div className="glide__arrows" data-glide-el="controls">
-                    <button
-                        className="glide__arrow glide__arrow--left absolute left-25 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center"
-                        data-glide-dir="<"
-                    >
-                        <Oval width="100%" height="100%">
-                            <span className="text-3xl">‹</span>
-                        </Oval>
-                    </button>
-                    <button
-                        className="glide__arrow glide__arrow--right absolute right-25 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center"
-                        data-glide-dir=">"
-                    >
-                        <Oval width="100%" height="100%">
-                            <span className="text-3xl">›</span>
-                        </Oval>
-                    </button>
+        <>
+            <div className='relative mt-10 mb-16 text-center'>
+                <h1 className='font-display text-7xl font-bold text-gray-800 mb-4 tracking-tight'>
+                    <span className='bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent'>
+                        Skills
+                    </span>
+                    <span className='text-4xl font-light text-gray-400 ml-2'>& Expertise</span>
+                </h1>
+                <div className='flex items-center justify-center gap-4 mt-6'>
+                    <div className='w-16 h-px bg-gradient-to-r from-transparent to-gray-300'></div>
+                    <span className='font-mono text-sm text-gray-500 px-4'>TECHNICAL PROFICIENCY</span>
+                    <div className='w-16 h-px bg-gradient-to-l from-transparent to-gray-300'></div>
                 </div>
             </div>
-        </div>
+            <div className="relative mt-10 mb-10">
+                <div className="glide" ref={glideRef}>
+                    <div className="glide__track" data-glide-el="track">
+                        <ul className="glide__slides">
+                            {/* Slide 1 */}
+                            <li className="glide__slide">
+                                <div className="w-full h-full flex flex-col items-center justify-center gap-6">
+                                    <div className="flex items-center gap-12">
+                                        <div className="w-40 h-40">
+                                            <Oval width="100%" height="100%">
+                                                <img src={Python} alt="Python" className="w-20 h-20" />
+                                            </Oval>
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-4">
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Numpy} alt="Numpy" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Pandas} alt="Pandas" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Pytorch} alt="Pytorch" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Matploatlib} alt="Matplotlib" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="mt-4 max-w-md text-center text-gray-700">
+                                        Skilled in Python and its popular data science libraries like Numpy, Pandas, Pytorch, and Matplotlib.
+                                    </p>
+                                </div>
+                            </li>
+
+                            {/* Slide 2 */}
+                            <li className="glide__slide">
+                                <div className="w-full h-full flex flex-col items-center justify-center gap-6">
+                                    <div className="flex items-center gap-12">
+                                        <div className="w-40 h-40">
+                                            <Oval width="100%" height="100%">
+                                                <img src={Html} alt="HTML" className="w-20 h-20" />
+                                            </Oval>
+                                        </div>
+                                        <div className="grid grid-cols-3 gap-4">
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Javascript} alt="Javascript" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Css} alt="CSS" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={ReactLogo} alt="React" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Flask} alt="Flask" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={TailwindcssLogo} alt="Tailwind" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Gcloud} alt="Google Cloud" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="mt-4 max-w-md text-center text-gray-700">
+                                        Experienced with frontend and backend technologies including HTML, CSS, JavaScript, React, Flask, Tailwind CSS, and Google Cloud.
+                                    </p>
+                                </div>
+                            </li>
+
+                            {/* Slide 3 */}
+                            <li className="glide__slide">
+                                <div className="w-full h-full flex flex-col items-center justify-center gap-6">
+                                    <div className="flex items-center gap-12">
+                                        <div className="w-40 h-40">
+                                            <Oval width="100%" height="100%">
+                                                <img src={cplusepluse} alt="C++" className="w-20 h-20" />
+                                            </Oval>
+                                        </div>
+                                        <div className="grid grid-cols-3 gap-4">
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={Java} alt="Java" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={C} alt="C" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                            <div className="w-16 h-16">
+                                                <Oval width="100%" height="100%">
+                                                    <img src={JSON} alt="JSON" className="w-8 h-8" />
+                                                </Oval>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="mt-4 max-w-md text-center text-gray-700">
+                                        Proficient in C, C++, Java, and working knowledge of data interchange format JSON.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="glide__arrows" data-glide-el="controls">
+                        <button
+                            className="glide__arrow glide__arrow--left absolute left-25 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center"
+                            data-glide-dir="<"
+                        >
+                            <Oval width="100%" height="100%">
+                                <span className="text-3xl">‹</span>
+                            </Oval>
+                        </button>
+                        <button
+                            className="glide__arrow glide__arrow--right absolute right-25 top-1/2 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center"
+                            data-glide-dir=">"
+                        >
+                            <Oval width="100%" height="100%">
+                                <span className="text-3xl">›</span>
+                            </Oval>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }

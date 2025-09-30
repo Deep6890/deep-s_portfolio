@@ -16,20 +16,20 @@ export default function Index() {
                         <MainGraphics />
                     </div>
                     <div className="relative w-full h-screen flex flex-col items-center justify-start pt-20">
-                        <h1 className="text-4xl font-bold mb-4">Journey & Achievements</h1>
+                        {/* <h1 className="text-4xl font-bold mb-4">Journey & Achievements</h1>
                         <p className="text-lg text-center mb-10 max-w-5xl">
                             A chronological view of my learning, projects, hackathons, and growth as an AIML student and developer.
-                        </p>
-                        <div className="w-full">
+                        </p> */}
+                        <div className="w-full mb-10">
                             <Line />
                         </div>
-                        <div className="relative w-full h-screen">
+                        <div className="relative w-full h-screen mt-10 mb-10">
                             <Skills />
                         </div>
-                        <div className="relative w-full h-screen">
+                        <div className="relative w-full h-screen mt-10 mb-20">
                             <Projects />
                         </div>
-                        <div className="relative w-full h-screen">
+                        <div className="relative w-full h-screen mt-10 mb-10">
                             <WorkExperience />
                         </div>
                         <div className="relative w-full h-screen">

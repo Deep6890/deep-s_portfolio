@@ -57,9 +57,15 @@ export default function MainGraphics() {
                             className="rotate-0 right-[6%] bottom-[3.8%] absolute"
                         />
                     </MainCard>
-
                     {/* Circles aligned and rotated with grey bar */}
                     <FeatureCard positionClass="bottom-[17%] left-[3%]" radius='3vw' style={{ width: '60%', height: '60%', position: 'relative' }}>
+                        <a
+                            href="#skills"
+                            style={{ fontSize: "1.2vw", fontWeight: 600, letterSpacing: "0.05em" }}
+                            className="absolute top-[-28%] left-[8%] text-gray-700 hover:text-black transition-colors"
+                        >
+                            My Interest Fields
+                        </a>
                         <Circle positionClass="absolute left-[8%] top-1/2 transform -translate-y-1/2" style={{ width: "7vw", height: "7vw", borderRadius: "3.5vw" }}>
                             <img src={Security} alt='Logo' width={"80%"} height={"80%"} style={{ padding: "0.5vw" }} />
                         </Circle>
