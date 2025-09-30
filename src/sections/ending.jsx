@@ -33,8 +33,8 @@ export default function Ending() {
                     {/* <div className='w-16 h-1 bg-black mx-auto'></div> */}
                 </div>
 
-                <h1 className='text-5xl font-bold mb-4 text-gray-800'>Drop Your Email</h1>
-                <p className='text-xl text-gray-600 mb-12'>Let's connect and collaborate</p>
+                <h1 className='font-display text-5xl font-bold mb-4 text-gray-800'>Drop Your Email</h1>
+                <p className='text-xl text-gray-600 mb-12 font-light'>Let's connect and collaborate</p>
 
                 <form onSubmit={handleSubmit} className='space-y-8'>
                     <div className='relative'>
