@@ -1,14 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Linkedin from '../assets/LinkedIn.svg'
 import Github from '../assets/GitHub.png'
 import Instagram from '../assets/256px-Instagram_icon.png'
 export default function Ending() {
-    const [email, setEmail] = useState('')
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        mobile: '',
+        notes: ''
+    })
+    const [visitors, setVisitors] = useState(0)
+
+    useEffect(() => {
+        // Track visitor count (exclude admin)
+        const isAdmin = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        if (!isAdmin) {
+            const currentCount = localStorage.getItem('visitorCount') || '0'
+            const newCount = parseInt(currentCount) + 1
+            localStorage.setItem('visitorCount', newCount.toString())
+            setVisitors(newCount)
+        } else {
+            const currentCount = localStorage.getItem('visitorCount') || '0'
+            setVisitors(parseInt(currentCount))
+        }
+    }, [])
+
+    const handleInputChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Email submitted:', email)
-        setEmail('')
+        const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+        const message = `🌟 *New Portfolio Contact* 🌟%0A%0A👤 *Name:* ${formData.name}%0A📧 *Email:* ${formData.email}%0A📱 *Mobile:* ${formData.mobile}%0A%0A💬 *Message:*%0A${formData.notes || 'No additional message'}%0A%0A⏰ *Contacted on:* ${timestamp}%0A🌐 *From:* Portfolio Website%0A📊 *Total Portfolio Views:* ${visitors.toLocaleString()}`
+        const whatsappUrl = `https://wa.me/917016332374?text=${message}`
+        window.open(whatsappUrl, '_blank')
+        setFormData({ name: '', email: '', mobile: '', notes: '' })
     }
 
     return (
@@ -24,7 +54,7 @@ export default function Ending() {
             <div className='absolute top-0 right-1/3 w-px h-full bg-gray-200 opacity-30 -rotate-12'></div>
 
             {/* Main Content */}
-            <div className='text-center max-w-md w-full px-8'>
+            <div className='text-center max-w-2xl w-full px-8'>
                 {/* Large Email Icon */}
                 <div className='mb-8'>
                     {/* <div className='w-24 h-24 mx-auto bg-black rounded-full flex items-center justify-center mb-4'>
@@ -33,28 +63,79 @@ export default function Ending() {
                     {/* <div className='w-16 h-1 bg-black mx-auto'></div> */}
                 </div>
 
-                <h1 className='text-5xl font-bold mb-4 text-gray-800'>Drop Your Email</h1>
-                <p className='text-xl text-gray-600 mb-12'>Let's connect and collaborate</p>
+                <div className='relative mb-16 text-center'>
+                    <h1 className='font-display text-7xl font-bold text-gray-800 mb-4 tracking-tight'>
+                        <span className='bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent'>
+                            Let's Talk
+                        </span>
+                        <span className='text-4xl font-light text-gray-400 ml-2'>& Build</span>
+                    </h1>
+                    <div className='flex items-center justify-center gap-4 mt-6'>
+                        <div className='w-16 h-px bg-gradient-to-r from-transparent to-gray-300'></div>
+                        <span className='font-mono text-sm text-gray-500 px-4'>START A CONVERSATION</span>
+                        <div className='w-16 h-px bg-gradient-to-l from-transparent to-gray-300'></div>
+                    </div>
+                    <p className='text-sm text-gray-500 mt-6'>Portfolio Views: {visitors.toLocaleString()}</p>
+                </div>
 
-                <form onSubmit={handleSubmit} className='space-y-8'>
+                <form onSubmit={handleSubmit} className='space-y-6 max-w-lg'>
                     <div className='relative'>
                         <input
-                            type='email'
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder='Enter your email address'
+                            type='text'
+                            name='name'
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            placeholder='Your Name'
                             className='w-full px-6 py-4 text-lg border-2 border-gray-800 bg-transparent focus:outline-none focus:border-gray-600 transition-colors'
                             required
                         />
                         <div className='absolute -bottom-2 -right-2 w-full h-full border-2 border-gray-300 -z-10'></div>
                     </div>
 
+                    <div className='relative'>
+                        <input
+                            type='email'
+                            name='email'
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            placeholder='Your Email'
+                            className='w-full px-6 py-4 text-lg border-2 border-gray-800 bg-transparent focus:outline-none focus:border-gray-600 transition-colors'
+                            required
+                        />
+                        <div className='absolute -bottom-2 -right-2 w-full h-full border-2 border-gray-300 -z-10'></div>
+                    </div>
+
+                    <div className='relative'>
+                        <input
+                            type='tel'
+                            name='mobile'
+                            value={formData.mobile}
+                            onChange={handleInputChange}
+                            placeholder='Mobile Number'
+                            className='w-full px-6 py-4 text-lg border-2 border-gray-800 bg-transparent focus:outline-none focus:border-gray-600 transition-colors'
+                            required
+                        />
+                        <div className='absolute -bottom-2 -right-2 w-full h-full border-2 border-gray-300 -z-10'></div>
+                    </div>
+
+                    <div className='relative'>
+                        <textarea
+                            name='notes'
+                            value={formData.notes}
+                            onChange={handleInputChange}
+                            placeholder='Additional Notes (Optional)'
+                            rows='3'
+                            className='w-full px-6 py-4 text-lg border-2 border-gray-800 bg-transparent focus:outline-none focus:border-gray-600 transition-colors resize-none'
+                        />
+                        <div className='absolute -bottom-2 -right-2 w-full h-full border-2 border-gray-300 -z-10'></div>
+                    </div>
+
                     <button
                         type='submit'
-                        className='w-full py-4 px-6 bg-black text-white text-lg font-semibold hover:bg-gray-800 transition-colors relative'
+                        className='w-full py-4 px-6 bg-green-600 text-white text-lg font-semibold hover:bg-green-700 transition-colors relative'
                     >
                         <div className='absolute -bottom-2 -right-2 w-full h-full bg-gray-300 -z-10'></div>
-                        Send Message
+                        Send via WhatsApp
                     </button>
                 </form>
 

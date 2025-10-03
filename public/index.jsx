@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import LocomotiveScroll from 'locomotive-scroll'
+import 'locomotive-scroll/dist/locomotive-scroll.css'
 import MainGraphics from '../src/sections/mainGraphics'
 import Line from '../src/sections/TimeLine'
 import Skills from '../src/sections/skills'
-
 import Projects from '../src/sections/projects'
 import WorkExperience from '../src/sections/workExperience'
 import Ending from '../src/sections/ending'
@@ -32,7 +33,7 @@ export default function Index() {
                         <div className="relative w-full h-screen mt-10 mb-10">
                             <WorkExperience />
                         </div>
-                        <div className="relative w-full h-screen">
+                        <div className="relative w-full h-screen mt-20 mb-10">
                             <Ending />
                         </div>
                     </div>
