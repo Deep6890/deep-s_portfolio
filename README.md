@@ -1,87 +1,41 @@
 # Portfolio Website
 
-A modern, interactive portfolio website built with React and Vite, showcasing skills, projects, work experience, and contact information.
-# Go and Check : https://deep6890.github.io/deep-s_portfolio/
-## Features
+A clean, modern portfolio website showcasing skills and projects.
 
-- **Interactive Skills Slider** - Carousel showcasing different skill categories
-- **Work Experience Timeline** - Geometric design displaying career journey
-- **Project Showcase** - Fancy cards highlighting featured projects
-- **Client Feedback** - Testimonials and reviews section
-- **Contact Form** - Email collection with social media links
-- **Responsive Design** - Works on all device sizes
+## 🌐 Live Demo
+[View Portfolio](https://deep6890.github.io/deep-s_portfolio/)
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **React** - Frontend framework
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **Glide.js** - Carousel/slider library
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **GitHub API** - Live contributions calendar
 
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+## 🚀 Getting Started
 
 ### Installation
 
-1. Clone the repository
 ```bash
-git clone <repository-url>
-cd my-project
-```
-
-2. Install dependencies
-```bash
+git clone https://github.com/Deep6890/deep-s_portfolio.git
+cd deep-s_portfolio
 npm install
-```
-
-3. Start the development server
-```bash
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
-
-## Project Structure
-
-```
-my-project/
-├── public/
-│   └── index.jsx          # Main entry component
-├── src/
-│   ├── assets/            # Images and icons
-│   ├── components/        # Reusable components
-│   │   ├── mainCard.jsx
-│   │   ├── FeatureCard.jsx
-│   │   ├── ovel.jsx
-│   │   └── ...
-│   └── sections/          # Page sections
-│       ├── mainGraphics.jsx
-│       ├── skills.jsx
-│       ├── projects.jsx
-│       ├── workExperience.jsx
-│       ├── feedback.jsx
-│       └── ending.jsx
-└── package.json
-```
-
-## Available Scripts
+## 📜 Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+- `npm run deploy` - Deploy to GitHub Pages
 
-## Contact
+## 📞 Contact
 
-Feel free to reach out for collaborations or opportunities!
+- **GitHub**: [Deep6890](https://github.com/Deep6890)
+- **LinkedIn**: [Deep Kayastha](https://www.linkedin.com/in/deep-kayastha-763514319/)
+- **Instagram**: [@deep__kayastha](https://www.instagram.com/deep__kayastha/)
 
-- **Email**: hello@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
-- **Instagram**: [Your Instagram Profile]
+## 📄 License
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+MIT License

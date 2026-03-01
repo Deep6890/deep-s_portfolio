@@ -1,14 +1,8 @@
-import React from "react"
-import MainGraphics from "./sections/mainGraphics"
-import Index from "../public"
+import React from 'react'
+import Home from './pages/Home'
+
 function App() {
-  return (
-    <>
-      <div className="w-screen h-screen flex">
-        <Index />
-      </div>
-    </>
-  )
+  return <Home />
 }
 
 export default App
