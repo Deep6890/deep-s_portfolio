@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Copyright */}
           <p className="text-[10px] xs:text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 text-center sm:text-left">
-            © 2025 Deep Kayastha. All rights reserved.
+            © 2026 Deep Kayastha. All rights reserved.
           </p>
 
           {/* Social Links */}
