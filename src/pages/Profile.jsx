@@ -1,142 +1,161 @@
 import React from "react";
-import { Github, Linkedin, Instagram, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 import PageHeader from "../components/PageHeader";
+import Footer from "../components/Footer";
+import PixelTransition from "../components/PixelTransition";
 
 export default function Profile() {
   return (
-    <section className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white min-h-screen">
+    <div className="relative bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-white min-h-screen flex flex-col">
+
       <PageHeader />
 
-      {/* ================= HEADER ================= */}
-      <header className="px-8 md:px-24 pb-8 border-b border-neutral-200 dark:border-neutral-700 flex justify-between items-center">
-        <h1 className="text-sm tracking-[0.3em] uppercase text-neutral-500 dark:text-neutral-400">
-          Portfolio
-        </h1>
-        <span className="text-sm text-neutral-400 dark:text-neutral-500">
-          Ahmedabad, India
-        </span>
-      </header>
+      <div className="flex-grow px-2 xs:px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-10 xs:py-12 sm:py-16 md:py-20 lg:py-32 max-w-7xl mx-auto w-full">
 
-      {/* ================= MAIN ================= */}
-      <div className="px-8 md:px-24 py-20 max-w-6xl mx-auto">
+        {/* ================= HERO ================= */}
+        <div className="grid md:grid-cols-2 gap-8 xs:gap-10 sm:gap-12 md:gap-16 lg:gap-24 items-center mb-16 xs:mb-20 sm:mb-24 md:mb-32">
 
-        {/* NAME */}
-        <h2 className="text-6xl md:text-7xl font-serif tracking-tight mb-8">
-          Deep Kayastha
-        </h2>
+          {/* LEFT CONTENT */}
+          <div>
 
-        {/* INFO PILLS */}
-        <div className="flex flex-wrap gap-4 mb-14">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight leading-[0.95] mb-4 xs:mb-6 sm:mb-8">
+              Deep Kayastha
+            </h1>
 
-          <Pill icon={<MapPin size={14} />} text="Ahmedabad, India" />
-          <Pill icon={<Mail size={14} />} text="deepkayastha6890@gmail.com" />
-          <Pill text="Machine Learning Engineer" />
-          <Pill text="Financial Systems Enthusiast" />
+            <p className="text-sm xs:text-base sm:text-lg md:text-xl text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-xl">
+              Building structured Machine Learning systems and scalable financial architectures.
+              Focused on long-term engineering clarity, risk modeling and AI evaluation frameworks.
+            </p>
 
-        </div>
+            <div className="flex items-center gap-4 xs:gap-6 sm:gap-8 mt-6 xs:mt-8 sm:mt-10 text-xs xs:text-sm text-neutral-500 flex-wrap">
+              <span className="flex items-center gap-1.5 xs:gap-2">
+                <MapPin size={12} className="xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4" />
+                Ahmedabad, India
+              </span>
 
-        {/* ABOUT */}
-        <div className="max-w-3xl text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-20">
-          I design intelligent systems across machine learning and financial
-          architecture. My focus is long-term structure, analytical clarity,
-          and scalable design thinking. I build with precision and measure
-          everything.
-        </div>
+              <a
+                href="/assets/resume.pdf"
+                download
+                className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-white transition"
+              >
+                Resume
+              </a>
+            </div>
 
-        {/* HOBBIES */}
-        <h3 className="text-xl font-medium mb-6">Interests</h3>
-        <div className="flex flex-wrap gap-4 mb-20">
-          <Pill text="Market Structure Research" />
-          <Pill text="Risk Modeling" />
-          <Pill text="System Design" />
-          <Pill text="Quantitative Analysis" />
-        </div>
+          </div>
 
-        {/* BUILT WORK */}
-        <h3 className="text-xl font-medium mb-10">Selected Work</h3>
+          {/* RIGHT IMAGE SECTION */}
+          <div className="flex justify-center md:justify-end">
 
-        <div className="grid md:grid-cols-2 gap-16 mb-24">
+            <div className="relative">
 
-          <WorkItem
-            title="Financial Risk Prediction Engine"
-            desc="End-to-end ML system predicting portfolio volatility using engineered financial indicators."
-          />
+              {/* Ambient Glow */}
+              <div className="absolute inset-0 -z-10 blur-3xl bg-neutral-200/40 dark:bg-neutral-800/40 rounded-full w-60 h-60 xs:w-72 xs:h-72 sm:w-80 sm:h-80 translate-x-6 translate-y-6" />
 
-          <WorkItem
-            title="Scalable Transaction Pipeline"
-            desc="Data pipeline architecture handling rolling aggregation, anomaly detection, and real-time scoring."
-          />
+              {/* Pixel Transition Image */}
+              <div className="relative w-48 h-48 xs:w-60 xs:h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
+                <PixelTransition
+                  firstContent={
+                    <img
+                      src="/assets/myMain.svg"
+                      alt="Deep Kayastha"
+                      className="w-full h-full object-cover grayscale"
+                    />
+                  }
+                  secondContent={
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+                      <p className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white transform -rotate-12">
+                        Hiii
+                      </p>
+                    </div>
+                  }
+                  gridSize={8}
+                  pixelColor="#ffffff"
+                  once={false}
+                  animationStepDuration={0.4}
+                  aspectRatio="100%"
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </div>
 
-          <WorkItem
-            title="Market Structure Research Model"
-            desc="Quantitative framework studying capital flows and structural behavior in equity markets."
-          />
-
-          <WorkItem
-            title="Neural Network Evaluation Framework"
-            desc="Custom model evaluation metrics comparing baseline vs deep models with stability testing."
-          />
-
-        </div>
-
-        {/* CONTACT ICON PILLS */}
-        <div className="border-t border-neutral-200 dark:border-neutral-700 pt-14">
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-            <IconPill href="mailto:deepkayastha6890@gmail.com">
-              <Mail size={18} />
-            </IconPill>
-
-            <IconPill href="https://github.com/Deep6890">
-              <Github size={18} />
-            </IconPill>
-
-            <IconPill href="https://www.linkedin.com/in/deep-kayastha-763514319/">
-              <Linkedin size={18} />
-            </IconPill>
-
-            <IconPill href="https://www.instagram.com/deep__kayastha/">
-              <Instagram size={18} />
-            </IconPill>
+            </div>
 
           </div>
 
         </div>
 
+        {/* ================= CURRENT DIRECTION ================= */}
+        <div className="mb-8 xs:mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-[9px] xs:text-[10px] sm:text-xs tracking-[0.4em] uppercase text-neutral-400">
+            Current Direction
+          </h2>
+        </div>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 xs:gap-8 sm:gap-10 md:gap-12 mb-16 xs:mb-20 sm:mb-24 md:mb-32">
+
+          <InfoBlock
+            title="Loan Risk Systems"
+            desc="Developing structured ML pipelines for credit risk modeling and predictive financial analysis."
+          />
+
+          <InfoBlock
+            title="AI Evaluation"
+            desc="Comparing model architectures with custom metrics and stability-focused validation."
+          />
+
+          <InfoBlock
+            title="Scalable Architecture"
+            desc="Designing backend systems that support analytical workloads and long-term maintainability."
+          />
+
+        </div>
+
+        {/* ================= CONTACT ================= */}
+        <div className="border-t border-neutral-200 dark:border-neutral-800 pt-6 xs:pt-8 sm:pt-10 md:pt-12 flex gap-6 xs:gap-8 sm:gap-10 text-neutral-500 flex-wrap">
+
+          <ContactIcon href="mailto:deepkayastha6890@gmail.com">
+            <Mail size={18} className="xs:w-5 xs:h-5" />
+          </ContactIcon>
+
+          <ContactIcon href="https://github.com/Deep6890">
+            <Github size={18} className="xs:w-5 xs:h-5" />
+          </ContactIcon>
+
+          <ContactIcon href="https://www.linkedin.com/in/deep-kayastha-763514319/">
+            <Linkedin size={18} className="xs:w-5 xs:h-5" />
+          </ContactIcon>
+
+        </div>
+
       </div>
 
-    </section>
+      <Footer />
+    </div>
   );
 }
 
 /* ================= COMPONENTS ================= */
 
-function Pill({ text, icon }) {
-  return (
-    <div className="flex items-center gap-2 px-4 py-2 border border-neutral-300 dark:border-neutral-600 rounded-full text-sm text-neutral-700 dark:text-neutral-300">
-      {icon}
-      {text}
-    </div>
-  );
-}
-
-function WorkItem({ title, desc }) {
+function InfoBlock({ title, desc }) {
   return (
     <div>
-      <h4 className="text-lg font-medium mb-3">{title}</h4>
-      <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">{desc}</p>
+      <h3 className="text-base xs:text-lg sm:text-xl font-medium mb-2 xs:mb-3 sm:mb-4 tracking-tight">
+        {title}
+      </h3>
+      <p className="text-xs xs:text-sm sm:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed">
+        {desc}
+      </p>
     </div>
   );
 }
 
-function IconPill({ href, children }) {
+function ContactIcon({ href, children }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex justify-center items-center py-4 border border-neutral-300 dark:border-neutral-600 rounded-full hover:bg-neutral-900 hover:text-white dark:hover:bg-white dark:hover:text-neutral-900 transition"
+      className="hover:text-neutral-900 dark:hover:text-white transition duration-300"
     >
       {children}
     </a>

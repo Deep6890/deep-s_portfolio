@@ -20,7 +20,7 @@ export default function GitHubCalendar() {
       </p>
 
       {/* Activity Panel */}
-      <div className="border border-neutral-200 rounded-2xl p-6 md:p-10">
+      <div className=" rounded-2xl p-6 md:p-10">
 
         <div className="flex items-center gap-3 mb-6 text-neutral-600">
           <Activity size={18} />

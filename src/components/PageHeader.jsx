@@ -18,7 +18,7 @@ export default function PageHeader() {
       </button>
 
       <button
-        onClick={toggleDarkMode}
+        onClick={(e) => toggleDarkMode(e)}
         className="flex items-center justify-center w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition"
       >
         {isDark ? <Sun size={18} className="text-neutral-900 dark:text-white" /> : <Moon size={18} className="text-neutral-900" />}

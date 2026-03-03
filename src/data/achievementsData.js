@@ -2,28 +2,51 @@
 export const certificates = [
   {
     id: 1,
-    title: "Certificate Name",
-    issuer: "Organization Name",
+    title: "Java Programming",
+    issuer: "Institution",
     date: "2024",
-    image: "https://via.placeholder.com/300x200",
-    description: "Completed advanced training in specific domain",
+    image: "/assets/Java.pdf",
+    description: "Core Java programming concepts and OOP principles",
     skills: [
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
+      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" }
     ],
-    credentialUrl: "https://example.com/credential"
+    credentialUrl: ""
   },
   {
     id: 2,
-    title: "Another Certificate",
-    issuer: "Another Organization",
-    date: "2023",
-    image: "https://via.placeholder.com/300x200",
-    description: "Mastered key concepts in technology",
+    title: "Data Structures & Algorithms",
+    issuer: "Institution",
+    date: "2024",
+    image: "/assets/DSA.pdf",
+    description: "Advanced DSA concepts and problem-solving techniques",
     skills: [
-      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" }
+      { name: "DSA", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" }
     ],
-    credentialUrl: "https://example.com/credential2"
+    credentialUrl: ""
+  },
+  {
+    id: 3,
+    title: "Python Programming",
+    issuer: "Institution",
+    date: "2024",
+    image: "/assets/Normal python.pdf",
+    description: "Python fundamentals and programming concepts",
+    skills: [
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+    ],
+    credentialUrl: ""
+  },
+  {
+    id: 4,
+    title: "Google Data Analytics",
+    issuer: "Google",
+    date: "2024",
+    image: "/assets/GoogleData.pdf",
+    description: "Data analysis and visualization with Google tools",
+    skills: [
+      { name: "Data Analytics", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" }
+    ],
+    credentialUrl: ""
   }
 ]
 
@@ -31,25 +54,25 @@ export const certificates = [
 export const events = [
   {
     id: 1,
-    title: "Hackathon Name",
+    title: "Markup Mania",
     type: "Competition",
     date: "2024",
-    achievement: "Winner/Participant",
-    image: "https://via.placeholder.com/300x200",
-    description: "Built innovative solution for real-world problem",
+    achievement: "Winner",
+    image: "/assets/MarkupMania.jpeg",
+    description: "Won web development competition showcasing HTML/CSS skills",
     skills: [
-      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
     ]
   },
   {
     id: 2,
-    title: "Conference Name",
-    type: "Conference",
-    date: "2023",
-    achievement: "Attendee",
-    image: "https://via.placeholder.com/300x200",
-    description: "Learned latest industry trends and networking",
+    title: "Creator's Hub",
+    type: "Event",
+    date: "2024",
+    achievement: "Participant",
+    image: "/assets/Creator_s hub .pdf",
+    description: "Participated in creative tech event and networking",
     skills: []
   }
 ]
@@ -58,53 +81,32 @@ export const events = [
 export const importantCourses = [
   {
     id: 1,
-    title: "Advanced Machine Learning",
-    provider: "Platform Name",
+    title: "Frontend Development",
+    provider: "Platform",
     date: "2024",
-    image: "https://via.placeholder.com/300x200",
-    description: "Deep dive into ML algorithms and applications",
+    image: "/assets/frontend_devlopment.pdf",
+    description: "Modern frontend development with React and responsive design",
     skills: [
-      { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" }
     ],
-    certificateUrl: "https://example.com/cert"
+    certificateUrl: ""
   },
   {
     id: 2,
-    title: "Data Science Specialization",
-    provider: "Another Platform",
-    date: "2023",
-    image: "https://via.placeholder.com/300x200",
-    description: "Comprehensive data science training",
+    title: "Problem Solving Through Programming in C",
+    provider: "Platform",
+    date: "2024",
+    image: "/assets/Problem Solving Through Programming in C.pdf",
+    description: "C programming fundamentals and problem-solving techniques",
     skills: [
-      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
-      { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" }
+      { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" }
     ],
-    certificateUrl: "https://example.com/cert2"
+    certificateUrl: ""
   }
 ]
 
 // Basic Courses
-export const basicCourses = [
-  {
-    id: 1,
-    title: "Python Fundamentals",
-    provider: "Platform",
-    date: "2022",
-    image: "https://via.placeholder.com/300x200",
-    skills: [
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
-    ]
-  },
-  {
-    id: 2,
-    title: "Web Development Basics",
-    provider: "Platform",
-    date: "2022",
-    image: "https://via.placeholder.com/300x200",
-    skills: [
-      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
-    ]
-  }
-]
+export const basicCourses = []

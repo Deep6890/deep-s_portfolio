@@ -1,8 +1,8 @@
 // Profile Data
 export const profileData = {
   name: "Deep Kayastha",
-  title: "AI Engineer",
-  description: "Building intelligent systems through logic & design",
+  title: "AI Engineer + Developer",
+  description: "Brains Behind the Build",
   location: "Ahmedabad, India",
   email: "deepkayastha6890@gmail.com",
   tagline: "Crafting intelligent systems through thoughtful design & logic."
@@ -37,52 +37,17 @@ export const socialLinks = [
   }
 ]
 
-// Navigation Items
+// Navbar paths
 export const navItems = [
+  { name: 'Profile', path: '/profile' },
   { name: 'Projects', path: '/projects' },
   { name: 'Skills', path: '/skills' },
-  { name: 'Achievements', path: '/achievements' },
-  { name: 'Profile', path: '/profile' }
+  { name: 'Achievements', path: '/achievements' }
 ]
 
-// Carousel Items
-export const carouselItems = [
-  {
-    id: 1,
-    type: 'intro',
-    title: 'Deep Kayastha',
-    subtitle: 'AI Engineer',
-    description: 'Building intelligent systems through logic & design',
-    caption: 'AI Engineer & Developer'
-  },
-  {
-    id: 2,
-    type: 'milestone',
-    title: 'LeetCode Journey',
-    caption: 'DSA Growth'
-  },
-  {
-    id: 3,
-    type: 'milestone',
-    title: 'GitHub Builds',
-    caption: 'Real Projects'
-  },
-  {
-    id: 4,
-    type: 'milestone',
-    title: 'Hackathon Win',
-    caption: 'Innovation Under Pressure'
-  },
-  {
-    id: 5,
-    type: 'milestone',
-    title: 'CmDZeN Platform',
-    caption: 'AI Productivity System'
-  },
-  {
-    id: 6,
-    type: 'milestone',
-    title: 'Kaggle Experiments',
-    caption: 'Data + Models'
-  }
-]
+// About section
+export const aboutText = [
+  "I build things that solve problems.",
+  "From web applications to machine learning models, I focus on creating systems that work.",
+  "Currently exploring AI, data science, and full-stack development."
+]       

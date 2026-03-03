@@ -9,14 +9,17 @@ export function useDarkMode() {
 export function DarkModeProvider({ children }) {
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem('darkMode')
-    return saved === 'true'
+    return saved !== null ? saved === 'true' : true
   })
 
   useEffect(() => {
+    const root = document.documentElement
+    root.style.transition = 'background-color 2s ease-in-out, color 2s ease-in-out'
+    
     if (isDark) {
-      document.documentElement.classList.add('dark')
+      root.classList.add('dark')
     } else {
-      document.documentElement.classList.remove('dark')
+      root.classList.remove('dark')
     }
     localStorage.setItem('darkMode', isDark)
   }, [isDark])

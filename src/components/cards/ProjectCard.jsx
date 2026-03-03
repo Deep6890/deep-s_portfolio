@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="group relative border border-neutral-200 rounded-2xl overflow-hidden transition hover:border-neutral-400">
+    <div className="group relative border border-neutral-200 dark:border-neutral-700 rounded-2xl overflow-hidden transition hover:border-neutral-400 dark:hover:border-neutral-600">
 
       {/* IMAGE */}
       <div className="relative h-40 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500 group-hover:scale-[1.03]"
+          className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition duration-500 group-hover:scale-[1.03]"
         />
 
         {/* Overlay Tag */}
@@ -25,12 +25,12 @@ export default function ProjectCard({ project }) {
       <div className="p-6">
 
         {/* Title */}
-        <h3 className="text-xl font-light text-neutral-900 group-hover:tracking-wide transition-all">
+        <h3 className="text-xl font-light text-neutral-900 dark:text-white group-hover:tracking-wide transition-all">
           {project.title}
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-neutral-500 mt-2 leading-relaxed">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
           {project.description}
         </p>
 
@@ -40,7 +40,7 @@ export default function ProjectCard({ project }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-[10px] tracking-widest uppercase text-neutral-400"
+              className="text-[10px] tracking-widest uppercase text-neutral-400 dark:text-neutral-500"
             >
               {tag}
             </span>
@@ -56,7 +56,7 @@ export default function ProjectCard({ project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-900 transition"
+              className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition"
             >
               Live →
             </a>
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-900 transition"
+              className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition"
             >
               Code →
             </a>

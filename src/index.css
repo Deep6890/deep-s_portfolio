@@ -7,7 +7,7 @@ html.dark body,
 html.dark #root {
   background-color: #0a0a0a !important;
   color: #ffffff !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 2s ease-in-out, color 2s ease-in-out;
 }
 
 html:not(.dark),
@@ -15,5 +15,68 @@ html:not(.dark) body,
 html:not(.dark) #root {
   background-color: #ffffff !important;
   color: #000000 !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 2s ease-in-out, color 2s ease-in-out;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #525252;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a3a3a3 transparent;
+}
+
+html.dark * {
+  scrollbar-color: #525252 transparent;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
 }
