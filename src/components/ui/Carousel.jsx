@@ -1,53 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion, useMotionValue, useTransform } from 'motion/react'
-import { Circle, Code, FileText, Layers, Layout } from 'lucide-react'
+import { carouselItems } from '../../data/centralData'
 import profileImg from '../../assets/myMain.svg'
-
-const DEFAULT_ITEMS = [
-  {
-    id: 1,
-    type: 'intro',
-    image: profileImg,
-    title: 'Deep Kayastha',
-    subtitle: 'AI Engineer',
-    description: 'Building intelligent systems through logic & design'
-  },
-  {
-    id: 2,
-    type: 'milestone',
-    title: 'LeetCode Journey',
-    image: null,
-    caption: 'DSA Growth'
-  },
-  {
-    id: 3,
-    type: 'milestone',
-    title: 'GitHub Builds',
-    image: null,
-    caption: 'Real Projects'
-  },
-  {
-    id: 4,
-    type: 'milestone',
-    title: 'Hackathon Win',
-    image: null,
-    caption: 'Innovation Under Pressure'
-  },
-  {
-    id: 5,
-    type: 'milestone',
-    title: 'CmDZeN Platform',
-    image: null,
-    caption: 'AI Productivity System'
-  },
-  {
-    id: 6,
-    type: 'milestone',
-    title: 'Kaggle Experiments',
-    image: null,
-    caption: 'Data + Models'
-  }
-]
 
 const DRAG_BUFFER = 0
 const VELOCITY_THRESHOLD = 500
@@ -75,7 +29,7 @@ function CarouselItem({ item, index, itemWidth, round, trackItemOffset, x, trans
       transition={transition}
     >
       {item.image ? (
-        <div className="w-full h-full flex items-center justify-center bg-white">
+        <div className="w-full h-full flex flex-col items-center justify-center bg-white dark:bg-neutral-900">
           <img
             src={item.image}
             alt={item.title}
@@ -85,6 +39,13 @@ function CarouselItem({ item, index, itemWidth, round, trackItemOffset, x, trans
               e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-2xl font-bold text-neutral-400">Coming Soon</div>'
             }}
           />
+          {item.caption && (
+            <div className="absolute bottom-4 left-0 right-0 text-center">
+              <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300 bg-white/80 dark:bg-neutral-800/80 px-4 py-2 rounded-full inline-block">
+                {item.caption}
+              </p>
+            </div>
+          )}
         </div>
       ) : (
         <>
@@ -104,7 +65,6 @@ function CarouselItem({ item, index, itemWidth, round, trackItemOffset, x, trans
 }
 
 export default function Carousel({
-  items = DEFAULT_ITEMS,
   baseWidth = 300,
   autoplay = false,
   autoplayDelay = 3000,
@@ -112,6 +72,9 @@ export default function Carousel({
   loop = false,
   round = false
 }) {
+  const items = carouselItems.map(item => 
+    item.id === 1 ? { ...item, image: profileImg } : { ...item, image: null }
+  )
   const containerPadding = 16
   const itemWidth = baseWidth - containerPadding * 2
   const trackItemOffset = itemWidth + GAP
@@ -238,7 +201,7 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden p-4 ${round ? 'rounded-full border border-white' : 'rounded-[24px] border border-[#222]'
+      className={`relative overflow-hidden p-4 ${round ? 'rounded-full border border-white dark:border-neutral-700' : 'rounded-[24px] border border-[#222] dark:border-neutral-700'
         }`}
       style={{
         width: `${baseWidth}px`,

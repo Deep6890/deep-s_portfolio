@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { Moon, Sun, Briefcase, Code, User, Mail, FolderGit2, Award } from 'lucide-react'
+import { Moon, Sun, FolderGit2, Code, Award, User } from 'lucide-react'
+import { useDarkMode } from '../context/DarkModeContext'
+import { navItems } from '../data/centralData'
 
 export default function MainNavbar() {
-  const [isDark, setIsDark] = useState(false)
+  const { isDark, toggleDarkMode } = useDarkMode()
 
-  const navItems = [
-    { name: 'Projects', icon: FolderGit2, path: '/projects' },
-    { name: 'Skills', icon: Code, path: '/skills' },
-    { name: 'Achievements', icon: Award, path: '/achievements' },
-    { name: 'Profile', icon: User, path: '/profile' },
-    { name: 'Contact', icon: Mail, path: '/contact' },
+  const navConfig = [
+    { ...navItems[0], icon: FolderGit2 },
+    { ...navItems[1], icon: Code },
+    { ...navItems[2], icon: Award },
+    { ...navItems[3], icon: User }
   ]
 
   return (
@@ -19,7 +20,7 @@ export default function MainNavbar() {
 
         {/* Toggle Button */}
         <button
-          onClick={() => setIsDark(!isDark)}
+          onClick={toggleDarkMode}
           className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-neutral-700 transition"
         >
           {isDark ? <Sun size={16} className="md:w-[18px] md:h-[18px]" /> : <Moon size={16} className="md:w-[18px] md:h-[18px]" />}
@@ -29,7 +30,7 @@ export default function MainNavbar() {
         <div className="w-px h-6 bg-neutral-700 flex-shrink-0"></div>
 
         {/* Navigation Items */}
-        {navItems.map((item) => {
+        {navConfig.map((item) => {
           const Icon = item.icon
           return (
             <Link

@@ -2,31 +2,19 @@ import React from 'react'
 import LinkedInImg from '../assets/LinkedIn.svg'
 import GitHubImg from '../assets/GitHub.png'
 import TrueFocus from './ui/TrueFocus'
+import { socialLinks } from '../data/centralData'
 
 export default function SocialLinks() {
 
-  const links = [
-    {
-      name: 'LinkedIn',
-      image: LinkedInImg,
-      url: 'https://www.linkedin.com/in/deep-kayastha-763514319/'
-    },
-    {
-      name: 'GitHub',
-      image: GitHubImg,
-      url: 'https://github.com/Deep6890'
-    },
-    {
-      name: 'LeetCode',
-      image: '/src/assets/icons8-leetcode-96.png',
-      url: 'https://leetcode.com/'
-    },
-    {
-      name: 'Kaggle',
-      image: '/src/assets/icons8-leetcode-96.png',
-      url: 'https://www.kaggle.com/'
-    }
-  ]
+  const links = socialLinks.filter(link => 
+    ['LinkedIn', 'GitHub', 'LeetCode', 'Kaggle'].includes(link.name)
+  ).map(link => ({
+    ...link,
+    image: link.name === 'LinkedIn' ? LinkedInImg : 
+           link.name === 'GitHub' ? GitHubImg :
+           link.icon === 'leetcode' ? 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg' :
+           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg'
+  }))
 
   return (
     <section className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mt-12 md:mt-32">
@@ -35,9 +23,9 @@ export default function SocialLinks() {
 
         {/* HERO */}
         <TrueFocus
-          sentence="We Connect"
+          sentence="Connect on"
           manualMode={false}
-          blurAmount={4}
+          blurAmount={2}
           borderColor="#000000"
           animationDuration={0.4}
           pauseBetweenAnimations={1}
@@ -63,7 +51,7 @@ export default function SocialLinks() {
                 />
               </div>
 
-              <span className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400 group-hover:text-neutral-900 transition">
+              <span className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400 dark:text-neutral-500 group-hover:text-neutral-900 dark:group-hover:text-white transition">
                 {link.name}
               </span>
 
@@ -73,7 +61,7 @@ export default function SocialLinks() {
         </div>
 
         {/* SUBTEXT */}
-        <p className="text-neutral-400 text-xs md:text-sm max-w-md mx-auto px-4">
+        <p className="text-neutral-400 dark:text-neutral-500 text-xs md:text-sm max-w-md mx-auto px-4">
           Platforms where I build, share and solve.
         </p>
 

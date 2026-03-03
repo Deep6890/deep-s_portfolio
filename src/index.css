@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html.dark,
+html.dark body,
+html.dark #root {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html:not(.dark),
+html:not(.dark) body,
+html:not(.dark) #root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

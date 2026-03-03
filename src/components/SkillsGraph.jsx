@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDrag } from '@use-gesture/react'
 
+// This component creates an interactive bubble graph of skills with physics-based movement and drag functionality.
 export default function SkillsGraph() {
   const containerRef = useRef(null)
   const [bubbles, setBubbles] = useState([])
@@ -132,7 +133,7 @@ export default function SkillsGraph() {
           touchAction: 'none',
           borderColor: bubble.color,
         }}
-        className="rounded-full bg-white border-4 flex items-center justify-center shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        className="rounded-full bg-white border-4 flex items-center justify-center transition-shadow duration-300"
       >
         <div className="flex flex-col items-center justify-center p-2">
           <img
@@ -149,16 +150,16 @@ export default function SkillsGraph() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] bg-gradient-to-br from-white to-neutral-50 rounded-3xl border border-neutral-200 overflow-hidden shadow-xl"
+      className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-800 rounded-3xl border border-neutral-200 dark:border-neutral-700 overflow-hidden"
     >
       <svg className="absolute inset-0 w-full h-full pointer-events-none">
-        {bubbles.map((bubble, i) => 
+        {bubbles.map((bubble, i) =>
           bubbles.slice(i + 1).map((otherBubble, j) => {
             const dx = (otherBubble.x + otherBubble.size / 2) - (bubble.x + bubble.size / 2)
             const dy = (otherBubble.y + otherBubble.size / 2) - (bubble.y + bubble.size / 2)
             const distance = Math.sqrt(dx * dx + dy * dy)
             const maxDistance = 200
-            
+
             if (distance < maxDistance) {
               const opacity = 1 - (distance / maxDistance)
               return (
