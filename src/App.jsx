@@ -40,7 +40,7 @@ function App() {
   return (
     <DarkModeProvider>
       <CustomCursor />
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

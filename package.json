@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "cross-env GITHUB_PAGES=true npm run build && gh-pages -d dist",
     "update-data": "node scripts/updateData.js"
   },
   "dependencies": {
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.2",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.1.1",
     "node-fetch": "^3.3.2",
     "postcss": "^8.4.49",
