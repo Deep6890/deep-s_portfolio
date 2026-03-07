@@ -34,7 +34,7 @@ export default function Profile() {
               </span>
 
               <a
-                href="/assets/resume.pdf"
+                href="/assets/Deep_Kayastha_AI_ML_Resume.pdf"
                 download
                 className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-white transition"
               >
