@@ -3,10 +3,16 @@ import { useEffect, useState, useRef } from 'react'
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [isHovering, setIsHovering] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
   const dotRef = useRef(null)
   const ringRef = useRef(null)
 
   useEffect(() => {
+    // Hide cursor on touch devices
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      setIsTouchDevice(true)
+      return
+    }
     let mouseX = 0
     let mouseY = 0
     let dotX = 0
@@ -54,7 +60,9 @@ export default function CustomCursor() {
       window.removeEventListener('mousemove', updatePosition)
       document.removeEventListener('mouseover', handleMouseOver)
     }
-  }, [])
+  }, [isTouchDevice])
+
+  if (isTouchDevice) return null
 
   return (
     <>

@@ -1,23 +1,42 @@
 export const mainProjects = [
   {
+    id: 0,
+    title: "ArmorAI",
+    description: "AI-powered security and threat intelligence platform. Leverages machine learning to detect, analyze, and respond to security threats in real time.",
+    image: "/assets/projects/ArmorMain.png",
+    tags: ["Python", "AI", "Machine Learning", "Security"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Deep6890/ArmorAI"
+  },
+  {
     id: 1,
-    title: "Portfolio Website",
-    description: "Responsive portfolio built with React, Vite, and Tailwind showcasing projects and GitHub integration.",
-    image: "/assets/portfolio.jpg",
-    tags: ["React", "Tailwind", "Vite", "JavaScript", "Python"],
-    liveUrl: "https://deep6890.github.io/deep-s_portfolio/",
-    githubUrl: "https://github.com/Deep6890/deep-s_portfolio"
+    title: "AEGIS-FIN",
+    description: "Fintech platform solving the MSME credit gap. Fuses live NSE market data with fundamental analysis through a 9-layer ML pipeline to produce dynamic Survival Scores and Risk Vectors.",
+    image: "/assets/projects/AgisFine.png",
+    tags: ["React", "Python", "XGBoost", "Supabase", "Tailwind", "Vite"],
+    liveUrl: "https://aegis-fin.vercel.app/",
+    githubUrl: "https://github.com/Deep6890/AEGIS-FIN"
   },
   {
     id: 2,
-    title: "CMDZEN",
-    description: "Developer productivity platform focused on tracking, focus management, and workflow optimization.",
-    image: "/assets/CMDZEN.jpg",
-    tags: ["Python", "Django", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/Deep6890/CmDZeN"
+    title: "TreadCaster",
+    description: "Trend analysis and forecasting platform for pattern discovery across market and behavioral data streams.",
+    image: "/assets/projects/TreadCaster.png",
+    tags: ["JavaScript", "React", "Data Analysis"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Deep6890/TrendCaster"
+  },
+  {
+    id: 3,
+    title: "Portfolio Website",
+    description: "Responsive portfolio built with React, Vite, and Tailwind showcasing projects and GitHub integration.",
+    image: "/assets/projects/portfolio.jpg",
+    tags: ["React", "Tailwind", "Vite", "JavaScript"],
+    liveUrl: "https://deep6890.github.io/deep-s_portfolio/",
+    githubUrl: "https://github.com/Deep6890/deep-s_portfolio"
   }
 ]
+
 export const kaggleNotebooks = [
   {
     id: 1,
@@ -47,6 +66,15 @@ export const kaggleNotebooks = [
 
 // GitHub Repositories (Auto-updated: 3/3/2026, 11:05:42 pm)
 export const githubRepos = [
+  {
+    id: 0,
+    name: "AEGIS-FIN",
+    description: "Unified Business Health Prediction System — 9-layer ML pipeline for MSME credit risk analysis.",
+    stars: 0,
+    forks: 0,
+    language: "Python",
+    url: "https://github.com/Deep6890/AEGIS-FIN"
+  },
   {
     id: 1,
     name: "deep-s_portfolio",

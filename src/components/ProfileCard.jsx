@@ -17,10 +17,10 @@ export default function ProfileCard() {
           </p>
 
           <div className="pt-0 md:pt-14">
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-light tracking-tight text-neutral-900 dark:text-white leading-[0.9]">
+            <h1 className="text-4xl xs:text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-neutral-900 dark:text-white leading-[0.9]">
               {profileData.name?.split(' ')[0]}
             </h1>
-            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-light tracking-tight text-neutral-900 dark:text-white leading-[0.9]">
+            <h2 className="text-4xl xs:text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-neutral-900 dark:text-white leading-[0.9]">
               {profileData.name?.split(' ')[1]}
             </h2>
           </div>

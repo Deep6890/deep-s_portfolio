@@ -46,7 +46,7 @@ export default function SocialLinks() {
         </div>
 
         {/* PREMIUM GRID */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-5">
 
           {links.map((link) => (
             <a

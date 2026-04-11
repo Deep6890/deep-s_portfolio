@@ -46,7 +46,7 @@ export default function Navbar() {
 
           <span className="text-neutral-300 dark:text-neutral-600 text-[9px] xs:text-[10px]">/</span>
 
-          <a href="/assets/Deep_Kayastha_AI_ML_Resume.pdf" download className="hover:text-neutral-900 dark:hover:text-white transition whitespace-nowrap text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
+          <a href="/assets/Deep_Kayastha _ai_resume.pdf" download className="hover:text-neutral-900 dark:hover:text-white transition whitespace-nowrap text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
             CV
           </a>
 

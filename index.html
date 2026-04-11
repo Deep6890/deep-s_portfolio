@@ -18,6 +18,16 @@
       }
     }(window.location))
   </script>
+  <!-- Apply saved theme before first paint — prevents flash -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('darkMode');
+        var isDark = saved !== null ? saved === 'true' : true;
+        if (isDark) document.documentElement.classList.add('dark');
+      } catch(e) {}
+    })();
+  </script>
 </head>
 
 <body>

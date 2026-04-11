@@ -23,8 +23,8 @@ export default function Profile() {
             </h1>
 
             <p className="text-sm xs:text-base sm:text-lg md:text-xl text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-xl">
-              Building structured Machine Learning systems and scalable financial architectures.
-              Focused on long-term engineering clarity, risk modeling and AI evaluation frameworks.
+              Building structured Machine Learning systems and scalable software architectures.
+              Focused on engineering clarity, security intelligence and AI evaluation frameworks.
             </p>
 
             <div className="flex items-center gap-4 xs:gap-6 sm:gap-8 mt-6 xs:mt-8 sm:mt-10 text-xs xs:text-sm text-neutral-500 flex-wrap">
@@ -34,11 +34,12 @@ export default function Profile() {
               </span>
 
               <a
-                href="/assets/Deep_Kayastha_AI_ML_Resume.pdf"
-                download
+                href="/assets/Deep_Kayastha _ai_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-white transition"
               >
-                Resume
+                Resume ↗
               </a>
             </div>
 
@@ -94,8 +95,8 @@ export default function Profile() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 xs:gap-8 sm:gap-10 md:gap-12 mb-16 xs:mb-20 sm:mb-24 md:mb-32">
 
           <InfoBlock
-            title="Loan Risk Systems"
-            desc="Developing structured ML pipelines for credit risk modeling and predictive financial analysis."
+            title="Security Intelligence"
+            desc="Building ML-powered threat detection systems that analyze and respond to security patterns in real time."
           />
 
           <InfoBlock

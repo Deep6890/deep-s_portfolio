@@ -18,9 +18,11 @@ html:not(.dark) #root {
   transition: background-color 2s ease-in-out, color 2s ease-in-out;
 }
 
-/* Hide default cursor */
-* {
-  cursor: none !important;
+/* Hide default cursor — desktop only */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
 }
 
 /* Custom Scrollbar */
