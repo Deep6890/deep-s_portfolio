@@ -93,9 +93,9 @@ export const events = [
     title: "Markup Mania",
     type: "Competition",
     date: "2024",
-    achievement: "Winner",
+    achievement: "2nd Runner Up",
     image: "/assets/events/MarkupMania.jpeg",
-    description: "Won web development competition showcasing HTML/CSS skills",
+    description: "Secured 2nd Runner Up in Markup Mania, a web development competition testing HTML/CSS precision and design instinct.",
     skills: [
       { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
@@ -192,9 +192,9 @@ export const milestones = [
   },
   {
     id: 2,
-    title: "Won Markup Mania",
-    description: "First competitive win — took first place in Markup Mania, a web development competition testing HTML/CSS precision and design instinct.",
-    type: "win"
+    title: "Markup Mania — 2nd Runner Up",
+    description: "Secured 2nd Runner Up in Markup Mania, a web development competition testing HTML/CSS precision and design instinct.",
+    type: "build"
   },
   {
     id: 3,
@@ -218,7 +218,7 @@ export const milestones = [
     id: 6,
     title: "Top 60 / 580 — Hack2Future, IIIT Dharwad",
     description: "Selected among the top 60 teams out of 580 at IIIT Dharwad's Hack2Future hackathon. Presented ArmorAI on stage to a panel of industry judges.",
-    type: "win"
+    type: "build"
   },
   {
     id: 7,
