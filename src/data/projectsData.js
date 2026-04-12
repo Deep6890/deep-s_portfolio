@@ -64,78 +64,106 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 3/3/2026, 11:05:42 pm)
+// GitHub Repositories (Auto-updated: 12/4/2026, 8:05:09 am IST)
 export const githubRepos = [
   {
-    id: 0,
-    name: "AEGIS-FIN",
-    description: "Unified Business Health Prediction System — 9-layer ML pipeline for MSME credit risk analysis.",
-    stars: 0,
-    forks: 0,
-    language: "Python",
-    url: "https://github.com/Deep6890/AEGIS-FIN"
+    "id": 1124343259,
+    "name": "Deep6890",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "url": "https://github.com/Deep6890/Deep6890",
+    "updatedAt": "2026-04-11T18:21:03Z"
   },
   {
-    id: 1,
-    name: "deep-s_portfolio",
-    description: "Modern personal portfolio built with React and Tailwind CSS.",
-    stars: 1,
-    forks: 0,
-    language: "JavaScript",
-    url: "https://github.com/Deep6890/deep-s_portfolio"
+    "id": 992832356,
+    "name": "deep-s_portfolio",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/deep-s_portfolio",
+    "updatedAt": "2026-04-11T11:20:29Z"
   },
   {
-    id: 2,
-    name: "TrendCaster",
-    description: "Trend analysis project for pattern discovery and forecasting.",
-    stars: 0,
-    forks: 0,
-    language: "JavaScript",
-    url: "https://github.com/Deep6890/TrendCaster"
+    "id": 1193506466,
+    "name": "Nlp_Factory",
+    "description": "No description",
+    "stars": 2,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/Nlp_Factory",
+    "updatedAt": "2026-04-11T11:06:39Z"
   },
   {
-    id: 4,
-    name: "CellPhonePricePridictor",
-    description: "ML project predicting cellphone prices from hardware specs.",
-    stars: 0,
-    forks: 0,
-    language: "Jupyter Notebook",
-    url: "https://github.com/Deep6890/CellPhonePricePridictor"
+    "id": 1127391717,
+    "name": "AEGIS-FIN",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/AEGIS-FIN",
+    "updatedAt": "2026-04-11T08:10:23Z"
   },
   {
-    id: 5,
-    name: "Numberplate",
-    description: "Vehicle number plate detection using computer vision.",
-    stars: 0,
-    forks: 0,
-    language: "Python",
-    url: "https://github.com/Deep6890/Numberplate"
+    "id": 1132039485,
+    "name": "TrendCaster",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/TrendCaster",
+    "updatedAt": "2026-04-10T14:19:28Z"
   },
   {
-    id: 6,
-    name: "webTrafficDataAnalysis",
-    description: "Website traffic analysis and behavioral insights project.",
-    stars: 0,
-    forks: 0,
-    language: "Jupyter Notebook",
-    url: "https://github.com/Deep6890/webTrafficDataAnalysis"
+    "id": 1124335977,
+    "name": "CellPhonePricePridictor",
+    "description": "Cellphone Price Prediction App | Jupyter Notebook Predict cellphone prices based on hardware specifications using Python, pandas, and numpy with a real dataset.",
+    "stars": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/CellPhonePricePridictor",
+    "updatedAt": "2025-12-28T20:48:55Z"
   },
   {
-    id: 7,
-    name: "chatApplication",
-    description: "Real-time chat app built with Java and socket programming.",
-    stars: 1,
-    forks: 0,
-    language: "Java",
-    url: "https://github.com/Deep6890/chatApplication"
+    "id": 1102473632,
+    "name": "Numberplate",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "url": "https://github.com/Deep6890/Numberplate",
+    "updatedAt": "2025-11-24T13:34:38Z"
   },
   {
-    id: 8,
-    name: "CmDZeN",
-    description: "Productivity desktop platform for developers.",
-    stars: 1,
-    forks: 0,
-    language: "JavaScript",
-    url: "https://github.com/Deep6890/CmDZeN"
+    "id": 1079450728,
+    "name": "webTrafficDataAnalysis",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/webTrafficDataAnalysis",
+    "updatedAt": "2025-10-19T20:44:33Z"
+  },
+  {
+    "id": 1078992778,
+    "name": "chatApplication",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Java",
+    "url": "https://github.com/Deep6890/chatApplication",
+    "updatedAt": "2025-10-18T21:21:45Z"
+  },
+  {
+    "id": 1035485691,
+    "name": "CmDZeN",
+    "description": "CmDZeN represents a paradigm shift in developer productivity tools, combining intelligent activity tracking, advanced focus management, and competitive coding integration into a unified desktop platform.",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/CmDZeN",
+    "updatedAt": "2025-08-31T06:58:38Z"
   }
 ]
