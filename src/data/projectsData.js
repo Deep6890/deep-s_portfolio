@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 17/4/2026, 8:04:43 am IST)
+// GitHub Repositories (Auto-updated: 18/4/2026, 7:55:45 am IST)
 export const githubRepos = [
+  {
+    "id": 1127391717,
+    "name": "AEGIS-FIN",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/AEGIS-FIN",
+    "updatedAt": "2026-04-17T18:16:01Z"
+  },
   {
     "id": 992832356,
     "name": "deep-s_portfolio",
@@ -74,7 +84,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-04-16T02:38:51Z"
+    "updatedAt": "2026-04-17T02:34:46Z"
   },
   {
     "id": 1124343259,
@@ -95,16 +105,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/Nlp_Factory",
     "updatedAt": "2026-04-11T11:06:39Z"
-  },
-  {
-    "id": 1127391717,
-    "name": "AEGIS-FIN",
-    "description": "No description",
-    "stars": 1,
-    "forks": 0,
-    "language": "Jupyter Notebook",
-    "url": "https://github.com/Deep6890/AEGIS-FIN",
-    "updatedAt": "2026-04-11T08:10:23Z"
   },
   {
     "id": 1132039485,
