@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 20/4/2026, 8:10:38 am IST)
+// GitHub Repositories (Auto-updated: 21/4/2026, 8:05:36 am IST)
 export const githubRepos = [
+  {
+    "id": 992832356,
+    "name": "deep-s_portfolio",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/deep-s_portfolio",
+    "updatedAt": "2026-04-20T02:40:43Z"
+  },
   {
     "id": 1193506466,
     "name": "Nlp_Factory",
@@ -75,16 +85,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/Nlp_Factory",
     "updatedAt": "2026-04-19T16:14:24Z"
-  },
-  {
-    "id": 992832356,
-    "name": "deep-s_portfolio",
-    "description": "No description",
-    "stars": 1,
-    "forks": 0,
-    "language": "JavaScript",
-    "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-04-19T02:40:07Z"
   },
   {
     "id": 1127391717,
