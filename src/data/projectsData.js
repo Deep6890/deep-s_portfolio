@@ -64,7 +64,7 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 26/4/2026, 8:13:15 am IST)
+// GitHub Repositories (Auto-updated: 27/4/2026, 8:15:39 am IST)
 export const githubRepos = [
   {
     "id": 1127391717,
@@ -74,7 +74,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "Jupyter Notebook",
     "url": "https://github.com/Deep6890/AEGIS-FIN",
-    "updatedAt": "2026-04-25T21:01:43Z"
+    "updatedAt": "2026-04-26T04:13:17Z"
   },
   {
     "id": 992832356,
@@ -84,7 +84,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-04-25T02:27:49Z"
+    "updatedAt": "2026-04-26T02:43:21Z"
   },
   {
     "id": 1193506466,
