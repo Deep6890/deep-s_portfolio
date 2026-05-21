@@ -64,18 +64,8 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 20/5/2026, 9:03:10 am IST)
+// GitHub Repositories (Auto-updated: 21/5/2026, 9:09:56 am IST)
 export const githubRepos = [
-  {
-    "id": 992832356,
-    "name": "deep-s_portfolio",
-    "description": "No description",
-    "stars": 1,
-    "forks": 0,
-    "language": "JavaScript",
-    "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-05-19T03:32:46Z"
-  },
   {
     "id": 1242534999,
     "name": "startupXpert",
@@ -84,7 +74,27 @@ export const githubRepos = [
     "forks": 0,
     "language": "Unknown",
     "url": "https://github.com/Deep6890/startupXpert",
-    "updatedAt": "2026-05-18T14:11:37Z"
+    "updatedAt": "2026-05-20T18:15:18Z"
+  },
+  {
+    "id": 1124343259,
+    "name": "Deep6890",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "url": "https://github.com/Deep6890/Deep6890",
+    "updatedAt": "2026-05-20T15:22:47Z"
+  },
+  {
+    "id": 992832356,
+    "name": "deep-s_portfolio",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/deep-s_portfolio",
+    "updatedAt": "2026-05-20T03:33:15Z"
   },
   {
     "id": 1127391717,
@@ -105,16 +115,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/Nlp_Factory",
     "updatedAt": "2026-04-19T16:14:24Z"
-  },
-  {
-    "id": 1124343259,
-    "name": "Deep6890",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "url": "https://github.com/Deep6890/Deep6890",
-    "updatedAt": "2026-04-11T18:21:03Z"
   },
   {
     "id": 1132039485,
