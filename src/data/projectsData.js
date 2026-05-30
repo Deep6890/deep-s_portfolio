@@ -64,8 +64,48 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 29/5/2026, 9:05:03 am IST)
+// GitHub Repositories (Auto-updated: 30/5/2026, 8:53:44 am IST)
 export const githubRepos = [
+  {
+    "id": 1124343259,
+    "name": "Deep6890",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Unknown",
+    "url": "https://github.com/Deep6890/Deep6890",
+    "updatedAt": "2026-05-29T16:39:29Z"
+  },
+  {
+    "id": 1124335977,
+    "name": "CellPhonePricePridictor",
+    "description": "Cellphone Price Prediction App | Jupyter Notebook Predict cellphone prices based on hardware specifications using Python, pandas, and numpy with a real dataset.",
+    "stars": 1,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/CellPhonePricePridictor",
+    "updatedAt": "2026-05-29T16:39:23Z"
+  },
+  {
+    "id": 1102473632,
+    "name": "Numberplate",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "url": "https://github.com/Deep6890/Numberplate",
+    "updatedAt": "2026-05-29T16:39:21Z"
+  },
+  {
+    "id": 1079450728,
+    "name": "webTrafficDataAnalysis",
+    "description": "No description",
+    "stars": 1,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/webTrafficDataAnalysis",
+    "updatedAt": "2026-05-29T16:39:18Z"
+  },
   {
     "id": 992832356,
     "name": "deep-s_portfolio",
@@ -74,7 +114,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-05-28T03:34:41Z"
+    "updatedAt": "2026-05-29T03:35:07Z"
   },
   {
     "id": 1242534999,
@@ -85,16 +125,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/startupXpert",
     "updatedAt": "2026-05-26T20:03:56Z"
-  },
-  {
-    "id": 1124343259,
-    "name": "Deep6890",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "url": "https://github.com/Deep6890/Deep6890",
-    "updatedAt": "2026-05-20T15:22:47Z"
   },
   {
     "id": 1127391717,
@@ -125,46 +155,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/TrendCaster",
     "updatedAt": "2026-04-10T14:19:28Z"
-  },
-  {
-    "id": 1124335977,
-    "name": "CellPhonePricePridictor",
-    "description": "Cellphone Price Prediction App | Jupyter Notebook Predict cellphone prices based on hardware specifications using Python, pandas, and numpy with a real dataset.",
-    "stars": 0,
-    "forks": 0,
-    "language": "Jupyter Notebook",
-    "url": "https://github.com/Deep6890/CellPhonePricePridictor",
-    "updatedAt": "2025-12-28T20:48:55Z"
-  },
-  {
-    "id": 1102473632,
-    "name": "Numberplate",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "url": "https://github.com/Deep6890/Numberplate",
-    "updatedAt": "2025-11-24T13:34:38Z"
-  },
-  {
-    "id": 1079450728,
-    "name": "webTrafficDataAnalysis",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Jupyter Notebook",
-    "url": "https://github.com/Deep6890/webTrafficDataAnalysis",
-    "updatedAt": "2025-10-19T20:44:33Z"
-  },
-  {
-    "id": 1078992778,
-    "name": "chatApplication",
-    "description": "No description",
-    "stars": 1,
-    "forks": 0,
-    "language": "Java",
-    "url": "https://github.com/Deep6890/chatApplication",
-    "updatedAt": "2025-10-18T21:21:45Z"
   },
   {
     "id": 1035485691,
