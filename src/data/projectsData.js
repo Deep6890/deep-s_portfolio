@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 30/5/2026, 8:53:44 am IST)
+// GitHub Repositories (Auto-updated: 31/5/2026, 9:20:38 am IST)
 export const githubRepos = [
+  {
+    "id": 992832356,
+    "name": "deep-s_portfolio",
+    "description": "No description",
+    "stars": 2,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/deep-s_portfolio",
+    "updatedAt": "2026-05-30T03:23:48Z"
+  },
   {
     "id": 1124343259,
     "name": "Deep6890",
@@ -105,16 +115,6 @@ export const githubRepos = [
     "language": "Jupyter Notebook",
     "url": "https://github.com/Deep6890/webTrafficDataAnalysis",
     "updatedAt": "2026-05-29T16:39:18Z"
-  },
-  {
-    "id": 992832356,
-    "name": "deep-s_portfolio",
-    "description": "No description",
-    "stars": 2,
-    "forks": 0,
-    "language": "JavaScript",
-    "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-05-29T03:35:07Z"
   },
   {
     "id": 1242534999,
