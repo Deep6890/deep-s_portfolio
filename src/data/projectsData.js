@@ -64,7 +64,7 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 28/6/2026, 9:16:58 am IST)
+// GitHub Repositories (Auto-updated: 29/6/2026, 9:23:39 am IST)
 export const githubRepos = [
   {
     "id": 992832356,
@@ -74,7 +74,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-06-26T03:39:14Z"
+    "updatedAt": "2026-06-28T03:47:03Z"
   },
   {
     "id": 1242534999,
