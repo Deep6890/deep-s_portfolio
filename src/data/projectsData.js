@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 14/9/2026, 9:04:38 am IST)
+// GitHub Repositories (Auto-updated: 15/9/2026, 9:05:46 am IST)
 export const githubRepos = [
+  {
+    "id": 1367641245,
+    "name": "bob-ai-hackathon-Astra",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/Deep6890/bob-ai-hackathon-Astra",
+    "updatedAt": "2026-09-14T19:55:58Z"
+  },
   {
     "id": 992832356,
     "name": "deep-s_portfolio",
@@ -74,17 +84,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-09-13T03:23:31Z"
-  },
-  {
-    "id": 1367641245,
-    "name": "bob-ai-hackathon-Astra",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "url": "https://github.com/Deep6890/bob-ai-hackathon-Astra",
-    "updatedAt": "2026-09-12T19:48:06Z"
+    "updatedAt": "2026-09-14T03:34:43Z"
   },
   {
     "id": 1306455370,
