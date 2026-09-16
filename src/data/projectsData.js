@@ -64,17 +64,17 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 15/9/2026, 9:05:46 am IST)
+// GitHub Repositories (Auto-updated: 16/9/2026, 9:01:46 am IST)
 export const githubRepos = [
   {
     "id": 1367641245,
-    "name": "bob-ai-hackathon-Astra",
+    "name": "bob-ai-hackathon-Astraea",
     "description": "No description",
     "stars": 0,
     "forks": 0,
     "language": "Jupyter Notebook",
-    "url": "https://github.com/Deep6890/bob-ai-hackathon-Astra",
-    "updatedAt": "2026-09-14T19:55:58Z"
+    "url": "https://github.com/Deep6890/bob-ai-hackathon-Astraea",
+    "updatedAt": "2026-09-15T18:09:16Z"
   },
   {
     "id": 992832356,
@@ -84,7 +84,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-09-14T03:34:43Z"
+    "updatedAt": "2026-09-15T03:35:52Z"
   },
   {
     "id": 1306455370,
