@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 5/10/2026, 9:46:52 am IST)
+// GitHub Repositories (Auto-updated: 6/10/2026, 10:35:03 am IST)
 export const githubRepos = [
+  {
+    "id": 1405189995,
+    "name": "resumeForge",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "url": "https://github.com/Deep6890/resumeForge",
+    "updatedAt": "2026-10-05T05:35:19Z"
+  },
   {
     "id": 992832356,
     "name": "deep-s_portfolio",
@@ -74,7 +84,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-10-04T04:31:17Z"
+    "updatedAt": "2026-10-05T04:16:56Z"
   },
   {
     "id": 1367641245,
