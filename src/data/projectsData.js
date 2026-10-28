@@ -64,7 +64,7 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 27/10/2026, 9:22:18 am IST)
+// GitHub Repositories (Auto-updated: 28/10/2026, 9:42:31 am IST)
 export const githubRepos = [
   {
     "id": 992832356,
@@ -74,7 +74,7 @@ export const githubRepos = [
     "forks": 0,
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/deep-s_portfolio",
-    "updatedAt": "2026-10-26T03:25:14Z"
+    "updatedAt": "2026-10-27T03:52:23Z"
   },
   {
     "id": 1405189995,
@@ -105,16 +105,6 @@ export const githubRepos = [
     "language": "JavaScript",
     "url": "https://github.com/Deep6890/awdf",
     "updatedAt": "2026-08-10T18:29:40Z"
-  },
-  {
-    "id": 1319561301,
-    "name": "repo",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "url": "https://github.com/Deep6890/repo",
-    "updatedAt": "2026-08-01T19:09:26Z"
   },
   {
     "id": 1242534999,
