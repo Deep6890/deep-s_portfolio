@@ -64,8 +64,18 @@ export const kaggleNotebooks = [
   }
 ]
 
-// GitHub Repositories (Auto-updated: 16/11/2026, 10:27:01 am IST)
+// GitHub Repositories (Auto-updated: 17/11/2026, 12:14:38 pm IST)
 export const githubRepos = [
+  {
+    "id": 1306455370,
+    "name": "awdf",
+    "description": "No description",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "url": "https://github.com/Deep6890/awdf",
+    "updatedAt": "2026-11-16T19:19:39Z"
+  },
   {
     "id": 992832356,
     "name": "deep-s_portfolio",
@@ -95,16 +105,6 @@ export const githubRepos = [
     "language": "Jupyter Notebook",
     "url": "https://github.com/Deep6890/bob-ai-hackathon-Astraea",
     "updatedAt": "2026-09-15T18:09:16Z"
-  },
-  {
-    "id": 1306455370,
-    "name": "awdf",
-    "description": "No description",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "url": "https://github.com/Deep6890/awdf",
-    "updatedAt": "2026-08-10T18:29:40Z"
   },
   {
     "id": 1242534999,
